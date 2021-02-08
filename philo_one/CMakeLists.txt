@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.17)
+project(practice)
+
+set(CMAKE_C_COMPILER gcc)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
+
+add_executable(practice main.c philo_one.h support_functions.c setup.c)
