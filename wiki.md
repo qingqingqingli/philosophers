@@ -70,6 +70,8 @@
 
 - On Linux, programs that use the Pthreads API should be compiled using `cc -pthread`.
 
+- **Race condition**. When multiple threads race to write in the same memory space. `Mutex locks` is a computing abstraction that allows one thread to exclude other threads. Only one thread can have the lock at a time. 
+
 ### mutex
 
 - A Mutex is a mutually exclusive flag, which is used to protect a shared resource by ensuring mutual exclusion inside critical sections of code.

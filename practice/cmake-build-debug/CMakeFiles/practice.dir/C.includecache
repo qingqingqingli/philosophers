@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/practice/mutex_0.c
+/home/qli/CLionProjects/philosophers/practice/threads.c
+pthread.h
+-
 stdio.h
 -
-pthread.h
+unistd.h
+-
+stdlib.h
 -
 

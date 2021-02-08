@@ -5,4 +5,4 @@ set(CMAKE_C_COMPILER gcc)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 
-add_executable(practice mutex_0.c)
+add_executable(practice threads.c)

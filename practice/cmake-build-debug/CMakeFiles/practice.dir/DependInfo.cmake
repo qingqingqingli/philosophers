@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/qli/CLionProjects/philosophers/practice/mutex_0.c" "/home/qli/CLionProjects/philosophers/practice/cmake-build-debug/CMakeFiles/practice.dir/mutex_0.c.o"
+  "/home/qli/CLionProjects/philosophers/practice/threads.c" "/home/qli/CLionProjects/philosophers/practice/cmake-build-debug/CMakeFiles/practice.dir/threads.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

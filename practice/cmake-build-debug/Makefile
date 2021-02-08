@@ -143,32 +143,32 @@ practice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
 .PHONY : practice/fast
 
-mutex_0.o: mutex_0.c.o
+threads.o: threads.c.o
 
-.PHONY : mutex_0.o
+.PHONY : threads.o
 
 # target to build an object file
-mutex_0.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/mutex_0.c.o
-.PHONY : mutex_0.c.o
+threads.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/threads.c.o
+.PHONY : threads.c.o
 
-mutex_0.i: mutex_0.c.i
+threads.i: threads.c.i
 
-.PHONY : mutex_0.i
+.PHONY : threads.i
 
 # target to preprocess a source file
-mutex_0.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/mutex_0.c.i
-.PHONY : mutex_0.c.i
+threads.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/threads.c.i
+.PHONY : threads.c.i
 
-mutex_0.s: mutex_0.c.s
+threads.s: threads.c.s
 
-.PHONY : mutex_0.s
+.PHONY : threads.s
 
 # target to generate assembly for a file
-mutex_0.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/mutex_0.c.s
-.PHONY : mutex_0.c.s
+threads.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/threads.c.s
+.PHONY : threads.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practice"
-	@echo "... mutex_0.o"
-	@echo "... mutex_0.i"
-	@echo "... mutex_0.s"
+	@echo "... threads.o"
+	@echo "... threads.i"
+	@echo "... threads.s"
 .PHONY : help
 
 
