@@ -1,19 +1,19 @@
 
 ### PROGRAM PARAMETERS
 
-- `number_of_philosophers`
+1. `number_of_philosophers`
     - Number of philosophers and forks
 
--   `time_to_die` (in milliseconds)
+2. `time_to_die` (in milliseconds)
     - if a philosopher doesn't start eating 'time_to_eat' milliseconds after starting his last meal or the beginning of the stimulation, it dies
     
-- `time_to_eat` (in milliseconds)
+3. `time_to_eat` (in milliseconds)
     - the time it takes for a philosopher to eat. During that time he will need to keep the two forks
 
-- `time_to_sleep` (in milliseconds)
+4. `time_to_sleep` (in milliseconds)
     - the time the philosopher will spend sleeping
 
-- `number_of_times_each_philosopher_must_eat` (optional)
+5. `number_of_times_each_philosopher_must_eat` (optional)
     - If all philosophers eat at least this amount of times, the stimulation will stop
     - If not specified, the stimulation will stop only at the death of a philosopher
 
