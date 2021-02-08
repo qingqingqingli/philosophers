@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/philosophers.dir/practice/mutex_switch.c.o  -o philosophers 

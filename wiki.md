@@ -59,4 +59,27 @@
 
 ### mutex
 
+- A Mutex is a mutually exclusive flag, which is used to protect a shared resource by ensuring mutual exclusion inside critical sections of code.
+  
+- It acts as a `gate keeper` to a section of code allowing one thread in and blocking access to all others. This ensures that the code being controlled will only be hit by a single thread at a time. `Just be sure to release the mutex when you are done.`
+
+- `Mutual exclusion`. It is the requirement that one thread of execution never enters a critical section while a concurrent thread of execution is already accessing `critical section`, which refers to an interval of time during which a thread of execution accesses a shared resource, such as `shared data objects, shared resources, shared memory`.
+
+- Deadlock will occur when the thread which acquired the lock attempts to lock the mutex again. Pay close attention to when you lock and unlock the mutexes.
+
 ### semaphore
+
+- Semaphores can count higher than one
+
+### Differences between mutex and semaphore
+
+- The correct use of a semaphore is for `signaling from one task to another`. 
+  
+- A mutex is meant to `be taken and released`, always in that order, by each task that uses the shared resource it protects. 
+  
+- By contrast, tasks that use semaphores `either signal or wait`—not both.
+
+### Resources
+
+- [What is a mutex?](https://stackoverflow.com/questions/34524/what-is-a-mutex)
+- [Mutexes and Semaphores Demystified](https://barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
