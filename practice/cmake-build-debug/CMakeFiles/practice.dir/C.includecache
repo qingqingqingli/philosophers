@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/practice/threads.c
-pthread.h
--
+/home/qli/CLionProjects/philosophers/practice/thread_1.c
 stdio.h
 -
-unistd.h
--
 stdlib.h
+-
+assert.h
+-
+pthread.h
+-
+unistd.h
 -
 

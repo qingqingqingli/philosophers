@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/qli/CLionProjects/philosophers/practice/threads.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/practice/thread_1.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/practice/CMakeLists.txt">

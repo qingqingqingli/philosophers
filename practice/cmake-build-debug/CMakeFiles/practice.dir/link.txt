@@ -1,1 +1,1 @@
-gcc  -pthread -g   CMakeFiles/practice.dir/threads.c.o  -o practice 
+gcc  -pthread -g   CMakeFiles/practice.dir/thread_1.c.o  -o practice 

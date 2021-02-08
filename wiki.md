@@ -72,6 +72,11 @@
 
 - **Race condition**. When multiple threads race to write in the same memory space. `Mutex locks` is a computing abstraction that allows one thread to exclude other threads. Only one thread can have the lock at a time. 
 
+- Three major classes of routines in Pthreads API:
+    - Thread management
+    - Mutex variables
+    - Condition variables
+
 ### mutex
 
 - A Mutex is a mutually exclusive flag, which is used to protect a shared resource by ensuring mutual exclusion inside critical sections of code.
@@ -82,6 +87,12 @@
 
 - Deadlock will occur when the thread which acquired the lock attempts to lock the mutex again. Pay close attention to when you lock and unlock the mutexes.
 
+- Programs having the following characteristics may be well suited for pthreads:
+    - Work that can be executed, or data that can be operated on, by multiple tasks simultaneously
+    - Block for potentially long I/O waits
+    - Use many CPU cycles in some places but not others
+    - Must respond to asynchronous events
+    - Some work is more important than other work (priority interrupts)
 
 ### semaphore
 
@@ -111,3 +122,7 @@
 - [What is a mutex?](https://stackoverflow.com/questions/34524/what-is-a-mutex)
 - [Mutexes and Semaphores Demystified](https://barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
 - [POSIX Threads wikipedia](https://en.wikipedia.org/wiki/POSIX_Threads)
+- [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+- [Introduction to Parallel Computing Tutorial](https://hpc.llnl.gov/training/tutorials/introduction-parallel-computing-tutorial)
+- [Chapter 4 Programming with Synchronization Objects](https://docs.oracle.com/cd/E19683-01/806-6867/6jfpgdcnd/index.html)
+- [Using Mutual Exclusion Locks](https://docs.oracle.com/cd/E19683-01/806-6867/6jfpgdcng/index.html)
