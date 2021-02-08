@@ -22,11 +22,11 @@
 - Each philosopher should be given a number from 1 to `number_of_philosophers`. Philosopher number 1 is next to philosopher number ’number_of_philosophers’. Any other philosopher with number N is seated between philosopher N - 1 and philosopher N + 1
 
 - Any change of status of a philosopher must be written as follows (with X replaced with the philosopher number and timestamp_in_ms the current timestamp in milliseconds)
-  ◦ `timestamp_in_ms X has taken a fork`
-  ◦ `timestamp_in_ms X is eating`
-  ◦ `timestamp_in_ms X is sleeping`
-  ◦ `timestamp_in_ms X is thinking`
-  ◦ `timestamp_in_ms X died`
+    - `timestamp_in_ms X has taken a fork`
+    - `timestamp_in_ms X is eating`
+    - `timestamp_in_ms X is sleeping`
+    - `timestamp_in_ms X is thinking`
+    - `timestamp_in_ms X died`
 
 - `No more than 10 seconds` between the death of a philosopher and when it will print its death
 
