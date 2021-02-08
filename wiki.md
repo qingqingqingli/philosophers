@@ -34,20 +34,23 @@
 
 ### THREE SOLUTIONS
 
-`PHILO_ONE`
+`PHILO_ONE` (philosopher with threads and mutex)
 
+- Allowed functions: `memset`, `printf`, `malloc`, `free`, `write`, `usleep`, `gettimeofday`, `pthread_create`, `pthread_detach`, `pthread_join`, `pthread_mutex_init`, `pthread_mutex_destroy`, `pthread_mutex_lock`, `pthread_mutex_unlock`
 - One fork between each philosopher, therefore there will be a fork at the right and at the left of each philosopher.
 - To avoid philosophers duplicating forks, you should `protect the forks state` with a mutex for each of them.
 - Each philosopher should be a thread.
 
-`PHILO_TWO`
+`PHILO_TWO` (philosopher with threads and semaphore)
 
+- Allowed functions: `memset`, `printf`, `malloc`, `free`, `write`, `usleep`, `gettimeofday`, `pthread_create`, `pthread_detach`, `pthread_join`, `sem_open`, `sem_close`, `sem_post`, `sem_wait`, `sem_unlink`
 - All the forks are in the middle of the table.
 - They have no states in memory but the number of available forks is represented by a semaphore.
 - Each philosopher should be a thread.
 
-`PHILO_THREE`
+`PHILO_THREE` (philosopher with processes and semaphore)
 
+- Allowed functions: `memset`, `printf`, `malloc`, `free`, `write`, `fork`, `kill`, `exit`, `pthread_create`, `pthread_detach`, `pthread_join`, `usleep`, `gettimeofday`, `waitpid`, `sem_open`, `sem_close`, `sem_post`, `sem_wait`, `sem_unlink`
 - All the forks are in the middle of the table.
 - They have no states in memory but the number of available forks is represented by a semaphore.
 - Each philosopher should be a process and the main process should not be a philosopher.
