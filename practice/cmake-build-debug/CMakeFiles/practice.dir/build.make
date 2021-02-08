@@ -77,27 +77,27 @@ include CMakeFiles/practice.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/practice.dir/flags.make
 
-CMakeFiles/practice.dir/mutex_switch.c.o: CMakeFiles/practice.dir/flags.make
-CMakeFiles/practice.dir/mutex_switch.c.o: ../mutex_switch.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/practice.dir/mutex_switch.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/mutex_switch.c.o   -c /home/qli/CLionProjects/philosophers/practice/mutex_switch.c
+CMakeFiles/practice.dir/mutex_0.c.o: CMakeFiles/practice.dir/flags.make
+CMakeFiles/practice.dir/mutex_0.c.o: ../mutex_0.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/practice.dir/mutex_0.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/mutex_0.c.o   -c /home/qli/CLionProjects/philosophers/practice/mutex_0.c
 
-CMakeFiles/practice.dir/mutex_switch.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/mutex_switch.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/practice/mutex_switch.c > CMakeFiles/practice.dir/mutex_switch.c.i
+CMakeFiles/practice.dir/mutex_0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/mutex_0.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/practice/mutex_0.c > CMakeFiles/practice.dir/mutex_0.c.i
 
-CMakeFiles/practice.dir/mutex_switch.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/mutex_switch.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/practice/mutex_switch.c -o CMakeFiles/practice.dir/mutex_switch.c.s
+CMakeFiles/practice.dir/mutex_0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/mutex_0.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/practice/mutex_0.c -o CMakeFiles/practice.dir/mutex_0.c.s
 
 # Object files for target practice
 practice_OBJECTS = \
-"CMakeFiles/practice.dir/mutex_switch.c.o"
+"CMakeFiles/practice.dir/mutex_0.c.o"
 
 # External object files for target practice
 practice_EXTERNAL_OBJECTS =
 
-practice: CMakeFiles/practice.dir/mutex_switch.c.o
+practice: CMakeFiles/practice.dir/mutex_0.c.o
 practice: CMakeFiles/practice.dir/build.make
 practice: CMakeFiles/practice.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable practice"

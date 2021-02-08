@@ -1,9 +1,13 @@
+//
+// Created by qli on 08/02/2021.
+//
+
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#define COUNT_TO  100
-#define MAX_CORES 12
+#define COUNT_TO  10000
+#define MAX_CORES 1
 
 static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
@@ -13,6 +17,7 @@ void *start_counting() {
 		// acquire lock
 		pthread_mutex_lock(&mutex);
 
+		// critical section of the code
 		// check if all COUNT_TO has been arrived at
 		if (i >= COUNT_TO) {
 			pthread_mutex_unlock(&mutex);

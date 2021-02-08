@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/qli/CLionProjects/philosophers/practice/mutex_switch.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/practice/mutex_0.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/practice/CMakeLists.txt">

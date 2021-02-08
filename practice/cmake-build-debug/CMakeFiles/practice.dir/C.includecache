@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/practice/mutex_switch.c
-pthread.h
--
+/home/qli/CLionProjects/philosophers/practice/mutex_0.c
 stdio.h
 -
-stdlib.h
+pthread.h
 -
 

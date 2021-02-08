@@ -1,1 +1,1 @@
-gcc  -Wall -Wextra -Werror -pthread -g   CMakeFiles/practice.dir/mutex_switch.c.o  -o practice 
+gcc  -pthread -g   CMakeFiles/practice.dir/mutex_0.c.o  -o practice 

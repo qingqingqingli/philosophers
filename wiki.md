@@ -79,6 +79,17 @@
   
 - By contrast, tasks that use semaphores `either signal or wait`—not both.
 
+### relevant topics
+
+- Uses a mutex (pthread_mutex) to synchronize the processing to avoid a race condition.
+- Timing the process without using threads (Linux time command)
+- Switching processing to new threads
+- Running multiple threads without a mutex lock (race condition)
+- Solving a race condition
+- Timing the multi-threaded version
+- Common problem when passing arguments to a thread
+- Common problem spotting race conditions
+
 ### Resources
 
 - [What is a mutex?](https://stackoverflow.com/questions/34524/what-is-a-mutex)

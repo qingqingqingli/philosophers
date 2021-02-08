@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/practice.dir/mutex_switch.c.o"
+  "CMakeFiles/practice.dir/mutex_0.c.o"
   "practice"
   "practice.pdb"
 )
