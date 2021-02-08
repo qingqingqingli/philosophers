@@ -56,6 +56,19 @@
 - Each philosopher should be a process and the main process should not be a philosopher.
 
 ### process threading
+- With `fork()`, you create a new process. You create concurrency and isolation. When one process fails, the other process is usually fine. Both processes have their only memory spaces. 
+
+- With `threads`, you can get concurrency without isolation. Threads have different call stacks but they are in the same memory space. One thread can write into the memory space of another thread, which makes it easier to communicate between threads. It is both a blessing and curse. 
+
+- `POSIX threads`. The `Portable Operating System Interface` (POSIX) is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. A single process can contain multiple threads, all of which are executing the same program. These threads share the same global memory (data and heap segments), but each thread has its own stack (automatic variables). 
+
+- POSIX requires that threads `share a range of attributes` (e.g., process ID, parent process ID) and have `distinct attributes` for each thread (e.g., thread ID, errno variable)
+
+- **Pthreads function return values**: Most pthreads functions return 0 on success, and an error number on failure.
+
+- **Thread IDs**: Each of the threads in a process has a unique thread identifier (stored in the type `pthread_t`). This identifier is returned to the caller of `pthread_create`, and a thread can obtain its own thread identifier using `pthread_self`.
+
+- On Linux, programs that use the Pthreads API should be compiled using `cc -pthread`.
 
 ### mutex
 
@@ -66,6 +79,7 @@
 - `Mutual exclusion`. It is the requirement that one thread of execution never enters a critical section while a concurrent thread of execution is already accessing `critical section`, which refers to an interval of time during which a thread of execution accesses a shared resource, such as `shared data objects, shared resources, shared memory`.
 
 - Deadlock will occur when the thread which acquired the lock attempts to lock the mutex again. Pay close attention to when you lock and unlock the mutexes.
+
 
 ### semaphore
 
@@ -94,3 +108,4 @@
 
 - [What is a mutex?](https://stackoverflow.com/questions/34524/what-is-a-mutex)
 - [Mutexes and Semaphores Demystified](https://barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
+- [POSIX Threads wikipedia](https://en.wikipedia.org/wiki/POSIX_Threads)
