@@ -3,7 +3,7 @@ NAME			= 	philo_one
 
 SOURCE			= 	main.c\
 					init_program_setup.c\
-					support_functions\support_01.c
+					support_functions/support_01.c
 
 OBJECT			=	$(SOURCE:.c=.o)
 

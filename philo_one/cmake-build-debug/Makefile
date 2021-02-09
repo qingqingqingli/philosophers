@@ -143,6 +143,60 @@ practice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
 .PHONY : practice/fast
 
+clean_up.o: clean_up.c.o
+
+.PHONY : clean_up.o
+
+# target to build an object file
+clean_up.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.o
+.PHONY : clean_up.c.o
+
+clean_up.i: clean_up.c.i
+
+.PHONY : clean_up.i
+
+# target to preprocess a source file
+clean_up.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.i
+.PHONY : clean_up.c.i
+
+clean_up.s: clean_up.c.s
+
+.PHONY : clean_up.s
+
+# target to generate assembly for a file
+clean_up.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.s
+.PHONY : clean_up.c.s
+
+create_philosophers.o: create_philosophers.c.o
+
+.PHONY : create_philosophers.o
+
+# target to build an object file
+create_philosophers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.o
+.PHONY : create_philosophers.c.o
+
+create_philosophers.i: create_philosophers.c.i
+
+.PHONY : create_philosophers.i
+
+# target to preprocess a source file
+create_philosophers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.i
+.PHONY : create_philosophers.c.i
+
+create_philosophers.s: create_philosophers.c.s
+
+.PHONY : create_philosophers.s
+
+# target to generate assembly for a file
+create_philosophers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.s
+.PHONY : create_philosophers.c.s
+
 init_program_setup.o: init_program_setup.c.o
 
 .PHONY : init_program_setup.o
@@ -169,6 +223,33 @@ init_program_setup.s: init_program_setup.c.s
 init_program_setup.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.s
 .PHONY : init_program_setup.c.s
+
+libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
+
+.PHONY : libft/srcs/ft_atoi.o
+
+# target to build an object file
+libft/srcs/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o
+.PHONY : libft/srcs/ft_atoi.c.o
+
+libft/srcs/ft_atoi.i: libft/srcs/ft_atoi.c.i
+
+.PHONY : libft/srcs/ft_atoi.i
+
+# target to preprocess a source file
+libft/srcs/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.i
+.PHONY : libft/srcs/ft_atoi.c.i
+
+libft/srcs/ft_atoi.s: libft/srcs/ft_atoi.c.s
+
+.PHONY : libft/srcs/ft_atoi.s
+
+# target to generate assembly for a file
+libft/srcs/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.s
+.PHONY : libft/srcs/ft_atoi.c.s
 
 main.o: main.c.o
 
@@ -233,9 +314,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practice"
+	@echo "... clean_up.o"
+	@echo "... clean_up.i"
+	@echo "... clean_up.s"
+	@echo "... create_philosophers.o"
+	@echo "... create_philosophers.i"
+	@echo "... create_philosophers.s"
 	@echo "... init_program_setup.o"
 	@echo "... init_program_setup.i"
 	@echo "... init_program_setup.s"
+	@echo "... libft/srcs/ft_atoi.o"
+	@echo "... libft/srcs/ft_atoi.i"
+	@echo "... libft/srcs/ft_atoi.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

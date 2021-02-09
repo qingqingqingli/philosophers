@@ -6,8 +6,7 @@
 #include <stdio.h> // printf
 #include <unistd.h> // usleep
 #include <sys/time.h> // gettimeofday
-
-#define NOT_VALID	-1
+#include "libft/libft.h"
 
 #define RESET			"\033[0m"
 #define BLACK			"\033[30m"
@@ -40,15 +39,14 @@ typedef struct 		s_setup_data
 
 typedef struct 		s_philosopher
 {
-	char**			philo_array;
-	char*			philo_name;
-};
+	int*			philo_array;
+}					t_philosopher;
 
 // ** support.c ** //
-
-int		ft_atoi(const char *str);
 void 	print_philo_data(t_setup_data data);
 
-// ** setup.c ** //
-
+// ** init_program_setup.c ** //
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
+
+// ** create_philosophers.c ** //
+int create_philosophers(t_philosopher *philo, t_setup_data setup);

@@ -3,6 +3,7 @@
 //
 
 #include "philo_one.h"
+#include "libft/libft.h"
 
 void process_argv_input(int argc, char **argv, t_setup_data *setup)
 {
@@ -23,7 +24,7 @@ int validate_setup_data(t_setup_data setup)
 		printf("Provided data not valid.\n");
 		return (-1);
 	}
-	return 0;
+	return (0);
 }
 
 int init_program_setup(int argc, char **argv, t_setup_data *setup)
@@ -31,7 +32,7 @@ int init_program_setup(int argc, char **argv, t_setup_data *setup)
 	if (argc == 5 || argc == 6)
 	{
 		process_argv_input(argc, argv, setup);
-		if (validate_setup_data(*setup) == NOT_VALID)
+		if (validate_setup_data(*setup) == -1)
 			return (-1);
 		print_philo_data(*setup);
 		return (0);
