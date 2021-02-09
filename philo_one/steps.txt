@@ -1,0 +1,32 @@
+# program steps
+
+* process input [DONE]
+
+* validate input [DONE & DOUBLE CHECK AT THE END]
+
+* create philosopher threads
+    - malloc `number_of_philosopher` threads
+    - create threads and pass on the function to run
+    - [question] how to pass data struct to the function so it can use data (index of each philosopher, time required for each action)
+    - [question] how to store the current number of forks so it can be modified and protected within mutex
+
+* start action
+
+[eat]
+    - check if there are any available forks. If so, grab one or two forks. --> PRINT "timestamp_in_ms X has taken a fork"
+    - check if the current timestamp to the last time eat timestamp is bigger then `time_to_die`. If so, terminate this thread and all other threads. Otherwise, keep waiting.
+    - When the philosopher has two forks --> PRINT "timestamp_in_ms X is eating"
+    - sleep for the required `time_to_eat`
+[sleep]
+    - drop 2 forks, unlock mutex and starts sleeping --> PRINT "timestamp_in_ms X is sleeping"
+    - sleep for the required `time_to_sleep`
+[think]
+    - PRINT "timestamp_in_ms X is thinking" & sleep for the required `time_to_think`
+    - go to [eat]
+
+* check if program ends
+    - `number_of_times_each_philosopher_must_eat` reached
+    - a philosopher dies
+        - does not start eating at the beginning of the stimulation
+        - does not start eating within `time_to_eat` milliseconds after starting last meal
+        - [question] how does it signal other philosophers and terminate all threads?

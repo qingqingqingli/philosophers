@@ -11,6 +11,6 @@ int 	main(int argc, char **argv)
 
 	if (init_program_setup(argc, argv, &setup_data) == -1)
 		return (-1);
-	create_philosophers(&philo_data, setup_data);
+	create_philos(&philo_data, setup_data);
 	return (0);
 }

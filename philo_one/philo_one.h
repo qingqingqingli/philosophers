@@ -7,6 +7,7 @@
 #include <unistd.h> // usleep
 #include <sys/time.h> // gettimeofday
 #include "libft/libft.h"
+#include <pthread.h> // threads
 
 #define RESET			"\033[0m"
 #define BLACK			"\033[30m"
@@ -39,7 +40,10 @@ typedef struct 		s_setup_data
 
 typedef struct 		s_philosopher
 {
-	int*			philo_array;
+	pthread_t*		philo_threads;
+	int 			philo_number;
+	struct timeval	begin_time;
+	struct timeval	current_time;
 }					t_philosopher;
 
 // ** support.c ** //
@@ -49,4 +53,4 @@ void 	print_philo_data(t_setup_data data);
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
 
 // ** create_philosophers.c ** //
-int create_philosophers(t_philosopher *philo, t_setup_data setup);
+int create_philos(t_philosopher *philo, t_setup_data setup);
