@@ -143,6 +143,33 @@ practice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
 .PHONY : practice/fast
 
+init_program_setup.o: init_program_setup.c.o
+
+.PHONY : init_program_setup.o
+
+# target to build an object file
+init_program_setup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.o
+.PHONY : init_program_setup.c.o
+
+init_program_setup.i: init_program_setup.c.i
+
+.PHONY : init_program_setup.i
+
+# target to preprocess a source file
+init_program_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.i
+.PHONY : init_program_setup.c.i
+
+init_program_setup.s: init_program_setup.c.s
+
+.PHONY : init_program_setup.s
+
+# target to generate assembly for a file
+init_program_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.s
+.PHONY : init_program_setup.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -170,59 +197,32 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.c.s
 .PHONY : main.c.s
 
-setup.o: setup.c.o
+support_functions/support_01.o: support_functions/support_01.c.o
 
-.PHONY : setup.o
-
-# target to build an object file
-setup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/setup.c.o
-.PHONY : setup.c.o
-
-setup.i: setup.c.i
-
-.PHONY : setup.i
-
-# target to preprocess a source file
-setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/setup.c.i
-.PHONY : setup.c.i
-
-setup.s: setup.c.s
-
-.PHONY : setup.s
-
-# target to generate assembly for a file
-setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/setup.c.s
-.PHONY : setup.c.s
-
-support_functions.o: support_functions.c.o
-
-.PHONY : support_functions.o
+.PHONY : support_functions/support_01.o
 
 # target to build an object file
-support_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.o
-.PHONY : support_functions.c.o
+support_functions/support_01.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.o
+.PHONY : support_functions/support_01.c.o
 
-support_functions.i: support_functions.c.i
+support_functions/support_01.i: support_functions/support_01.c.i
 
-.PHONY : support_functions.i
+.PHONY : support_functions/support_01.i
 
 # target to preprocess a source file
-support_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.i
-.PHONY : support_functions.c.i
+support_functions/support_01.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.i
+.PHONY : support_functions/support_01.c.i
 
-support_functions.s: support_functions.c.s
+support_functions/support_01.s: support_functions/support_01.c.s
 
-.PHONY : support_functions.s
+.PHONY : support_functions/support_01.s
 
 # target to generate assembly for a file
-support_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.s
-.PHONY : support_functions.c.s
+support_functions/support_01.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.s
+.PHONY : support_functions/support_01.c.s
 
 # Help Target
 help:
@@ -233,15 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practice"
+	@echo "... init_program_setup.o"
+	@echo "... init_program_setup.i"
+	@echo "... init_program_setup.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... setup.o"
-	@echo "... setup.i"
-	@echo "... setup.s"
-	@echo "... support_functions.o"
-	@echo "... support_functions.i"
-	@echo "... support_functions.s"
+	@echo "... support_functions/support_01.o"
+	@echo "... support_functions/support_01.i"
+	@echo "... support_functions/support_01.s"
 .PHONY : help
 
 

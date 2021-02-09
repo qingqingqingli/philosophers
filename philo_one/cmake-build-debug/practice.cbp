@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c">
+			<Option target="practice"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/main.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/philo_one.h">
 			<Option target="practice"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/setup.c">
-			<Option target="practice"/>
-		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/support_functions.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/CMakeLists.txt">

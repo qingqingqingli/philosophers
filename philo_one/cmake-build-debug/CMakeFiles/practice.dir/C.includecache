@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c
+philo_one.h
+/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
+
+/home/qli/CLionProjects/philosophers/philo_one/main.c
+philo_one.h
+/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
+
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 stdio.h
 -
+unistd.h
+-
+sys/time.h
+-
 
-/home/qli/CLionProjects/philosophers/philo_one/setup.c
-philo_one.h
+/home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c
+../philo_one.h
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 

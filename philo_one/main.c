@@ -4,23 +4,26 @@
 
 #include "philo_one.h"
 
-int main(int argc, char **argv)
+void 	start_action(t_setup_data data)
 {
-	t_philo_data philo_data;
-	if (argc == 5 || argc == 6)
-	{
-		initialise_philo_states(argc, argv, &philo_data);
-		if (validate_philo_data(philo_data) == NOT_VALID)
-		{
-			printf("Provided data not valid.\n");
-			return (-1);
-		}
-		print_philo_data(philo_data);
-	}
-	else
-	{
-		printf("Arguments not correct.\n");
+	struct timeval 	begin_time;
+	struct timeval 	finish_time;
+	long int		time_difference = 0;
+
+	gettimeofday(&begin_time, NULL);
+	usleep(50);
+	gettimeofday(&finish_time, NULL);
+	time_difference = finish_time.tv_usec - begin_time.tv_usec;
+	printf(BLUE "time difference [%ld]\n", time_difference);
+	printf(RESET);
+}
+
+int 	main(int argc, char **argv)
+{
+	t_setup_data setup_data;
+
+	if (init_program_setup(argc, argv, &setup_data) == -1)
 		return (-1);
-	}
+	start_action(setup_data);
 	return (0);
 }

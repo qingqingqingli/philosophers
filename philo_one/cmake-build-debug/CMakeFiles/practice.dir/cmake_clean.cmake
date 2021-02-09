@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/practice.dir/init_program_setup.c.o"
   "CMakeFiles/practice.dir/main.c.o"
-  "CMakeFiles/practice.dir/setup.c.o"
-  "CMakeFiles/practice.dir/support_functions.c.o"
+  "CMakeFiles/practice.dir/support_functions/support_01.c.o"
   "practice"
   "practice.pdb"
 )

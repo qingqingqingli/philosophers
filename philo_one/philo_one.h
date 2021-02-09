@@ -3,25 +3,52 @@
 //
 
 #pragma once
-#include <stdio.h>
+#include <stdio.h> // printf
+#include <unistd.h> // usleep
+#include <sys/time.h> // gettimeofday
 
 #define NOT_VALID	-1
 
-typedef struct 		s_philo_data
+#define RESET			"\033[0m"
+#define BLACK			"\033[30m"
+#define RED				"\033[31m"
+#define GREEN			"\033[32m"
+#define YELLOW			"\033[33m"
+#define BLUE			"\033[34m"
+#define MAGENTA			"\033[35m"
+#define CYAN			"\033[36m"
+#define WHITE			"\033[37m"
+#define BOLDBLACK		"\033[1m\033[30m"
+#define BOLDRED			"\033[1m\033[31m"
+#define BOLDGREEN		"\033[1m\033[32m"
+#define BOLDYELLOW		"\033[1m\033[33m"
+#define BOLDBLUE		"\033[1m\033[34m"
+#define BOLDMAGENTA		"\033[1m\033[35m"
+#define BOLDCYAN		"\033[1m\033[36m"
+#define BOLDWHITE		"\033[1m\033[37m"
+
+// ** DATA STRUCT ** //
+
+typedef struct 		s_setup_data
 {
 	int 			number_of_philosophers;
 	long long int 	time_to_die;
 	long long int 	time_to_eat;
 	long long int 	time_to_sleep;
 	int 			number_of_times_each_philosopher_must_eat;
-}					t_philo_data;
+}					t_setup_data;
 
-// ** SUPPORT FUNCTIONS ** //
+typedef struct 		s_philosopher
+{
+	char**			philo_array;
+	char*			philo_name;
+};
+
+// ** support.c ** //
 
 int		ft_atoi(const char *str);
+void 	print_philo_data(t_setup_data data);
 
-// ** SETUP ** //
+// ** setup.c ** //
 
-void initialise_philo_states(int argc, char **argv, t_philo_data *philo_data);
-int validate_philo_data(t_philo_data data);
-void print_philo_data(t_philo_data data);
+int 	init_program_setup(int argc, char **argv, t_setup_data *setup);

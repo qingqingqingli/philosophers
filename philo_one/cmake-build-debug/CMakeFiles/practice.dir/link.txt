@@ -1,1 +1,1 @@
-gcc  -pthread -g   CMakeFiles/practice.dir/main.c.o CMakeFiles/practice.dir/support_functions.c.o CMakeFiles/practice.dir/setup.c.o  -o practice 
+gcc  -pthread -g   CMakeFiles/practice.dir/main.c.o CMakeFiles/practice.dir/support_functions/support_01.c.o CMakeFiles/practice.dir/init_program_setup.c.o  -o practice 
