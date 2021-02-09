@@ -116,18 +116,18 @@ CMakeFiles/practice.dir/init_program_setup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/init_program_setup.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c -o CMakeFiles/practice.dir/init_program_setup.c.s
 
-CMakeFiles/practice.dir/create_philosophers.c.o: CMakeFiles/practice.dir/flags.make
-CMakeFiles/practice.dir/create_philosophers.c.o: ../create_philosophers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/practice.dir/create_philosophers.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/create_philosophers.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/create_philosophers.c
+CMakeFiles/practice.dir/create_philos.c.o: CMakeFiles/practice.dir/flags.make
+CMakeFiles/practice.dir/create_philos.c.o: ../create_philos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/practice.dir/create_philos.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/create_philos.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/create_philos.c
 
-CMakeFiles/practice.dir/create_philosophers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/create_philosophers.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/create_philosophers.c > CMakeFiles/practice.dir/create_philosophers.c.i
+CMakeFiles/practice.dir/create_philos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/create_philos.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/create_philos.c > CMakeFiles/practice.dir/create_philos.c.i
 
-CMakeFiles/practice.dir/create_philosophers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/create_philosophers.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/create_philosophers.c -o CMakeFiles/practice.dir/create_philosophers.c.s
+CMakeFiles/practice.dir/create_philos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/create_philos.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/create_philos.c -o CMakeFiles/practice.dir/create_philos.c.s
 
 CMakeFiles/practice.dir/clean_up.c.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/clean_up.c.o: ../clean_up.c
@@ -160,7 +160,7 @@ practice_OBJECTS = \
 "CMakeFiles/practice.dir/main.c.o" \
 "CMakeFiles/practice.dir/support_functions/support_01.c.o" \
 "CMakeFiles/practice.dir/init_program_setup.c.o" \
-"CMakeFiles/practice.dir/create_philosophers.c.o" \
+"CMakeFiles/practice.dir/create_philos.c.o" \
 "CMakeFiles/practice.dir/clean_up.c.o" \
 "CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"
 
@@ -170,7 +170,7 @@ practice_EXTERNAL_OBJECTS =
 practice: CMakeFiles/practice.dir/main.c.o
 practice: CMakeFiles/practice.dir/support_functions/support_01.c.o
 practice: CMakeFiles/practice.dir/init_program_setup.c.o
-practice: CMakeFiles/practice.dir/create_philosophers.c.o
+practice: CMakeFiles/practice.dir/create_philos.c.o
 practice: CMakeFiles/practice.dir/clean_up.c.o
 practice: CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o
 practice: CMakeFiles/practice.dir/build.make

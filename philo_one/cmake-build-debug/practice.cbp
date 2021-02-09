@@ -85,7 +85,7 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/clean_up.c">
 			<Option target="practice"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/create_philosophers.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/create_philos.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c">

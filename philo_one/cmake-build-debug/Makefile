@@ -170,32 +170,32 @@ clean_up.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.s
 .PHONY : clean_up.c.s
 
-create_philosophers.o: create_philosophers.c.o
+create_philos.o: create_philos.c.o
 
-.PHONY : create_philosophers.o
+.PHONY : create_philos.o
 
 # target to build an object file
-create_philosophers.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.o
-.PHONY : create_philosophers.c.o
+create_philos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.o
+.PHONY : create_philos.c.o
 
-create_philosophers.i: create_philosophers.c.i
+create_philos.i: create_philos.c.i
 
-.PHONY : create_philosophers.i
+.PHONY : create_philos.i
 
 # target to preprocess a source file
-create_philosophers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.i
-.PHONY : create_philosophers.c.i
+create_philos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.i
+.PHONY : create_philos.c.i
 
-create_philosophers.s: create_philosophers.c.s
+create_philos.s: create_philos.c.s
 
-.PHONY : create_philosophers.s
+.PHONY : create_philos.s
 
 # target to generate assembly for a file
-create_philosophers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philosophers.c.s
-.PHONY : create_philosophers.c.s
+create_philos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.s
+.PHONY : create_philos.c.s
 
 init_program_setup.o: init_program_setup.c.o
 
@@ -317,9 +317,9 @@ help:
 	@echo "... clean_up.o"
 	@echo "... clean_up.i"
 	@echo "... clean_up.s"
-	@echo "... create_philosophers.o"
-	@echo "... create_philosophers.i"
-	@echo "... create_philosophers.s"
+	@echo "... create_philos.o"
+	@echo "... create_philos.i"
+	@echo "... create_philos.s"
 	@echo "... init_program_setup.o"
 	@echo "... init_program_setup.i"
 	@echo "... init_program_setup.s"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/create_philosophers.c
+/home/qli/CLionProjects/philosophers/philo_one/create_philos.c
 philo_one.h
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 stdlib.h

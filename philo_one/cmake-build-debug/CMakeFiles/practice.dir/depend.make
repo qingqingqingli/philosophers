@@ -3,9 +3,9 @@
 
 CMakeFiles/practice.dir/clean_up.c.o: ../clean_up.c
 
-CMakeFiles/practice.dir/create_philosophers.c.o: ../create_philosophers.c
-CMakeFiles/practice.dir/create_philosophers.c.o: ../libft/libft.h
-CMakeFiles/practice.dir/create_philosophers.c.o: ../philo_one.h
+CMakeFiles/practice.dir/create_philos.c.o: ../create_philos.c
+CMakeFiles/practice.dir/create_philos.c.o: ../libft/libft.h
+CMakeFiles/practice.dir/create_philos.c.o: ../philo_one.h
 
 CMakeFiles/practice.dir/init_program_setup.c.o: ../init_program_setup.c
 CMakeFiles/practice.dir/init_program_setup.c.o: ../libft/libft.h

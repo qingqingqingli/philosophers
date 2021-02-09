@@ -1,3 +1,7 @@
+# learning
+
+- each thread points to a separate philosopher struct with the relevant information
+
 # program steps
 
 * process input [DONE]

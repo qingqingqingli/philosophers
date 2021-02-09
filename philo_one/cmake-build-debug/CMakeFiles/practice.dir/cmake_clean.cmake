@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/practice.dir/clean_up.c.o"
-  "CMakeFiles/practice.dir/create_philosophers.c.o"
+  "CMakeFiles/practice.dir/create_philos.c.o"
   "CMakeFiles/practice.dir/init_program_setup.c.o"
   "CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"
   "CMakeFiles/practice.dir/main.c.o"

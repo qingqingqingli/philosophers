@@ -41,7 +41,7 @@ typedef struct 		s_setup_data
 typedef struct 		s_philosopher
 {
 	pthread_t*		philo_threads;
-	int 			philo_number;
+	int* 			philo_number;
 	struct timeval	begin_time;
 	struct timeval	current_time;
 }					t_philosopher;
