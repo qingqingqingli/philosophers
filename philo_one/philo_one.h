@@ -5,14 +5,16 @@
 #pragma once
 #include <stdio.h>
 
-typedef struct 				s_philo_data
+#define NOT_VALID	-1
+
+typedef struct 		s_philo_data
 {
-	unsigned int 			number_of_philosophers;
-	unsigned long long int 	time_to_die;
-	unsigned long long int 	time_to_eat;
-	unsigned long long int 	time_to_sleep;
-	unsigned int 			number_of_times_each_philosopher_must_eat;
-}							t_philo_data;
+	int 			number_of_philosophers;
+	long long int 	time_to_die;
+	long long int 	time_to_eat;
+	long long int 	time_to_sleep;
+	int 			number_of_times_each_philosopher_must_eat;
+}					t_philo_data;
 
 // ** SUPPORT FUNCTIONS ** //
 

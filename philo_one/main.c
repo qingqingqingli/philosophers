@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	if (argc == 5 || argc == 6)
 	{
 		initialise_philo_states(argc, argv, &philo_data);
-		if (validate_philo_data(philo_data) == -1)
+		if (validate_philo_data(philo_data) == NOT_VALID)
 		{
 			printf("Provided data not valid.\n");
 			return (-1);

@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/main.c
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 stdio.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one/setup.c
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-
-/home/qli/CLionProjects/philosophers/philo_one/support_functions.c
 philo_one.h
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 
