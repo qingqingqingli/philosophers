@@ -31,17 +31,17 @@
 
 typedef struct 		s_setup_data
 {
-	int 			number_of_philosophers;
+	long long int	number_of_philosophers;
 	long long int 	time_to_die;
 	long long int 	time_to_eat;
 	long long int 	time_to_sleep;
-	int 			number_of_times_each_philosopher_must_eat;
+	long long int	number_of_times_each_philosopher_must_eat;
 }					t_setup_data;
 
 typedef struct 		s_philosopher
 {
-	pthread_t*		philo_threads;
-	int* 			philo_number;
+	pthread_t*		philo_thread;
+	int 			philo_number;
 	struct timeval	begin_time;
 	struct timeval	current_time;
 }					t_philosopher;
@@ -53,4 +53,4 @@ void 	print_philo_data(t_setup_data data);
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
 
 // ** create_philosophers.c ** //
-int create_philos(t_philosopher *philo, t_setup_data setup);
+int create_philos(t_philosopher **philos, t_setup_data setup);
