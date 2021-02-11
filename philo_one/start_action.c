@@ -23,14 +23,14 @@ void grab_forks(t_philosopher *philo)
 	dif = 0;
 	pthread_mutex_lock(philo->left_fork_mutex);
 	dif = get_elapsed_time(philo);
-	printf("[%ld] \t [%d] \t grab a left fork\n", dif, philo->philo_number);
+	printf(GREEN "[%ld] \t [%d] \t grab a left fork\n", dif, philo->philo_number);
 
 	pthread_mutex_lock(philo->right_fork_mutex);
 	dif = get_elapsed_time(philo);
-	printf("[%ld] \t [%d] \t grab a right fork\n", dif, philo->philo_number);
+	printf(GREEN "[%ld] \t [%d] \t grab a right fork\n", dif, philo->philo_number);
 
 	dif = get_elapsed_time(philo);
-	printf("[%ld] \t [%d] \t is eating\n", dif, philo->philo_number);
+	printf(MAGENTA "[%ld] \t [%d] \t is eating\n", dif, philo->philo_number);
 
 	usleep(9000);
 	pthread_mutex_unlock(philo->left_fork_mutex);
@@ -43,7 +43,8 @@ void philo_sleep(t_philosopher *philo)
 	long int dif;
 
 	dif = get_elapsed_time(philo);
-	printf("[%ld] \t [%d] \t is sleeping\n", dif, philo->philo_number);
+	printf(BLUE "[%ld] \t [%d] \t is sleeping\n", dif, philo->philo_number);
+	printf(RESET);
 	usleep(90000);
 }
 
