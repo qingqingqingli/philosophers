@@ -3,6 +3,7 @@
 //
 
 #include <stdlib.h>
+#include <string.h>
 #include "philo_one.h"
 #include "libft/libft.h"
 
@@ -78,6 +79,7 @@ void set_philo_fork_mutexs(t_setup_data *setup)
 	i = 0;
 	setup->philos[i].left_fork_mutex = &setup->fork_mutexs[i];
 	setup->philos[i].right_fork_mutex = &setup->fork_mutexs[setup->number_of_philosophers - 1];
+	i++;
 	while (i < setup->number_of_philosophers)
 	{
 		setup->philos[i].left_fork_mutex = &setup->fork_mutexs[i];
