@@ -34,8 +34,6 @@ typedef struct 		s_philosopher
 	int 			philo_number; //init in init_program_setup
 	struct timeval	begin_time;
 	struct timeval	current_time;
-	int 			left_fork; //init in init_program_setup
-	int 			right_fork; //init in init_program_setup
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
 }					t_philosopher;
