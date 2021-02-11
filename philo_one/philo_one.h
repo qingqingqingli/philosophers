@@ -44,6 +44,9 @@ typedef struct 		s_philosopher
 	int 			philo_number;
 	struct timeval	begin_time;
 	struct timeval	current_time;
+	long long int 	time_to_die;
+	long long int 	time_to_eat;
+	long long int 	time_to_sleep;
 }					t_philosopher;
 
 // ** support.c ** //

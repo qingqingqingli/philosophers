@@ -9,10 +9,9 @@
 * validate input [DONE & DOUBLE CHECK AT THE END]
 
 * create philosopher threads
-    - malloc `number_of_philosopher` threads
-    - create threads and pass on the function to run
-    - [question] how to pass data struct to the function so it can use data (index of each philosopher, time required for each action)
-    - [question] how to store the current number of forks so it can be modified and protected within mutex
+    - malloc `number_of_philosopher` threads [DONE]
+    - create threads and pass on the function to run [DONE]
+    - [question - solved] how to pass data struct to the function so it can use data (index of each philosopher, time required for each action) -> pass in as an argument
 
 * start action
 
@@ -25,7 +24,7 @@
     - drop 2 forks, unlock mutex and starts sleeping --> PRINT "timestamp_in_ms X is sleeping"
     - sleep for the required `time_to_sleep`
 [think]
-    - PRINT "timestamp_in_ms X is thinking" & sleep for the required `time_to_think`
+    - PRINT "timestamp_in_ms X is thinking"
     - go to [eat]
 
 * check if program ends
