@@ -3,10 +3,6 @@
 
 CMakeFiles/practice.dir/clean_up.c.o: ../clean_up.c
 
-CMakeFiles/practice.dir/create_philos.c.o: ../create_philos.c
-CMakeFiles/practice.dir/create_philos.c.o: ../libft/libft.h
-CMakeFiles/practice.dir/create_philos.c.o: ../philo_one.h
-
 CMakeFiles/practice.dir/init_program_setup.c.o: ../init_program_setup.c
 CMakeFiles/practice.dir/init_program_setup.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/init_program_setup.c.o: ../philo_one.h
@@ -16,6 +12,10 @@ CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o: ../libft/srcs/ft_atoi.c
 CMakeFiles/practice.dir/main.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/main.c.o: ../main.c
 CMakeFiles/practice.dir/main.c.o: ../philo_one.h
+
+CMakeFiles/practice.dir/start_action.c.o: ../libft/libft.h
+CMakeFiles/practice.dir/start_action.c.o: ../philo_one.h
+CMakeFiles/practice.dir/start_action.c.o: ../start_action.c
 
 CMakeFiles/practice.dir/support_functions/support_01.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/support_functions/support_01.c.o: ../philo_one.h

@@ -170,33 +170,6 @@ clean_up.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.s
 .PHONY : clean_up.c.s
 
-create_philos.o: create_philos.c.o
-
-.PHONY : create_philos.o
-
-# target to build an object file
-create_philos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.o
-.PHONY : create_philos.c.o
-
-create_philos.i: create_philos.c.i
-
-.PHONY : create_philos.i
-
-# target to preprocess a source file
-create_philos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.i
-.PHONY : create_philos.c.i
-
-create_philos.s: create_philos.c.s
-
-.PHONY : create_philos.s
-
-# target to generate assembly for a file
-create_philos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/create_philos.c.s
-.PHONY : create_philos.c.s
-
 init_program_setup.o: init_program_setup.c.o
 
 .PHONY : init_program_setup.o
@@ -278,6 +251,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.c.s
 .PHONY : main.c.s
 
+start_action.o: start_action.c.o
+
+.PHONY : start_action.o
+
+# target to build an object file
+start_action.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.o
+.PHONY : start_action.c.o
+
+start_action.i: start_action.c.i
+
+.PHONY : start_action.i
+
+# target to preprocess a source file
+start_action.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.i
+.PHONY : start_action.c.i
+
+start_action.s: start_action.c.s
+
+.PHONY : start_action.s
+
+# target to generate assembly for a file
+start_action.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.s
+.PHONY : start_action.c.s
+
 support_functions/support_01.o: support_functions/support_01.c.o
 
 .PHONY : support_functions/support_01.o
@@ -317,9 +317,6 @@ help:
 	@echo "... clean_up.o"
 	@echo "... clean_up.i"
 	@echo "... clean_up.s"
-	@echo "... create_philos.o"
-	@echo "... create_philos.i"
-	@echo "... create_philos.s"
 	@echo "... init_program_setup.o"
 	@echo "... init_program_setup.i"
 	@echo "... init_program_setup.s"
@@ -329,6 +326,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... start_action.o"
+	@echo "... start_action.i"
+	@echo "... start_action.s"
 	@echo "... support_functions/support_01.o"
 	@echo "... support_functions/support_01.i"
 	@echo "... support_functions/support_01.s"

@@ -11,21 +11,21 @@
 * create philosopher threads
     - malloc `number_of_philosopher` threads [DONE]
     - create threads and pass on the function to run [DONE]
-    - [question - solved] how to pass data struct to the function so it can use data (index of each philosopher, time required for each action) -> pass in as an argument
+    - [question - solved] how to pass data struct to the function so it can use data (index of each philosopher, time required for each action) -> pass in as an argument [DONE]
 
 * start action
 
 [eat]
-    - check if there are any available forks. If so, grab one or two forks. --> PRINT "timestamp_in_ms X has taken a fork"
-    - check if the current timestamp to the last time eat timestamp is bigger then `time_to_die`. If so, terminate this thread and all other threads. Otherwise, keep waiting.
+    - Each fork is a mutex. When any fork left or right is available, grab it --> PRINT "timestamp_in_ms X has taken a fork"
+    - check if the current timestamp to the last time eat timestamp is bigger then `time_to_die`. If so, terminate this thread and all other threads. Otherwise, keep waiting. [LATER]
     - When the philosopher has two forks --> PRINT "timestamp_in_ms X is eating"
     - sleep for the required `time_to_eat`
 [sleep]
-    - drop 2 forks, unlock mutex and starts sleeping --> PRINT "timestamp_in_ms X is sleeping"
+    - drop 2 forks, unlock these forks' mutex and starts sleeping --> PRINT "timestamp_in_ms X is sleeping"
     - sleep for the required `time_to_sleep`
 [think]
-    - PRINT "timestamp_in_ms X is thinking"
-    - go to [eat]
+    - PRINT "timestamp_in_ms X is thinking" after finish sleeping
+    - Whenever two forks become available, the philosopher starts eating
 
 * check if program ends
     - `number_of_times_each_philosopher_must_eat` reached

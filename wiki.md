@@ -77,6 +77,19 @@
     - Mutex variables
     - Condition variables
 
+### thread
+
+- A thread is a semi-process, that has its own stack, and executes a given piece of code. Unlike a real process, the thread normally shares its memory with other threads (where as for processes we usually have a different memory area for each one of them).
+
+- A Thread Group is a set of threads all executing inside the same process. They all share the same memory, and thus can access the same global variables, same heap memory, same set of file descriptors, etc.
+
+- The advantage of using a thread group over using a process group is that context switching between threads is much faster then context switching between processes (context switching means that the system switches from running one thread or process, to running another thread or process). Also, communications between two threads is usually faster and easier to implement then communications between two processes.
+
+- On the other hand, because threads in a group all use the same memory space, if one of them corrupts the contents of its memory, other threads might suffer as well. With processes, the operating system normally protects processes from one another, and thus if one corrupts its own memory space, other processes won't suffer. Another advantage of using processes is that they can run on different machines, while all the threads have to run on the same machine (at least normally).
+
+- The call to `pthread_exit()` Causes the current thread to exit and free any thread-specific resources it is taking. There is no need to use this call at the end of the thread's top function, since when it returns, the thread would exit automatically anyway. This function is useful if we want to exit a thread in the middle of its execution.
+
+
 ### mutex
 
 - A Mutex is a mutually exclusive flag, which is used to protect a shared resource by ensuring mutual exclusion inside critical sections of code.
@@ -93,6 +106,29 @@
     - Use many CPU cycles in some places but not others
     - Must respond to asynchronous events
     - Some work is more important than other work (priority interrupts)
+
+- `pthread_mutex_t a_mutex = PTHREAD_MUTEX_INITIALIZER;` This type of initialization creates a mutex called `fast mutex`. This means that if a thread locks the mutex and then tries to lock it again, it'll get stuck - it will be in a deadlock.
+
+- After we finished using a mutex, we should destroy it. Finished using means no thread needs it at all.
+
+### Condition variable
+
+- A condition variable is a mechanism that allows threads to wait (without wasting CPU cycles) for some event to occur. Several threads may wait on a condition variable, until some other thread signals this condition variable (thus sending a notification). 
+  
+- At this time, one of the threads waiting on this condition variable wakes up, and can act on the event. It is possible to also wake up all threads waiting on this condition variable by using a broadcast method on this variable.
+
+- Note that a condition variable does not provide locking. Thus, a mutex is used along with the condition variable, to provide the necessary locking when accessing this condition variable.
+
+### Synchronizing on threads exiting
+
+- Sometimes it is desired for a thread to wait for the end of execution of another thread. This can be done using the `pthread_join()` function. It receives two parameters: a variable of type pthread_t, denoting the thread to be joined, and an address of a void* variable, into which the exit code of the thread will be placed.
+  The `pthread_join()` function suspends the execution of the calling thread until the joined thread is terminated.
+
+### Detaching a thread
+
+- Threads that are in a 'join-able' state, must be joined by other threads, or else their memory resources will not be fully cleaned out. This is similar to what happens with processes whose parents didn't clean up after them (also called 'orphan' or 'zombie' processes).
+
+- If we have a thread that we wish would `exit whenever it wants` without the need to join it, we should put it in the detached state. This can be done either with appropriate flags to the pthread_create() function, or by using the pthread_detach() function.
 
 ### semaphore
 
@@ -126,3 +162,4 @@
 - [Introduction to Parallel Computing Tutorial](https://hpc.llnl.gov/training/tutorials/introduction-parallel-computing-tutorial)
 - [Chapter 4 Programming with Synchronization Objects](https://docs.oracle.com/cd/E19683-01/806-6867/6jfpgdcnd/index.html)
 - [Using Mutual Exclusion Locks](https://docs.oracle.com/cd/E19683-01/806-6867/6jfpgdcng/index.html)
+- [Multi-Threaded Programming With POSIX Threads](http://www.cs.kent.edu/~ruttan/sysprog/lectures/multi-thread/multi-thread.html#definition)

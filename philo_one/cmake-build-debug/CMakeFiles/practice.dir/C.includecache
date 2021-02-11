@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/create_philos.c
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-stdlib.h
--
-
 /home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 stddef.h
 -
@@ -26,5 +20,11 @@ sys/time.h
 libft/libft.h
 /home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 pthread.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one/start_action.c
+philo_one.h
+/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
+stdlib.h
 -
 

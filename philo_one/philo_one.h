@@ -29,25 +29,28 @@
 
 // ** DATA STRUCT ** //
 
-typedef struct 		s_setup_data
-{
-	long long int	number_of_philosophers;
-	long long int 	time_to_die;
-	long long int 	time_to_eat;
-	long long int 	time_to_sleep;
-	long long int	number_of_times_each_philosopher_must_eat;
-}					t_setup_data;
-
 typedef struct 		s_philosopher
 {
-	pthread_t*		philo_thread;
-	int 			philo_number;
+	int 			philo_number; //init in init_program_setup
 	struct timeval	begin_time;
 	struct timeval	current_time;
-	long long int 	time_to_die;
-	long long int 	time_to_eat;
-	long long int 	time_to_sleep;
+	int 			left_fork; //init in init_program_setup
+	int 			right_fork; //init in init_program_setup
+	pthread_mutex_t *left_fork_mutex;
+	pthread_mutex_t *right_fork_mutex;
 }					t_philosopher;
+
+typedef struct 		s_setup_data
+{
+	long long int	number_of_philosophers; //init in init_program_setup
+	long long int 	time_to_die; //init in init_program_setup
+	long long int 	time_to_eat; //init in init_program_setup
+	long long int 	time_to_sleep; //init in init_program_setup
+	long long int	number_of_times_each_philosopher_must_eat; //init in init_program_setup
+	pthread_mutex_t	*fork_mutexs; //init in init_program_setup
+	pthread_t		*philo_threads; //init in init_program_setup
+	t_philosopher	*philos; //init in init_program_setup
+}					t_setup_data;
 
 // ** support.c ** //
 void 	print_philo_data(t_setup_data data);
@@ -56,4 +59,4 @@ void 	print_philo_data(t_setup_data data);
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
 
 // ** create_philosophers.c ** //
-int create_philos(t_philosopher **philos, t_setup_data setup);
+void* 	start_action(void *arg);

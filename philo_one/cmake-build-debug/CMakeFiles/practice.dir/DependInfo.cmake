@@ -5,10 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_one/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/clean_up.c.o"
-  "/home/qli/CLionProjects/philosophers/philo_one/create_philos.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/create_philos.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/init_program_setup.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/libft/srcs/ft_atoi.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/main.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/main.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_one/start_action.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/start_action.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/practice.dir/support_functions/support_01.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
