@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/practice.dir/check_status.c.o"
   "CMakeFiles/practice.dir/clean_up.c.o"
   "CMakeFiles/practice.dir/init_program_setup.c.o"
   "CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"

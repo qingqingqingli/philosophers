@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c
-stdlib.h
--
-string.h
--
+/home/qli/CLionProjects/philosophers/philo_one/check_status.c
 philo_one.h
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-libft/libft.h
-/home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 
 /home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 stddef.h
 -
-
-/home/qli/CLionProjects/philosophers/philo_one/main.c
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 stdio.h
@@ -35,14 +25,4 @@ libft/libft.h
 /home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 pthread.h
 -
-
-/home/qli/CLionProjects/philosophers/philo_one/start_action.c
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c
-../philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 

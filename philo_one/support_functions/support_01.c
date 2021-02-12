@@ -13,3 +13,8 @@ void print_philo_data(t_setup_data data)
 	printf("number_of_times_each_philosopher_must_eat = [%lld]\n", data.number_of_times_each_philosopher_must_eat);
 	printf(RESET);
 }
+
+long int get_elapsed_milliseconds(struct timeval *previous, struct timeval *now)
+{
+	return ((now->tv_sec - previous->tv_sec) * 1000000 + (now->tv_usec - previous->tv_usec));
+}

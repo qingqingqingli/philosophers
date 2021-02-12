@@ -3,7 +3,6 @@
 //
 
 #include <stdlib.h>
-#include <string.h>
 #include "philo_one.h"
 #include "libft/libft.h"
 
@@ -82,9 +81,11 @@ void init_philo_threads(t_setup_data *setup)
 
 	i = 0;
 	setup->philo_threads = malloc(sizeof(pthread_t) * setup->number_of_philosophers);
+	setup->philo_status_threads = malloc(sizeof(pthread_t) * setup->number_of_philosophers);
 	while (i < setup->number_of_philosophers)
 	{
 		pthread_create(&setup->philo_threads[i], NULL, start_action, &setup->philos[i]);
+		pthread_create(&setup->philo_status_threads[i], NULL, check_status, &setup->philos[i]);
 		i++;
 	}
 }
@@ -97,6 +98,8 @@ void join_threads(t_setup_data *setup)
 	while (i < setup->number_of_philosophers)
 	{
 		pthread_join(setup->philo_threads[i], NULL);
+		// not sure about joining the threads of life_status
+//		pthread_join(setup->philo_status_threads[i], NULL);
 		i++;
 	}
 }

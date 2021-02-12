@@ -143,6 +143,33 @@ practice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
 .PHONY : practice/fast
 
+check_status.o: check_status.c.o
+
+.PHONY : check_status.o
+
+# target to build an object file
+check_status.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.o
+.PHONY : check_status.c.o
+
+check_status.i: check_status.c.i
+
+.PHONY : check_status.i
+
+# target to preprocess a source file
+check_status.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.i
+.PHONY : check_status.c.i
+
+check_status.s: check_status.c.s
+
+.PHONY : check_status.s
+
+# target to generate assembly for a file
+check_status.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.s
+.PHONY : check_status.c.s
+
 clean_up.o: clean_up.c.o
 
 .PHONY : clean_up.o
@@ -314,6 +341,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practice"
+	@echo "... check_status.o"
+	@echo "... check_status.i"
+	@echo "... check_status.s"
 	@echo "... clean_up.o"
 	@echo "... clean_up.i"
 	@echo "... clean_up.s"

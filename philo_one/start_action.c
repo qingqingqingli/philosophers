@@ -5,58 +5,46 @@
 #include "philo_one.h"
 #include <stdlib.h>
 
-long int get_elapsed_time(t_philosopher *philo)
-{
-	long int dif;
-
-	dif = 0;
-	gettimeofday(&philo->current_time, NULL);
-	dif = (philo->current_time.tv_sec - philo->begin_time.tv_sec) * 1000000 + philo->current_time.tv_usec - philo->begin_time.tv_usec;
-	return dif / 1000; // convert to microseconds
-}
-
 void grab_left_fork_first(t_philosopher *philo)
 {
-	long int dif;
 
-	dif = 0;
-	// left
+	// left first
 	pthread_mutex_lock(philo->left_fork_mutex);
-	dif = get_elapsed_time(philo);
-	printf(GREEN "[%ld] \t [%d] \t has taken a left fork"RESET"\n", dif, philo->philo_number);
-	// right
+	gettimeofday(&philo->current_time, NULL);
+	printf(GREEN "[%ld] \t [%d] \t has taken a left fork"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
+	// right second
 	pthread_mutex_lock(philo->right_fork_mutex);
-	dif = get_elapsed_time(philo);
-	printf(GREEN "[%ld] \t [%d] \t has taken a right fork"RESET"\n", dif, philo->philo_number);
+	gettimeofday(&philo->current_time, NULL);
+	printf(GREEN "[%ld] \t [%d] \t has taken a right fork"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
 }
 
 void grab_right_fork_first(t_philosopher *philo)
 {
-	long int dif;
-
-	dif = 0;
-	// right
+	// right first
 	pthread_mutex_lock(philo->right_fork_mutex);
-	dif = get_elapsed_time(philo);
-	printf(GREEN"[%ld] \t [%d] \t has taken a right fork"RESET"\n", dif, philo->philo_number);
-	// left
+	gettimeofday(&philo->current_time, NULL);
+	printf(GREEN"[%ld] \t [%d] \t has taken a right fork"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
+	// left second
 	pthread_mutex_lock(philo->left_fork_mutex);
-	dif = get_elapsed_time(philo);
-	printf(GREEN"[%ld] \t [%d] \t has taken a left fork"RESET"\n", dif, philo->philo_number);
+	gettimeofday(&philo->current_time, NULL);
+	printf(GREEN"[%ld] \t [%d] \t has taken a left fork"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
 }
 
 void grab_forks(t_philosopher *philo)
 {
-	long int dif;
-
-	dif = 0;
 	if (philo->philo_number % 2 == 1)
 		grab_left_fork_first(philo);
 	else
 		grab_right_fork_first(philo);
 
-	dif = get_elapsed_time(philo);
-	printf(MAGENTA "[%ld] \t [%d] \t is eating"RESET"\n", dif, philo->philo_number);
+	gettimeofday(&philo->current_time, NULL);
+	printf(MAGENTA "[%ld] \t [%d] \t is eating"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
+	gettimeofday(&philo->last_eat_time, NULL); // mark the time when philo starts last meal
 
 	usleep(philo->time_to_eat); // eat for time_to_eat
 	pthread_mutex_unlock(philo->left_fork_mutex);
@@ -66,13 +54,15 @@ void grab_forks(t_philosopher *philo)
 
 void philo_sleep(t_philosopher *philo)
 {
-	long int dif;
+	gettimeofday(&philo->current_time, NULL);
+	printf(BLUE "[%ld] \t [%d] \t is sleeping"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
 
-	dif = get_elapsed_time(philo);
-	printf(BLUE "[%ld] \t [%d] \t is sleeping"RESET"\n", dif, philo->philo_number);
 	usleep(philo->time_to_sleep); // sleep for time_to_sleep
-	dif = get_elapsed_time(philo);
-	printf(YELLOW "[%ld] \t [%d] \t is thinking"RESET"\n", dif, philo->philo_number);
+
+	gettimeofday(&philo->current_time, NULL);
+	printf(YELLOW "[%ld] \t [%d] \t is thinking"RESET"\n",
+		   get_elapsed_milliseconds(&philo->begin_time, &philo->current_time) / 1000, philo->philo_number);
 }
 
 void* start_action(void *arg)

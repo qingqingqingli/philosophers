@@ -34,6 +34,8 @@ typedef struct 		s_philosopher
 	int 			philo_number; //init in init_program_setup
 	struct timeval	begin_time;
 	struct timeval	current_time;
+	struct timeval	last_eat_time;
+	struct timeval	check_status_time;
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
 	long long int 	time_to_die; //init in init_program_setup
@@ -50,14 +52,19 @@ typedef struct 		s_setup_data
 	long long int	number_of_times_each_philosopher_must_eat; //init in init_program_setup
 	pthread_mutex_t	*fork_mutexs; //init in init_program_setup
 	pthread_t		*philo_threads; //init in init_program_setup
+	pthread_t 		*philo_status_threads; //init in init_program_setup
 	t_philosopher	*philos; //init in init_program_setup
 }					t_setup_data;
 
 // ** support.c ** //
 void 	print_philo_data(t_setup_data data);
+long int get_elapsed_milliseconds(struct timeval *previous, struct timeval *now);
 
 // ** init_program_setup.c ** //
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
 
 // ** create_philosophers.c ** //
 void* 	start_action(void *arg);
+
+// ** check_status.c ** //
+void* check_status(void *arg);
