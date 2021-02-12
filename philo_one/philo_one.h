@@ -32,6 +32,7 @@
 typedef struct 		s_philosopher
 {
 	int 			philo_number; //init in init_program_setup
+	int 			life_status;
 	struct timeval	begin_time;
 	struct timeval	current_time;
 	struct timeval	last_eat_time;
@@ -58,7 +59,7 @@ typedef struct 		s_setup_data
 
 // ** support.c ** //
 void 	print_philo_data(t_setup_data data);
-long int get_elapsed_milliseconds(struct timeval *previous, struct timeval *now);
+long int get_elapsed_microseconds(struct timeval *previous, struct timeval *now);
 
 // ** init_program_setup.c ** //
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);

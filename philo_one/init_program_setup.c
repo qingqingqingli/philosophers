@@ -37,6 +37,7 @@ void init_each_philo(t_setup_data *setup)
 	while (i < setup->number_of_philosophers)
 	{
 		setup->philos[i].philo_number = i + 1;
+		setup->philos[i].life_status = 1;
 		setup->philos[i].time_to_sleep = setup->time_to_sleep;
 		setup->philos[i].time_to_eat = setup->time_to_eat;
 		setup->philos[i].time_to_die = setup->time_to_die;
@@ -90,18 +91,34 @@ void init_philo_threads(t_setup_data *setup)
 	}
 }
 
-void join_threads(t_setup_data *setup)
+void detach_all_threads(t_setup_data *setup)
 {
 	int i;
 
 	i = 0;
 	while (i < setup->number_of_philosophers)
 	{
-		pthread_join(setup->philo_threads[i], NULL);
+		pthread_detach(setup->philo_threads[i]);
+		i++;
+	}
+}
+
+void join_threads(t_setup_data *setup)
+{
+	int i;
+	void *ret = NULL;
+
+	i = 0;
+	while (i < setup->number_of_philosophers)
+	{
+		pthread_join(setup->philo_threads[i], ret);
+		if (*(int *)ret == -1)
+			detach_all_threads(setup);
 		// not sure about joining the threads of life_status
 //		pthread_join(setup->philo_status_threads[i], NULL);
 		i++;
 	}
+
 }
 
 int init_program_setup(int argc, char **argv, t_setup_data *setup)

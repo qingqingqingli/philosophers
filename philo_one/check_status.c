@@ -15,10 +15,11 @@ void* check_status(void *arg)
 		while (1)
 		{
 			gettimeofday(&philo->check_status_time, NULL);
-			dif = get_elapsed_milliseconds(&philo->last_eat_time, &philo->check_status_time);
+			dif = get_elapsed_microseconds(&philo->last_eat_time, &philo->check_status_time) / 1000;
 			if (dif >= philo->time_to_die)
 			{
-				printf("[%d] has died\n", philo->philo_number);
+				printf("[%ld] \t [%d] \t has died\n", get_elapsed_microseconds(&philo->current_time, &philo->check_status_time) / 1000, philo->philo_number);
+				philo->life_status = 0;
 				break ;
 			}
 		}
