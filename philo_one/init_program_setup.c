@@ -3,6 +3,7 @@
 //
 
 #include <stdlib.h>
+#include <string.h>
 #include "philo_one.h"
 #include "libft/libft.h"
 
@@ -37,6 +38,9 @@ void init_each_philo(t_setup_data *setup)
 	while (i < setup->number_of_philosophers)
 	{
 		setup->philos[i].philo_number = i + 1;
+		setup->philos[i].time_to_sleep = setup->time_to_sleep;
+		setup->philos[i].time_to_eat = setup->time_to_eat;
+		setup->philos[i].time_to_die = setup->time_to_die;
 		gettimeofday(&setup->philos[i].begin_time, NULL);
 		i++;
 	}

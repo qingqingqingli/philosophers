@@ -36,6 +36,9 @@ typedef struct 		s_philosopher
 	struct timeval	current_time;
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
+	long long int 	time_to_die; //init in init_program_setup
+	long long int 	time_to_eat; //init in init_program_setup
+	long long int 	time_to_sleep; //init in init_program_setup
 }					t_philosopher;
 
 typedef struct 		s_setup_data
