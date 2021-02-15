@@ -9,6 +9,8 @@
 #include "libft/libft.h"
 #include <pthread.h> // threads
 
+int life_status;
+
 #define RESET			"\033[0m"
 #define BLACK			"\033[30m"
 #define RED				"\033[31m"
@@ -31,8 +33,7 @@
 
 typedef struct 		s_philosopher
 {
-	int 			philo_number; //init in init_program_setup
-	int 			life_status;
+	int 			num; //init in init_program_setup
 	struct timeval	begin_time;
 	struct timeval	current_time;
 	struct timeval	last_eat_time;
@@ -51,6 +52,7 @@ typedef struct 		s_setup_data
 	long long int 	time_to_eat; //init in init_program_setup
 	long long int 	time_to_sleep; //init in init_program_setup
 	long long int	number_of_times_each_philosopher_must_eat; //init in init_program_setup
+	pthread_mutex_t status_check;
 	pthread_mutex_t	*fork_mutexs; //init in init_program_setup
 	pthread_t		*philo_threads; //init in init_program_setup
 	pthread_t 		*philo_status_threads; //init in init_program_setup
@@ -59,7 +61,7 @@ typedef struct 		s_setup_data
 
 // ** support.c ** //
 void 	print_philo_data(t_setup_data data);
-long int get_elapsed_microseconds(struct timeval *previous, struct timeval *now);
+long int get_elapsed_ms(struct timeval *previous, struct timeval *now);
 
 // ** init_program_setup.c ** //
 int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
@@ -69,3 +71,10 @@ void* 	start_action(void *arg);
 
 // ** check_status.c ** //
 void* check_status(void *arg);
+
+void process_argv_input(int argc, char **argv, t_setup_data *setup);
+int validate_setup_data(t_setup_data setup);
+void init_each_philo(t_setup_data *setup);
+void	init_fork_mutexes(t_setup_data *setup);
+void set_philo_fork_mutexs(t_setup_data *setup);
+void init_philo_threads(t_setup_data *setup);

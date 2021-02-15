@@ -14,7 +14,7 @@ void print_philo_data(t_setup_data data)
 	printf(RESET);
 }
 
-long int get_elapsed_microseconds(struct timeval *previous, struct timeval *now)
+long int get_elapsed_ms(struct timeval *previous, struct timeval *now)
 {
 	return ((now->tv_sec - previous->tv_sec) * 1000000 + (now->tv_usec - previous->tv_usec));
 }
