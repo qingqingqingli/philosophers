@@ -8,6 +8,7 @@ int 	main(int argc, char **argv)
 {
 	t_setup_data setup;
 
+	pthread_mutex_init(&check_status_mutex, NULL);
 	life_status = 1;
 	if (argc == 5 || argc == 6)
 	{

@@ -7,24 +7,20 @@
 void* check_status(void *arg)
 {
 	t_philosopher 	*philo;
-	long int		dif;
 
 	philo = arg;
-	dif = 0;
-	if (philo->last_eat_time.tv_usec)
+	while (life_status && philo->last_eat_time.tv_usec)
 	{
-		while (life_status)
+		pthread_mutex_lock(&check_status_mutex);
+		gettimeofday(&philo->time_now, NULL);
+		if (get_elapsed_ms(&philo->last_eat_time, &philo->time_now) / 1000 >= philo->time_to_die)
 		{
-			gettimeofday(&philo->check_status_time, NULL);
-			dif = get_elapsed_ms(&philo->last_eat_time, &philo->check_status_time) / 1000;
-			if (dif >= philo->time_to_die)
-			{
-				printf("[%ld] \t [%d] \t has died\n",
-					   get_elapsed_ms(&philo->current_time, &philo->check_status_time) / 1000, philo->num);
-				life_status = 0;
-				break ;
-			}
+			life_status = 0;
+			printf("[%ld] \t [%d] \t has died\n", get_elapsed_ms(&philo->begin_time, &philo->time_now) / 1000, philo->num);
+			pthread_mutex_unlock(&check_status_mutex);
+			return (NULL);
 		}
+		pthread_mutex_unlock(&check_status_mutex);
 	}
 	return (NULL);
 }

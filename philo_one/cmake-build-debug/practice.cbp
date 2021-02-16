@@ -85,9 +85,6 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/check_status.c">
 			<Option target="practice"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/clean_up.c">
-			<Option target="practice"/>
-		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c">
 			<Option target="practice"/>
 		</Unit>
@@ -109,7 +106,7 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/start_action.c">
 			<Option target="practice"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/support_functions.c">
 			<Option target="practice"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/CMakeLists.txt">

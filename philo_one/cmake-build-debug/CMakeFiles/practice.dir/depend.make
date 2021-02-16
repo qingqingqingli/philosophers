@@ -5,8 +5,6 @@ CMakeFiles/practice.dir/check_status.c.o: ../check_status.c
 CMakeFiles/practice.dir/check_status.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/check_status.c.o: ../philo_one.h
 
-CMakeFiles/practice.dir/clean_up.c.o: ../clean_up.c
-
 CMakeFiles/practice.dir/init_program_setup.c.o: ../init_program_setup.c
 CMakeFiles/practice.dir/init_program_setup.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/init_program_setup.c.o: ../philo_one.h
@@ -21,7 +19,7 @@ CMakeFiles/practice.dir/start_action.c.o: ../libft/libft.h
 CMakeFiles/practice.dir/start_action.c.o: ../philo_one.h
 CMakeFiles/practice.dir/start_action.c.o: ../start_action.c
 
-CMakeFiles/practice.dir/support_functions/support_01.c.o: ../libft/libft.h
-CMakeFiles/practice.dir/support_functions/support_01.c.o: ../philo_one.h
-CMakeFiles/practice.dir/support_functions/support_01.c.o: ../support_functions/support_01.c
+CMakeFiles/practice.dir/support_functions.c.o: ../libft/libft.h
+CMakeFiles/practice.dir/support_functions.c.o: ../philo_one.h
+CMakeFiles/practice.dir/support_functions.c.o: ../support_functions.c
 

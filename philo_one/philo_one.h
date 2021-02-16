@@ -10,6 +10,9 @@
 #include <pthread.h> // threads
 
 int life_status;
+pthread_mutex_t check_status_mutex;
+
+// ** COLOR ** //
 
 #define RESET			"\033[0m"
 #define BLACK			"\033[30m"
@@ -19,62 +22,50 @@ int life_status;
 #define BLUE			"\033[34m"
 #define MAGENTA			"\033[35m"
 #define CYAN			"\033[36m"
-#define WHITE			"\033[37m"
-#define BOLDBLACK		"\033[1m\033[30m"
-#define BOLDRED			"\033[1m\033[31m"
-#define BOLDGREEN		"\033[1m\033[32m"
-#define BOLDYELLOW		"\033[1m\033[33m"
-#define BOLDBLUE		"\033[1m\033[34m"
-#define BOLDMAGENTA		"\033[1m\033[35m"
-#define BOLDCYAN		"\033[1m\033[36m"
-#define BOLDWHITE		"\033[1m\033[37m"
 
 // ** DATA STRUCT ** //
 
 typedef struct 		s_philosopher
 {
-	int 			num; //init in init_program_setup
+	int 			num;
 	struct timeval	begin_time;
 	struct timeval	current_time;
 	struct timeval	last_eat_time;
-	struct timeval	check_status_time;
+	struct timeval	time_now;
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
-	long long int 	time_to_die; //init in init_program_setup
-	long long int 	time_to_eat; //init in init_program_setup
-	long long int 	time_to_sleep; //init in init_program_setup
+	long long int 	time_to_die;
+	long long int 	time_to_eat;
+	long long int 	time_to_sleep;
 }					t_philosopher;
 
 typedef struct 		s_setup_data
 {
-	long long int	number_of_philosophers; //init in init_program_setup
-	long long int 	time_to_die; //init in init_program_setup
-	long long int 	time_to_eat; //init in init_program_setup
-	long long int 	time_to_sleep; //init in init_program_setup
-	long long int	number_of_times_each_philosopher_must_eat; //init in init_program_setup
-	pthread_mutex_t status_check;
-	pthread_mutex_t	*fork_mutexs; //init in init_program_setup
-	pthread_t		*philo_threads; //init in init_program_setup
-	pthread_t 		*philo_status_threads; //init in init_program_setup
-	t_philosopher	*philos; //init in init_program_setup
+	long long int	number_of_philosophers;
+	long long int 	time_to_die;
+	long long int 	time_to_eat;
+	long long int 	time_to_sleep;
+	long long int	number_of_times_each_philosopher_must_eat;
+	pthread_mutex_t	*fork_mutexs;
+	pthread_t		*philo_threads;
+	pthread_t 		*philo_status_threads;
+	t_philosopher	*philos;
 }					t_setup_data;
 
 // ** support.c ** //
-void 	print_philo_data(t_setup_data data);
-long int get_elapsed_ms(struct timeval *previous, struct timeval *now);
-
-// ** init_program_setup.c ** //
-int 	init_program_setup(int argc, char **argv, t_setup_data *setup);
+void 		print_philo_data(t_setup_data data);
+long int 	get_elapsed_ms(struct timeval *previous, struct timeval *now);
 
 // ** create_philosophers.c ** //
-void* 	start_action(void *arg);
+void* 		start_action(void *arg);
 
 // ** check_status.c ** //
-void* check_status(void *arg);
+void* 		check_status(void *arg);
 
-void process_argv_input(int argc, char **argv, t_setup_data *setup);
-int validate_setup_data(t_setup_data setup);
-void init_each_philo(t_setup_data *setup);
-void	init_fork_mutexes(t_setup_data *setup);
-void set_philo_fork_mutexs(t_setup_data *setup);
-void init_philo_threads(t_setup_data *setup);
+// ** init_program_setup.c ** //
+void 		process_argv_input(int argc, char **argv, t_setup_data *setup);
+int 		validate_setup_data(t_setup_data setup);
+void 		init_each_philo(t_setup_data *setup);
+void		init_fork_mutexes(t_setup_data *setup);
+void 		set_philo_fork_mutexs(t_setup_data *setup);
+void 		init_philo_threads(t_setup_data *setup);

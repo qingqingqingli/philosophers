@@ -72,7 +72,6 @@ void set_philo_fork_mutexs(t_setup_data *setup)
 		setup->philos[i].right_fork_mutex = &setup->fork_mutexs[i - 1];
 		i++;
 	}
-
 }
 
 void init_philo_threads(t_setup_data *setup)
@@ -86,6 +85,11 @@ void init_philo_threads(t_setup_data *setup)
 	{
 		pthread_create(&setup->philo_threads[i], NULL, start_action, &setup->philos[i]);
 		pthread_create(&setup->philo_status_threads[i], NULL, check_status, &setup->philos[i]);
+		i++;
+	}
+	i = 0;
+	while (i < setup->number_of_philosophers)
+	{
 		pthread_join(setup->philo_threads[i], NULL);
 		i++;
 	}

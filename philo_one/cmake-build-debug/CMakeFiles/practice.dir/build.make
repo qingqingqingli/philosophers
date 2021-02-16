@@ -90,18 +90,18 @@ CMakeFiles/practice.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/main.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/main.c -o CMakeFiles/practice.dir/main.c.s
 
-CMakeFiles/practice.dir/support_functions/support_01.c.o: CMakeFiles/practice.dir/flags.make
-CMakeFiles/practice.dir/support_functions/support_01.c.o: ../support_functions/support_01.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/practice.dir/support_functions/support_01.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/support_functions/support_01.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c
+CMakeFiles/practice.dir/support_functions.c.o: CMakeFiles/practice.dir/flags.make
+CMakeFiles/practice.dir/support_functions.c.o: ../support_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/practice.dir/support_functions.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/support_functions.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/support_functions.c
 
-CMakeFiles/practice.dir/support_functions/support_01.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/support_functions/support_01.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c > CMakeFiles/practice.dir/support_functions/support_01.c.i
+CMakeFiles/practice.dir/support_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/support_functions.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/support_functions.c > CMakeFiles/practice.dir/support_functions.c.i
 
-CMakeFiles/practice.dir/support_functions/support_01.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/support_functions/support_01.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/support_functions/support_01.c -o CMakeFiles/practice.dir/support_functions/support_01.c.s
+CMakeFiles/practice.dir/support_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/support_functions.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/support_functions.c -o CMakeFiles/practice.dir/support_functions.c.s
 
 CMakeFiles/practice.dir/init_program_setup.c.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/init_program_setup.c.o: ../init_program_setup.c
@@ -129,22 +129,9 @@ CMakeFiles/practice.dir/start_action.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/start_action.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/start_action.c -o CMakeFiles/practice.dir/start_action.c.s
 
-CMakeFiles/practice.dir/clean_up.c.o: CMakeFiles/practice.dir/flags.make
-CMakeFiles/practice.dir/clean_up.c.o: ../clean_up.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/practice.dir/clean_up.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/clean_up.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/clean_up.c
-
-CMakeFiles/practice.dir/clean_up.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice.dir/clean_up.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/clean_up.c > CMakeFiles/practice.dir/clean_up.c.i
-
-CMakeFiles/practice.dir/clean_up.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice.dir/clean_up.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/clean_up.c -o CMakeFiles/practice.dir/clean_up.c.s
-
 CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o: ../libft/srcs/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/libft/srcs/ft_atoi.c
 
 CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.i: cmake_force
@@ -157,7 +144,7 @@ CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.s: cmake_force
 
 CMakeFiles/practice.dir/check_status.c.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/check_status.c.o: ../check_status.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/practice.dir/check_status.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/practice.dir/check_status.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice.dir/check_status.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/check_status.c
 
 CMakeFiles/practice.dir/check_status.c.i: cmake_force
@@ -171,10 +158,9 @@ CMakeFiles/practice.dir/check_status.c.s: cmake_force
 # Object files for target practice
 practice_OBJECTS = \
 "CMakeFiles/practice.dir/main.c.o" \
-"CMakeFiles/practice.dir/support_functions/support_01.c.o" \
+"CMakeFiles/practice.dir/support_functions.c.o" \
 "CMakeFiles/practice.dir/init_program_setup.c.o" \
 "CMakeFiles/practice.dir/start_action.c.o" \
-"CMakeFiles/practice.dir/clean_up.c.o" \
 "CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o" \
 "CMakeFiles/practice.dir/check_status.c.o"
 
@@ -182,15 +168,14 @@ practice_OBJECTS = \
 practice_EXTERNAL_OBJECTS =
 
 practice: CMakeFiles/practice.dir/main.c.o
-practice: CMakeFiles/practice.dir/support_functions/support_01.c.o
+practice: CMakeFiles/practice.dir/support_functions.c.o
 practice: CMakeFiles/practice.dir/init_program_setup.c.o
 practice: CMakeFiles/practice.dir/start_action.c.o
-practice: CMakeFiles/practice.dir/clean_up.c.o
 practice: CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o
 practice: CMakeFiles/practice.dir/check_status.c.o
 practice: CMakeFiles/practice.dir/build.make
 practice: CMakeFiles/practice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable practice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable practice"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/practice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

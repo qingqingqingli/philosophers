@@ -170,33 +170,6 @@ check_status.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.s
 .PHONY : check_status.c.s
 
-clean_up.o: clean_up.c.o
-
-.PHONY : clean_up.o
-
-# target to build an object file
-clean_up.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.o
-.PHONY : clean_up.c.o
-
-clean_up.i: clean_up.c.i
-
-.PHONY : clean_up.i
-
-# target to preprocess a source file
-clean_up.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.i
-.PHONY : clean_up.c.i
-
-clean_up.s: clean_up.c.s
-
-.PHONY : clean_up.s
-
-# target to generate assembly for a file
-clean_up.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/clean_up.c.s
-.PHONY : clean_up.c.s
-
 init_program_setup.o: init_program_setup.c.o
 
 .PHONY : init_program_setup.o
@@ -305,32 +278,32 @@ start_action.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.s
 .PHONY : start_action.c.s
 
-support_functions/support_01.o: support_functions/support_01.c.o
+support_functions.o: support_functions.c.o
 
-.PHONY : support_functions/support_01.o
+.PHONY : support_functions.o
 
 # target to build an object file
-support_functions/support_01.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.o
-.PHONY : support_functions/support_01.c.o
+support_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.o
+.PHONY : support_functions.c.o
 
-support_functions/support_01.i: support_functions/support_01.c.i
+support_functions.i: support_functions.c.i
 
-.PHONY : support_functions/support_01.i
+.PHONY : support_functions.i
 
 # target to preprocess a source file
-support_functions/support_01.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.i
-.PHONY : support_functions/support_01.c.i
+support_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.i
+.PHONY : support_functions.c.i
 
-support_functions/support_01.s: support_functions/support_01.c.s
+support_functions.s: support_functions.c.s
 
-.PHONY : support_functions/support_01.s
+.PHONY : support_functions.s
 
 # target to generate assembly for a file
-support_functions/support_01.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions/support_01.c.s
-.PHONY : support_functions/support_01.c.s
+support_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.s
+.PHONY : support_functions.c.s
 
 # Help Target
 help:
@@ -344,9 +317,6 @@ help:
 	@echo "... check_status.o"
 	@echo "... check_status.i"
 	@echo "... check_status.s"
-	@echo "... clean_up.o"
-	@echo "... clean_up.i"
-	@echo "... clean_up.s"
 	@echo "... init_program_setup.o"
 	@echo "... init_program_setup.i"
 	@echo "... init_program_setup.s"
@@ -359,9 +329,9 @@ help:
 	@echo "... start_action.o"
 	@echo "... start_action.i"
 	@echo "... start_action.s"
-	@echo "... support_functions/support_01.o"
-	@echo "... support_functions/support_01.i"
-	@echo "... support_functions/support_01.s"
+	@echo "... support_functions.o"
+	@echo "... support_functions.i"
+	@echo "... support_functions.s"
 .PHONY : help
 
 

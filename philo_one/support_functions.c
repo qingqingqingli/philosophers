@@ -2,7 +2,7 @@
 // Created by qli on 08/02/2021.
 //
 
-#include "../philo_one.h"
+#include "philo_one.h"
 
 void print_philo_data(t_setup_data data)
 {
