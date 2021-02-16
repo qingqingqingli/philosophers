@@ -10,7 +10,6 @@
 #include <pthread.h> // threads
 
 int life_status;
-pthread_mutex_t check_status_mutex;
 
 // ** COLOR ** //
 
@@ -23,6 +22,36 @@ pthread_mutex_t check_status_mutex;
 #define MAGENTA			"\033[35m"
 #define CYAN			"\033[36m"
 
+
+typedef struct 		s_common
+{
+	long long int	number_of_philosophers;
+	long long int 	time_to_die;
+	long long int 	time_to_eat;
+	long long int 	time_to_sleep;
+	long long int	number_of_times_each_philosopher_must_eat;
+	int				life_status;
+	pthread_mutex_t	*fork_mutexs;
+}					t_common;
+
+typedef struct 		s_philo
+{
+	int 			num;
+	struct timeval	begin_time;
+	struct timeval	current_time;
+	struct timeval	last_eat_time;
+	// mutextes
+	pthread_mutex_t *left_fork_mutex;
+	pthread_mutex_t *right_fork_mutex;
+	pthread_mutex_t *status_mutex;
+	//threads
+	pthread_t		*philo_threads;
+	pthread_t 		*philo_status_threads;
+	// pointer to common
+	t_common 		*common;
+}					t_philo;
+
+
 // ** DATA STRUCT ** //
 
 typedef struct 		s_philosopher
@@ -31,13 +60,12 @@ typedef struct 		s_philosopher
 	struct timeval	begin_time;
 	struct timeval	current_time;
 	struct timeval	last_eat_time;
-	struct timeval	time_now;
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
 	long long int 	time_to_die;
 	long long int 	time_to_eat;
 	long long int 	time_to_sleep;
-//	int 			life_status;
+	pthread_mutex_t *status_mutex;
 }					t_philosopher;
 
 typedef struct 		s_setup_data

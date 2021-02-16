@@ -40,7 +40,10 @@ void init_each_philo(t_setup_data *setup)
 		setup->philos[i].time_to_sleep = setup->time_to_sleep;
 		setup->philos[i].time_to_eat = setup->time_to_eat;
 		setup->philos[i].time_to_die = setup->time_to_die;
+		setup->philos[i].status_mutex = malloc(sizeof(pthread_mutex_t));
+		pthread_mutex_init(setup->philos[i].status_mutex, NULL);
 		gettimeofday(&setup->philos[i].begin_time, NULL);
+		gettimeofday(&setup->philos[i].last_eat_time, NULL);
 		i++;
 	}
 }

@@ -68,9 +68,9 @@ void grab_forks(t_philosopher *philo)
 		pthread_mutex_unlock(philo->left_fork_mutex);
 		pthread_mutex_unlock(philo->right_fork_mutex);
 	}
-	pthread_mutex_lock(&check_status_mutex);
+	pthread_mutex_lock(philo->status_mutex);
 	gettimeofday(&philo->last_eat_time, NULL);
-	pthread_mutex_unlock(&check_status_mutex);
+	pthread_mutex_unlock(philo->status_mutex);
 	usleep(philo->time_to_eat * 1000);
 	pthread_mutex_unlock(philo->left_fork_mutex);
 	pthread_mutex_unlock(philo->right_fork_mutex);
