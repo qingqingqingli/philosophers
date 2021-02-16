@@ -91,6 +91,7 @@ void init_philo_threads(t_setup_data *setup)
 	while (i < setup->number_of_philosophers)
 	{
 		pthread_join(setup->philo_threads[i], NULL);
+		pthread_join(setup->philo_status_threads[i], NULL);
 		i++;
 	}
 }

@@ -37,6 +37,7 @@ typedef struct 		s_philosopher
 	long long int 	time_to_die;
 	long long int 	time_to_eat;
 	long long int 	time_to_sleep;
+//	int 			life_status;
 }					t_philosopher;
 
 typedef struct 		s_setup_data

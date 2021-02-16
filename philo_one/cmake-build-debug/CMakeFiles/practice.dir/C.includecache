@@ -12,14 +12,6 @@ stdlib.h
 philo_one.h
 /home/qli/CLionProjects/philosophers/philo_one/philo_one.h
 
-/home/qli/CLionProjects/philosophers/philo_one/init_program_setup.c
-stdlib.h
--
-philo_one.h
-/home/qli/CLionProjects/philosophers/philo_one/philo_one.h
-libft/libft.h
-/home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
-
 /home/qli/CLionProjects/philosophers/philo_one/libft/libft.h
 stddef.h
 -

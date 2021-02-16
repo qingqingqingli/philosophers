@@ -9,6 +9,7 @@ void* check_status(void *arg)
 	t_philosopher 	*philo;
 
 	philo = arg;
+	usleep(philo->time_to_eat * 1000);
 	while (life_status && philo->last_eat_time.tv_usec)
 	{
 		pthread_mutex_lock(&check_status_mutex);
