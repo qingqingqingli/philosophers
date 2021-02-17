@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h">
+			<Option target="rewrite"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/clean_up.h">
 			<Option target="rewrite"/>
 		</Unit>
@@ -97,7 +100,13 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h">
 			<Option target="rewrite"/>
 		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h">
+			<Option target="rewrite"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/main.c">
+			<Option target="rewrite"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/check_status.c">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c">
@@ -116,6 +125,9 @@
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c">
+			<Option target="rewrite"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/time_calculation.c">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/CMakeLists.txt">

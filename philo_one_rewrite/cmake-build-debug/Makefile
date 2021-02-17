@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.s
 .PHONY : main.c.s
 
+srcs/check_status.o: srcs/check_status.c.o
+
+.PHONY : srcs/check_status.o
+
+# target to build an object file
+srcs/check_status.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.o
+.PHONY : srcs/check_status.c.o
+
+srcs/check_status.i: srcs/check_status.c.i
+
+.PHONY : srcs/check_status.i
+
+# target to preprocess a source file
+srcs/check_status.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.i
+.PHONY : srcs/check_status.c.i
+
+srcs/check_status.s: srcs/check_status.c.s
+
+.PHONY : srcs/check_status.s
+
+# target to generate assembly for a file
+srcs/check_status.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.s
+.PHONY : srcs/check_status.c.s
+
 srcs/clean_up.o: srcs/clean_up.c.o
 
 .PHONY : srcs/clean_up.o
@@ -305,6 +332,33 @@ srcs/start_action.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.s
 .PHONY : srcs/start_action.c.s
 
+srcs/time_calculation.o: srcs/time_calculation.c.o
+
+.PHONY : srcs/time_calculation.o
+
+# target to build an object file
+srcs/time_calculation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
+.PHONY : srcs/time_calculation.c.o
+
+srcs/time_calculation.i: srcs/time_calculation.c.i
+
+.PHONY : srcs/time_calculation.i
+
+# target to preprocess a source file
+srcs/time_calculation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.i
+.PHONY : srcs/time_calculation.c.i
+
+srcs/time_calculation.s: srcs/time_calculation.c.s
+
+.PHONY : srcs/time_calculation.s
+
+# target to generate assembly for a file
+srcs/time_calculation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.s
+.PHONY : srcs/time_calculation.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -317,6 +371,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... srcs/check_status.o"
+	@echo "... srcs/check_status.i"
+	@echo "... srcs/check_status.s"
 	@echo "... srcs/clean_up.o"
 	@echo "... srcs/clean_up.i"
 	@echo "... srcs/clean_up.s"
@@ -332,6 +389,9 @@ help:
 	@echo "... srcs/start_action.o"
 	@echo "... srcs/start_action.i"
 	@echo "... srcs/start_action.s"
+	@echo "... srcs/time_calculation.o"
+	@echo "... srcs/time_calculation.i"
+	@echo "... srcs/time_calculation.s"
 .PHONY : help
 
 

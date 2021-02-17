@@ -8,11 +8,17 @@ CMakeFiles/rewrite.dir/main.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/main.c
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/libft.h
+CMakeFiles/rewrite.dir/srcs/check_status.c.o
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/check_status.c
 CMakeFiles/rewrite.dir/srcs/clean_up.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
@@ -27,4 +33,8 @@ CMakeFiles/rewrite.dir/srcs/process_input.c.o
 CMakeFiles/rewrite.dir/srcs/start_action.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c
+CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/time_calculation.c

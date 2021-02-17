@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "../headers/initialise_philos.h"
 #include "../headers/start_action.h"
+#include "../headers/check_status.h"
 
 void setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
@@ -46,14 +47,14 @@ void	init_philo_threads(t_philosopher *philos, int num)
 	while (i < num)
 	{
 		pthread_create(&philos[i].philo_thread, NULL, start_action, &philos[i]);
-//		pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]);
+		pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]);
 		i++;
 	}
 	i = 0;
 	while (i < num)
 	{
 		pthread_join(philos[i].philo_thread, NULL);
-//		pthread_join(philos[i].philo_status_thread, NULL);
+		pthread_join(philos[i].philo_status_thread, NULL);
 		i++;
 	}
 }
