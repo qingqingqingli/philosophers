@@ -20,14 +20,15 @@ typedef struct 		s_setup
 
 typedef struct 		s_philosopher
 {
-	t_setup			*setup; 		// setup
-	int 			num;			// initialised
-	struct timeval	begin_time;		// initialised
+	t_setup			*setup;
+	int 			num;
+	int				time_of_eaten;
+	struct timeval	begin_time;
 	struct timeval	now;
-	struct timeval	last_eat_time;  // initialised
-	pthread_mutex_t *left_fork_mutex; // setup
-	pthread_mutex_t *right_fork_mutex; // setup
-	pthread_mutex_t status_mutex;		// initialised
+	struct timeval	last_eat_time;
+	pthread_mutex_t *left_fork_mutex;
+	pthread_mutex_t *right_fork_mutex;
+	pthread_mutex_t status_mutex;
 	pthread_t 		philo_thread;
 	pthread_t 		philo_status_thread;
 }					t_philosopher;

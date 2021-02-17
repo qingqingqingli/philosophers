@@ -42,8 +42,11 @@ int		philo_eat(t_philosopher *philo)
 	gettimeofday(&philo->last_eat_time, NULL);
 	pthread_mutex_unlock(&philo->status_mutex);
 	usleep(philo->setup->time_to_eat * 1000);
+	philo->time_of_eaten++;
 	pthread_mutex_unlock(philo->left_fork_mutex);
 	pthread_mutex_unlock(philo->right_fork_mutex);
+	if (philo->time_of_eaten == philo->setup->number_of_times_each_philosopher_must_eat)
+		return (1);
 	return 0;
 }
 

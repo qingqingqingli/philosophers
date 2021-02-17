@@ -16,6 +16,7 @@ void setup_each_philo(t_setup *setup, t_philosopher *philos)
 	{
 		philos[i].setup = setup;
 		philos[i].num = i + 1;
+		philos[i].time_of_eaten = 0;
 		gettimeofday(&philos[i].begin_time, NULL);
 		gettimeofday(&philos[i].last_eat_time, NULL);
 		pthread_mutex_init(&philos[i].status_mutex, NULL);
