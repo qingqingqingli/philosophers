@@ -6,4 +6,4 @@
 #include "../headers/struct.h"
 #include <stdlib.h>
 
-int 	clean_up(t_setup *setup, t_philosopher **philos);
+int 	clean_up(t_setup *setup, t_philosopher **philos, int return_value);

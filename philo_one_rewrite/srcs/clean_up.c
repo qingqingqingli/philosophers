@@ -4,14 +4,6 @@
 
 #include "../headers/clean_up.h"
 
-void 	clean_up_setup(t_setup *setup)
-{
-	if (setup->fork_mutexs)
-		free(setup->fork_mutexs);
-	if (setup)
-		free(setup);
-}
-
 void 	clean_up_philos(t_philosopher **philos, long long int num)
 {
 	int i;
@@ -19,7 +11,7 @@ void 	clean_up_philos(t_philosopher **philos, long long int num)
 	i = 0;
 	if (philos)
 	{
-		while (i < num)
+		while (philos[i])
 		{
 			free(philos[i]);
 			i++;
@@ -28,9 +20,16 @@ void 	clean_up_philos(t_philosopher **philos, long long int num)
 	}
 }
 
-int 	clean_up(t_setup *setup, t_philosopher **philos)
+void 	clean_up_setup(t_setup *setup)
+{
+	if (setup->fork_mutexs)
+		free(setup->fork_mutexs);
+	free(setup);
+}
+
+int 	clean_up(t_setup *setup, t_philosopher **philos, int return_value)
 {
 	clean_up_philos(philos, setup->number_of_philosophers);
 	clean_up_setup(setup);
-	return (error_occurred);
+	return (return_value);
 }

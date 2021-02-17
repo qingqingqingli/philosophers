@@ -129,18 +129,18 @@ CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c -o CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s
 
-CMakeFiles/rewrite.dir/clean_up.c.o: CMakeFiles/rewrite.dir/flags.make
-CMakeFiles/rewrite.dir/clean_up.c.o: ../clean_up.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rewrite.dir/clean_up.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/clean_up.c.o   -c /home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.c
+CMakeFiles/rewrite.dir/srcs/clean_up.c.o: CMakeFiles/rewrite.dir/flags.make
+CMakeFiles/rewrite.dir/srcs/clean_up.c.o: ../srcs/clean_up.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rewrite.dir/srcs/clean_up.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/clean_up.c.o   -c /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c
 
-CMakeFiles/rewrite.dir/clean_up.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rewrite.dir/clean_up.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.c > CMakeFiles/rewrite.dir/clean_up.c.i
+CMakeFiles/rewrite.dir/srcs/clean_up.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rewrite.dir/srcs/clean_up.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c > CMakeFiles/rewrite.dir/srcs/clean_up.c.i
 
-CMakeFiles/rewrite.dir/clean_up.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/clean_up.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.c -o CMakeFiles/rewrite.dir/clean_up.c.s
+CMakeFiles/rewrite.dir/srcs/clean_up.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/clean_up.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c -o CMakeFiles/rewrite.dir/srcs/clean_up.c.s
 
 # Object files for target rewrite
 rewrite_OBJECTS = \
@@ -148,7 +148,7 @@ rewrite_OBJECTS = \
 "CMakeFiles/rewrite.dir/srcs/process_input.c.o" \
 "CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o" \
 "CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o" \
-"CMakeFiles/rewrite.dir/clean_up.c.o"
+"CMakeFiles/rewrite.dir/srcs/clean_up.c.o"
 
 # External object files for target rewrite
 rewrite_EXTERNAL_OBJECTS =
@@ -157,7 +157,7 @@ rewrite: CMakeFiles/rewrite.dir/main.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/process_input.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
-rewrite: CMakeFiles/rewrite.dir/clean_up.c.o
+rewrite: CMakeFiles/rewrite.dir/srcs/clean_up.c.o
 rewrite: CMakeFiles/rewrite.dir/build.make
 rewrite: CMakeFiles/rewrite.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable rewrite"

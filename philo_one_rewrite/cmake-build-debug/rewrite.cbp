@@ -82,10 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.c">
-			<Option target="rewrite"/>
-		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.h">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/clean_up.h">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h">
@@ -98,6 +95,9 @@
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/main.c">
+			<Option target="rewrite"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c">

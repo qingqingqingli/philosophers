@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/qli/CLionProjects/philosophers/philo_one_rewrite/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/clean_up.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/main.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/main.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/clean_up.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/srcs/ft_atoi.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/process_input.c.o"

@@ -9,12 +9,11 @@ int malloc_philos(t_philosopher **philos, long long int num)
 	long long int i;
 
 	i = 0;
-	philos = (t_philosopher **)malloc(sizeof(t_philosopher *) * num);
-	if (!philos)
-		return (error_occurred);
 	while(i < num)
 	{
 		philos[i] = (t_philosopher *)malloc(sizeof(t_philosopher));
+		if (i == 3)
+			return (-1);
 		if (!philos[i])
 			return (error_occurred);
 		i++;

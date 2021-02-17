@@ -143,33 +143,6 @@ rewrite/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/build
 .PHONY : rewrite/fast
 
-clean_up.o: clean_up.c.o
-
-.PHONY : clean_up.o
-
-# target to build an object file
-clean_up.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/clean_up.c.o
-.PHONY : clean_up.c.o
-
-clean_up.i: clean_up.c.i
-
-.PHONY : clean_up.i
-
-# target to preprocess a source file
-clean_up.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/clean_up.c.i
-.PHONY : clean_up.c.i
-
-clean_up.s: clean_up.c.s
-
-.PHONY : clean_up.s
-
-# target to generate assembly for a file
-clean_up.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/clean_up.c.s
-.PHONY : clean_up.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -196,6 +169,33 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.s
 .PHONY : main.c.s
+
+srcs/clean_up.o: srcs/clean_up.c.o
+
+.PHONY : srcs/clean_up.o
+
+# target to build an object file
+srcs/clean_up.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.o
+.PHONY : srcs/clean_up.c.o
+
+srcs/clean_up.i: srcs/clean_up.c.i
+
+.PHONY : srcs/clean_up.i
+
+# target to preprocess a source file
+srcs/clean_up.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.i
+.PHONY : srcs/clean_up.c.i
+
+srcs/clean_up.s: srcs/clean_up.c.s
+
+.PHONY : srcs/clean_up.s
+
+# target to generate assembly for a file
+srcs/clean_up.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.s
+.PHONY : srcs/clean_up.c.s
 
 srcs/initialise_philos.o: srcs/initialise_philos.c.o
 
@@ -287,12 +287,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rewrite"
-	@echo "... clean_up.o"
-	@echo "... clean_up.i"
-	@echo "... clean_up.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... srcs/clean_up.o"
+	@echo "... srcs/clean_up.i"
+	@echo "... srcs/clean_up.s"
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"
