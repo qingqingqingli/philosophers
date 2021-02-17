@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
+../headers/struct.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+stdlib.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+pthread.h
+-
+sys/time.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c
+../headers/initialise_philos.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
+
