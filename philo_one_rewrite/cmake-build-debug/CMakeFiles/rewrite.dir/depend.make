@@ -9,7 +9,6 @@ CMakeFiles/rewrite.dir/main.c.o: ../main.c
 CMakeFiles/rewrite.dir/main.c.o: ../srcs/libft/libft.h
 
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../headers/check_status.h
-CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../headers/print.h
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../headers/struct.h
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../headers/time_calculation.h
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../srcs/check_status.c
