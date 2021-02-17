@@ -28,6 +28,14 @@ stdio.h
 stdlib.h
 -
 
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+stdio.h
+-
+unistd.h
+-
+
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
 pthread.h
 -
@@ -48,11 +56,29 @@ headers/initialise_philos.h
 headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/clean_up.h
 
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c
+stdio.h
+-
+../headers/clean_up.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/clean_up.h
+
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c
+stdio.h
+-
 ../headers/initialise_philos.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
+../headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
 
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/libft.h
 stddef.h
 -
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c
+../headers/process_input.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/process_input.h
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c
+../headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
 

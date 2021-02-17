@@ -8,11 +8,11 @@
 
 typedef struct 		s_setup
 {
-	long long int	number_of_philosophers;
+	int				number_of_philosophers;
 	long long int 	time_to_die;
 	long long int 	time_to_eat;
 	long long int 	time_to_sleep;
-	long long int	number_of_times_each_philosopher_must_eat;
+	int				number_of_times_each_philosopher_must_eat;
 	int 			number_to_eat_exist;
 	int				life_status;
 	pthread_mutex_t	*fork_mutexs;
@@ -20,13 +20,16 @@ typedef struct 		s_setup
 
 typedef struct 		s_philosopher
 {
-	t_setup			*setup;
-	int 			num;
-	struct timeval	begin_time;
-	struct timeval	last_eat_time;
-	pthread_mutex_t *status_mutex;
-	pthread_t 		*philo_thread;
-	pthread_t 		*philo_status_thread;
+	t_setup			*setup; 		// setup
+	int 			num;			// initialised
+	struct timeval	begin_time;		// initialised
+	struct timeval	now;
+	struct timeval	last_eat_time;  // initialised
+	pthread_mutex_t *left_fork_mutex; // setup
+	pthread_mutex_t *right_fork_mutex; // setup
+	pthread_mutex_t status_mutex;		// initialised
+	pthread_t 		philo_thread;
+	pthread_t 		philo_status_thread;
 }					t_philosopher;
 
 enum values
@@ -35,5 +38,5 @@ enum values
 	no = 0,
 	alive = 1,
 	dead = 0,
-	error_occurred = -1
+	error = -1
 };

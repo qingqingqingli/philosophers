@@ -13,6 +13,7 @@ CMakeFiles/rewrite.dir/srcs/clean_up.c.o: ../headers/struct.h
 CMakeFiles/rewrite.dir/srcs/clean_up.c.o: ../srcs/clean_up.c
 
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: ../headers/initialise_philos.h
+CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: ../headers/start_action.h
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: ../headers/struct.h
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: ../srcs/initialise_philos.c
 
@@ -22,4 +23,8 @@ CMakeFiles/rewrite.dir/srcs/process_input.c.o: ../headers/process_input.h
 CMakeFiles/rewrite.dir/srcs/process_input.c.o: ../headers/struct.h
 CMakeFiles/rewrite.dir/srcs/process_input.c.o: ../srcs/libft/libft.h
 CMakeFiles/rewrite.dir/srcs/process_input.c.o: ../srcs/process_input.c
+
+CMakeFiles/rewrite.dir/srcs/start_action.c.o: ../headers/start_action.h
+CMakeFiles/rewrite.dir/srcs/start_action.c.o: ../headers/struct.h
+CMakeFiles/rewrite.dir/srcs/start_action.c.o: ../srcs/start_action.c
 

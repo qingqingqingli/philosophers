@@ -10,7 +10,7 @@ void grab_left_fork_first(t_philosopher *philo)
 	pthread_mutex_lock(philo->left_fork_mutex);
 	gettimeofday(&philo->current_time, NULL);
 	if (life_status)
-		printf(GREEN "[%ld] \t [%d] \t has taken a left fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
+		printf(GREEN "[%d] \t [%d] \t has taken a left fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
 	else
 	{
 		pthread_mutex_unlock(philo->left_fork_mutex);
@@ -19,7 +19,7 @@ void grab_left_fork_first(t_philosopher *philo)
 	pthread_mutex_lock(philo->right_fork_mutex);
 	gettimeofday(&philo->current_time, NULL);
 	if (life_status)
-		printf(GREEN "[%ld] \t [%d] \t has taken a right fork"RESET"\n",
+		printf(GREEN "[%d] \t [%d] \t has taken a right fork"RESET"\n",
 		   get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
 	else
 	{
@@ -34,7 +34,7 @@ void grab_right_fork_first(t_philosopher *philo)
 	pthread_mutex_lock(philo->right_fork_mutex);
 	gettimeofday(&philo->current_time, NULL);
 	if (life_status)
-		printf(GREEN "[%ld] \t [%d] \t has taken a right fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
+		printf(GREEN "[%d] \t [%d] \t has taken a right fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
 	else
 	{
 		pthread_mutex_unlock(philo->right_fork_mutex);
@@ -43,7 +43,7 @@ void grab_right_fork_first(t_philosopher *philo)
 	pthread_mutex_lock(philo->left_fork_mutex);
 	gettimeofday(&philo->current_time, NULL);
 	if (life_status)
-		printf(GREEN "[%ld] \t [%d] \t has taken a left fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
+		printf(GREEN "[%d] \t [%d] \t has taken a left fork"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
 	else
 	{
 		pthread_mutex_unlock(philo->left_fork_mutex);
@@ -62,7 +62,7 @@ void grab_forks(t_philosopher *philo)
 
 	gettimeofday(&philo->current_time, NULL);
 	if (life_status)
-		printf(MAGENTA "[%ld] \t [%d] \t is eating"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
+		printf(MAGENTA "[%d] \t [%d] \t is eating"RESET"\n", get_elapsed_ms(&philo->begin_time, &philo->current_time) / 1000, philo->num);
 	else
 	{
 		pthread_mutex_unlock(philo->left_fork_mutex);

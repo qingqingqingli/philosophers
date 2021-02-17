@@ -91,6 +91,9 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/process_input.h">
 			<Option target="rewrite"/>
 		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h">
+			<Option target="rewrite"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h">
 			<Option target="rewrite"/>
 		</Unit>
@@ -110,6 +113,9 @@
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c">
+			<Option target="rewrite"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/CMakeLists.txt">

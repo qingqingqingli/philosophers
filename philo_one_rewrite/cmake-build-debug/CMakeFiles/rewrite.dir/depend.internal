@@ -14,6 +14,7 @@ CMakeFiles/rewrite.dir/srcs/clean_up.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/clean_up.c
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c
 CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
@@ -23,3 +24,7 @@ CMakeFiles/rewrite.dir/srcs/process_input.c.o
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/libft.h
  /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c
+CMakeFiles/rewrite.dir/srcs/start_action.c.o
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+ /home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c

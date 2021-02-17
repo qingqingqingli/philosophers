@@ -2,29 +2,69 @@
 // Created by qli on 17/02/2021.
 //
 
+#include <stdio.h>
 #include "../headers/initialise_philos.h"
+#include "../headers/start_action.h"
 
-int malloc_philos(t_philosopher **philos, long long int num)
+void setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
-	long long int i;
+	int i;
 
 	i = 0;
-	while(i < num)
+	while (i < setup->number_of_philosophers)
 	{
-		philos[i] = (t_philosopher *)malloc(sizeof(t_philosopher));
-		if (i == 3)
-			return (-1);
-		if (!philos[i])
-			return (error_occurred);
+		philos[i].setup = setup;
+		philos[i].num = i + 1;
+		gettimeofday(&philos[i].begin_time, NULL);
+		gettimeofday(&philos[i].last_eat_time, NULL);
+		pthread_mutex_init(&philos[i].status_mutex, NULL);
 		i++;
 	}
-	return (0);
 }
 
-int initialise_philos(t_setup *setup, t_philosopher **philos)
+void set_philo_fork_mutexs(t_philosopher *philos, int num)
 {
-	if (malloc_philos(philos, setup->number_of_philosophers) == error_occurred)
-		return (error_occurred);
+	int i;
 
+	i = 0;
+	philos[i].left_fork_mutex = &philos->setup->fork_mutexs[i];
+	philos[i].right_fork_mutex = &philos->setup->fork_mutexs[num - 1];
+	i++;
+	while (i < num)
+	{
+		philos[i].left_fork_mutex = &philos->setup->fork_mutexs[i];
+		philos[i].right_fork_mutex = &philos->setup->fork_mutexs[i - 1];
+		i++;
+	}
+}
+
+void	init_philo_threads(t_philosopher *philos, int num)
+{
+	int i;
+
+	i = 0;
+	while (i < num)
+	{
+		pthread_create(&philos[i].philo_thread, NULL, start_action, &philos[i]);
+//		pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]);
+		i++;
+	}
+	i = 0;
+	while (i < num)
+	{
+		pthread_join(philos[i].philo_thread, NULL);
+//		pthread_join(philos[i].philo_status_thread, NULL);
+		i++;
+	}
+}
+
+int 	initialise_philos(t_setup *setup, t_philosopher *philos)
+{
+	int num;
+
+	num = setup->number_of_philosophers;
+	setup_each_philo(setup, philos);
+	set_philo_fork_mutexs(philos, num);
+	init_philo_threads(philos, num);
 	return (0);
 }

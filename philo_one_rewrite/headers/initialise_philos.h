@@ -6,4 +6,4 @@
 #include "../headers/struct.h"
 #include <stdlib.h>
 
-int initialise_philos(t_setup *setup, t_philosopher **philos);
+int 	initialise_philos(t_setup *setup, t_philosopher *philos);

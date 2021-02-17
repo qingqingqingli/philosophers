@@ -278,6 +278,33 @@ srcs/process_input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.s
 .PHONY : srcs/process_input.c.s
 
+srcs/start_action.o: srcs/start_action.c.o
+
+.PHONY : srcs/start_action.o
+
+# target to build an object file
+srcs/start_action.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.o
+.PHONY : srcs/start_action.c.o
+
+srcs/start_action.i: srcs/start_action.c.i
+
+.PHONY : srcs/start_action.i
+
+# target to preprocess a source file
+srcs/start_action.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.i
+.PHONY : srcs/start_action.c.i
+
+srcs/start_action.s: srcs/start_action.c.s
+
+.PHONY : srcs/start_action.s
+
+# target to generate assembly for a file
+srcs/start_action.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.s
+.PHONY : srcs/start_action.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -302,6 +329,9 @@ help:
 	@echo "... srcs/process_input.o"
 	@echo "... srcs/process_input.i"
 	@echo "... srcs/process_input.s"
+	@echo "... srcs/start_action.o"
+	@echo "... srcs/start_action.i"
+	@echo "... srcs/start_action.s"
 .PHONY : help
 
 

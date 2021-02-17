@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/srcs/ft_atoi.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/process_input.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c" "/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles/rewrite.dir/srcs/start_action.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

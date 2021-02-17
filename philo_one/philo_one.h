@@ -83,7 +83,7 @@ typedef struct 		s_setup_data
 
 // ** support.c ** //
 void 		print_philo_data(t_setup_data data);
-long int 	get_elapsed_ms(struct timeval *previous, struct timeval *now);
+long int 	get_elapsed_micro(struct timeval *previous, struct timeval *now);
 
 // ** create_philosophers.c ** //
 void* 		start_action(void *arg);
