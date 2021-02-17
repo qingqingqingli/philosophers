@@ -94,12 +94,12 @@ clean: CMakeFiles/rewrite.dir/clean
 CMakeFiles/rewrite.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target rewrite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target rewrite"
 .PHONY : CMakeFiles/rewrite.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rewrite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rewrite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qli/CLionProjects/philosophers/philo_one_rewrite/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/rewrite.dir/rule

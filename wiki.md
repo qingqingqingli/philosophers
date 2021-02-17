@@ -28,7 +28,7 @@
     - `timestamp_in_ms X is thinking`
     - `timestamp_in_ms X died`
 
-- `No more than 10 seconds` between the death of a philosopher and when it will print its death
+- `No more than 10 seconds` between the death of a philosopher and when it will print_prompt its death
 
 - Philosophers should avoid to die
 

@@ -12,18 +12,10 @@ struct.h
 stdio.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
-../headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
-stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
 struct.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
 stdio.h
--
-unistd.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
@@ -43,24 +35,6 @@ stdio.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
 ../headers/time_calculation.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
-
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c
-stdio.h
--
-../headers/initialise_philos.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
-../headers/check_status.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
-
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
-
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/time_calculation.c
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
+../headers/print.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
 

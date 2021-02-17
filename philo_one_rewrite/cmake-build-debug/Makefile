@@ -278,6 +278,33 @@ srcs/libft/srcs/ft_atoi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s
 .PHONY : srcs/libft/srcs/ft_atoi.c.s
 
+srcs/print.o: srcs/print.c.o
+
+.PHONY : srcs/print.o
+
+# target to build an object file
+srcs/print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.o
+.PHONY : srcs/print.c.o
+
+srcs/print.i: srcs/print.c.i
+
+.PHONY : srcs/print.i
+
+# target to preprocess a source file
+srcs/print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.i
+.PHONY : srcs/print.c.i
+
+srcs/print.s: srcs/print.c.s
+
+.PHONY : srcs/print.s
+
+# target to generate assembly for a file
+srcs/print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.s
+.PHONY : srcs/print.c.s
+
 srcs/process_input.o: srcs/process_input.c.o
 
 .PHONY : srcs/process_input.o
@@ -383,6 +410,9 @@ help:
 	@echo "... srcs/libft/srcs/ft_atoi.o"
 	@echo "... srcs/libft/srcs/ft_atoi.i"
 	@echo "... srcs/libft/srcs/ft_atoi.s"
+	@echo "... srcs/print.o"
+	@echo "... srcs/print.i"
+	@echo "... srcs/print.s"
 	@echo "... srcs/process_input.o"
 	@echo "... srcs/process_input.i"
 	@echo "... srcs/process_input.s"

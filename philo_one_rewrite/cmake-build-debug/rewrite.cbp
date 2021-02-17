@@ -91,6 +91,9 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h">
 			<Option target="rewrite"/>
 		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h">
+			<Option target="rewrite"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/process_input.h">
 			<Option target="rewrite"/>
 		</Unit>
@@ -119,6 +122,9 @@
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/libft/srcs/ft_atoi.c">
+			<Option target="rewrite"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/print.c">
 			<Option target="rewrite"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/process_input.c">

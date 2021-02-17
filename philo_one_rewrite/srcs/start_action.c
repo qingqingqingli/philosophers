@@ -4,22 +4,23 @@
 
 #include "../headers/start_action.h"
 #include "../headers/time_calculation.h"
+#include "../headers/print.h"
 
-void 	lock_left_fork(t_philosopher *philo)
+int 	lock_left_fork(t_philosopher *philo)
 {
 	pthread_mutex_lock(philo->left_fork_mutex);
-	gettimeofday(&philo->now, NULL);
-	printf("[%ld] \t [%d] \t has taken a left fork\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	print_prompt(philo, "has taken a left fork");
+	return 0;
 }
 
-void 	lock_right_fork(t_philosopher *philo)
+int 	lock_right_fork(t_philosopher *philo)
 {
 	pthread_mutex_lock(philo->right_fork_mutex);
-	gettimeofday(&philo->now, NULL);
-	printf("[%ld] \t [%d] \t has taken a left fork\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	print_prompt(philo, "has taken a right fork");
+	return 0;
 }
 
-void 	grab_forks(t_philosopher *philo)
+int 	grab_forks(t_philosopher *philo)
 {
 	if (philo->num % 2)
 	{
@@ -31,31 +32,32 @@ void 	grab_forks(t_philosopher *philo)
 		lock_right_fork(philo);
 		lock_left_fork(philo);
 	}
+	return 0;
 }
 
-void	philo_eat(t_philosopher *philo)
+int		philo_eat(t_philosopher *philo)
 {
 	pthread_mutex_lock(&philo->status_mutex);
-	gettimeofday(&philo->now, NULL);
-	printf("[%ld] \t [%d] \t is eating\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	print_prompt(philo, "is eating");
 	gettimeofday(&philo->last_eat_time, NULL);
 	pthread_mutex_unlock(&philo->status_mutex);
 	usleep(philo->setup->time_to_eat * 1000);
 	pthread_mutex_unlock(philo->left_fork_mutex);
 	pthread_mutex_unlock(philo->right_fork_mutex);
+	return 0;
 }
 
-void 	philo_sleep(t_philosopher *philo)
+int 	philo_sleep(t_philosopher *philo)
 {
-	gettimeofday(&philo->now, NULL);
-	printf("[%ld] \t [%d] \t is sleeping\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	print_prompt(philo, "is sleeping");
 	usleep(philo->setup->time_to_sleep * 1000);
+	return 0;
 }
 
-void 	philo_think(t_philosopher *philo)
+int 	philo_think(t_philosopher *philo)
 {
-	gettimeofday(&philo->now, NULL);
-	printf("[%ld] \t [%d] \t is thinking\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	print_prompt(philo, "is thinking");
+	return 0;
 }
 
 void*	start_action(void *arg)
@@ -65,10 +67,8 @@ void*	start_action(void *arg)
 	philo = arg;
 	while (philo->setup->life_status)
 	{
-		grab_forks(philo);
-		philo_eat(philo);
-		philo_sleep(philo);
-		philo_think(philo);
+		if (grab_forks(philo) || philo_eat(philo) || philo_sleep(philo) || philo_think(philo))
+			return NULL;
 	}
 	return NULL;
 }
