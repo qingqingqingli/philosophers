@@ -22,7 +22,7 @@ int 	lock_right_fork(t_philosopher *philo)
 
 int 	grab_forks(t_philosopher *philo)
 {
-	if (philo->num % 2)
+	if (!philo->num % 2)
 	{
 		lock_left_fork(philo);
 		lock_right_fork(philo);
@@ -52,15 +52,15 @@ int		philo_eat(t_philosopher *philo)
 
 int 	philo_sleep(t_philosopher *philo)
 {
-	print_prompt(philo, "is sleeping");
+	if (print_prompt(philo, "is sleeping") == 1)
+		return (1);
 	usleep(philo->setup->time_to_sleep * 1000);
 	return 0;
 }
 
 int 	philo_think(t_philosopher *philo)
 {
-	print_prompt(philo, "is thinking");
-	return 0;
+	return (print_prompt(philo, "is thinking"));
 }
 
 void*	start_action(void *arg)

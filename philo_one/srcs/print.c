@@ -11,10 +11,10 @@ int 	print_prompt(t_philosopher *philo, char *prompt)
 
 	if (!philo->setup->life_status)
 		return (1);
-//	pthread_mutex_lock(&philo->setup->write_mutex);
+	pthread_mutex_lock(&philo->setup->write_mutex);
 	gettimeofday(&philo->now, NULL);
 	printf("%s", color[philo->num % 6]);
 	printf("[%ld] \t [%d] \t %s\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num, prompt);
-//	pthread_mutex_unlock(&philo->setup->write_mutex);
+	pthread_mutex_unlock(&philo->setup->write_mutex);
 	return (0);
 }
