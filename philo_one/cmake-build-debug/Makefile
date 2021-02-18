@@ -251,33 +251,6 @@ srcs/initialise_philos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s
 .PHONY : srcs/initialise_philos.c.s
 
-srcs/libft/srcs/ft_atoi.o: srcs/libft/srcs/ft_atoi.c.o
-
-.PHONY : srcs/libft/srcs/ft_atoi.o
-
-# target to build an object file
-srcs/libft/srcs/ft_atoi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
-.PHONY : srcs/libft/srcs/ft_atoi.c.o
-
-srcs/libft/srcs/ft_atoi.i: srcs/libft/srcs/ft_atoi.c.i
-
-.PHONY : srcs/libft/srcs/ft_atoi.i
-
-# target to preprocess a source file
-srcs/libft/srcs/ft_atoi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i
-.PHONY : srcs/libft/srcs/ft_atoi.c.i
-
-srcs/libft/srcs/ft_atoi.s: srcs/libft/srcs/ft_atoi.c.s
-
-.PHONY : srcs/libft/srcs/ft_atoi.s
-
-# target to generate assembly for a file
-srcs/libft/srcs/ft_atoi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s
-.PHONY : srcs/libft/srcs/ft_atoi.c.s
-
 srcs/print.o: srcs/print.c.o
 
 .PHONY : srcs/print.o
@@ -359,6 +332,33 @@ srcs/start_action.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.s
 .PHONY : srcs/start_action.c.s
 
+srcs/support_functions.o: srcs/support_functions.c.o
+
+.PHONY : srcs/support_functions.o
+
+# target to build an object file
+srcs/support_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/support_functions.c.o
+.PHONY : srcs/support_functions.c.o
+
+srcs/support_functions.i: srcs/support_functions.c.i
+
+.PHONY : srcs/support_functions.i
+
+# target to preprocess a source file
+srcs/support_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/support_functions.c.i
+.PHONY : srcs/support_functions.c.i
+
+srcs/support_functions.s: srcs/support_functions.c.s
+
+.PHONY : srcs/support_functions.s
+
+# target to generate assembly for a file
+srcs/support_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/support_functions.c.s
+.PHONY : srcs/support_functions.c.s
+
 srcs/time_calculation.o: srcs/time_calculation.c.o
 
 .PHONY : srcs/time_calculation.o
@@ -407,9 +407,6 @@ help:
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"
-	@echo "... srcs/libft/srcs/ft_atoi.o"
-	@echo "... srcs/libft/srcs/ft_atoi.i"
-	@echo "... srcs/libft/srcs/ft_atoi.s"
 	@echo "... srcs/print.o"
 	@echo "... srcs/print.i"
 	@echo "... srcs/print.s"
@@ -419,6 +416,9 @@ help:
 	@echo "... srcs/start_action.o"
 	@echo "... srcs/start_action.i"
 	@echo "... srcs/start_action.s"
+	@echo "... srcs/support_functions.o"
+	@echo "... srcs/support_functions.i"
+	@echo "... srcs/support_functions.s"
 	@echo "... srcs/time_calculation.o"
 	@echo "... srcs/time_calculation.i"
 	@echo "... srcs/time_calculation.s"

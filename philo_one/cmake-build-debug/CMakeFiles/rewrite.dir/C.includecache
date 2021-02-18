@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
--
-
 /home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
 ../headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
@@ -24,28 +18,14 @@ stdlib.h
 stdlib.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
--
-
 /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
 ../headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-../srcs/libft/libft.h
-/home/qli/CLionProjects/philosophers/philo_one/srcs/libft/libft.h
+../headers/support_functions.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
 stdio.h
 -
 stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
--
-unistd.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
@@ -54,9 +34,7 @@ pthread.h
 sys/time.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
-sys/time.h
--
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
 
 /home/qli/CLionProjects/philosophers/philo_one/main.c
 stdio.h
@@ -72,55 +50,7 @@ headers/initialise_philos.h
 headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
 
-/home/qli/CLionProjects/philosophers/philo_one/srcs/check_status.c
-stdio.h
--
-../headers/check_status.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/clean_up.c
-stdio.h
--
-../headers/clean_up.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/initialise_philos.c
-stdio.h
--
-../headers/initialise_philos.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/initialise_philos.h
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
-../headers/check_status.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/libft/libft.h
-stddef.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/libft/srcs/ft_atoi.c
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/print.c
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
-
 /home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c
 ../headers/process_input.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
 

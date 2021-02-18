@@ -4,8 +4,8 @@
 
 #pragma once
 #include "../headers/struct.h"
-#include "../srcs/libft/libft.h"
-#include <stdio.h> 	// printf
-#include <stdlib.h>	// malloc
+#include "../headers/support_functions.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int process_input(int argc, char **argv, t_setup *setup);

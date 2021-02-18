@@ -103,22 +103,9 @@ CMakeFiles/rewrite.dir/srcs/process_input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/process_input.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c -o CMakeFiles/rewrite.dir/srcs/process_input.c.s
 
-CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o: CMakeFiles/rewrite.dir/flags.make
-CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o: ../srcs/libft/srcs/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/srcs/ft_atoi.c
-
-CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/srcs/ft_atoi.c > CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i
-
-CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/srcs/ft_atoi.c -o CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s
-
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o: ../srcs/initialise_philos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/initialise_philos.c
 
 CMakeFiles/rewrite.dir/srcs/initialise_philos.c.i: cmake_force
@@ -131,7 +118,7 @@ CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s: cmake_force
 
 CMakeFiles/rewrite.dir/srcs/clean_up.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/clean_up.c.o: ../srcs/clean_up.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rewrite.dir/srcs/clean_up.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rewrite.dir/srcs/clean_up.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/clean_up.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/clean_up.c
 
 CMakeFiles/rewrite.dir/srcs/clean_up.c.i: cmake_force
@@ -144,7 +131,7 @@ CMakeFiles/rewrite.dir/srcs/clean_up.c.s: cmake_force
 
 CMakeFiles/rewrite.dir/srcs/start_action.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/start_action.c.o: ../srcs/start_action.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rewrite.dir/srcs/start_action.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rewrite.dir/srcs/start_action.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/start_action.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c
 
 CMakeFiles/rewrite.dir/srcs/start_action.c.i: cmake_force
@@ -157,7 +144,7 @@ CMakeFiles/rewrite.dir/srcs/start_action.c.s: cmake_force
 
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/check_status.c.o: ../srcs/check_status.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rewrite.dir/srcs/check_status.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rewrite.dir/srcs/check_status.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/check_status.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/check_status.c
 
 CMakeFiles/rewrite.dir/srcs/check_status.c.i: cmake_force
@@ -170,7 +157,7 @@ CMakeFiles/rewrite.dir/srcs/check_status.c.s: cmake_force
 
 CMakeFiles/rewrite.dir/srcs/time_calculation.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/time_calculation.c.o: ../srcs/time_calculation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rewrite.dir/srcs/time_calculation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rewrite.dir/srcs/time_calculation.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/time_calculation.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c
 
 CMakeFiles/rewrite.dir/srcs/time_calculation.c.i: cmake_force
@@ -183,7 +170,7 @@ CMakeFiles/rewrite.dir/srcs/time_calculation.c.s: cmake_force
 
 CMakeFiles/rewrite.dir/srcs/print.c.o: CMakeFiles/rewrite.dir/flags.make
 CMakeFiles/rewrite.dir/srcs/print.c.o: ../srcs/print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rewrite.dir/srcs/print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rewrite.dir/srcs/print.c.o"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/print.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/print.c
 
 CMakeFiles/rewrite.dir/srcs/print.c.i: cmake_force
@@ -194,30 +181,43 @@ CMakeFiles/rewrite.dir/srcs/print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/print.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/print.c -o CMakeFiles/rewrite.dir/srcs/print.c.s
 
+CMakeFiles/rewrite.dir/srcs/support_functions.c.o: CMakeFiles/rewrite.dir/flags.make
+CMakeFiles/rewrite.dir/srcs/support_functions.c.o: ../srcs/support_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rewrite.dir/srcs/support_functions.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rewrite.dir/srcs/support_functions.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c
+
+CMakeFiles/rewrite.dir/srcs/support_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rewrite.dir/srcs/support_functions.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c > CMakeFiles/rewrite.dir/srcs/support_functions.c.i
+
+CMakeFiles/rewrite.dir/srcs/support_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rewrite.dir/srcs/support_functions.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c -o CMakeFiles/rewrite.dir/srcs/support_functions.c.s
+
 # Object files for target rewrite
 rewrite_OBJECTS = \
 "CMakeFiles/rewrite.dir/main.c.o" \
 "CMakeFiles/rewrite.dir/srcs/process_input.c.o" \
-"CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o" \
 "CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o" \
 "CMakeFiles/rewrite.dir/srcs/clean_up.c.o" \
 "CMakeFiles/rewrite.dir/srcs/start_action.c.o" \
 "CMakeFiles/rewrite.dir/srcs/check_status.c.o" \
 "CMakeFiles/rewrite.dir/srcs/time_calculation.c.o" \
-"CMakeFiles/rewrite.dir/srcs/print.c.o"
+"CMakeFiles/rewrite.dir/srcs/print.c.o" \
+"CMakeFiles/rewrite.dir/srcs/support_functions.c.o"
 
 # External object files for target rewrite
 rewrite_EXTERNAL_OBJECTS =
 
 rewrite: CMakeFiles/rewrite.dir/main.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/process_input.c.o
-rewrite: CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/clean_up.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/start_action.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/check_status.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
 rewrite: CMakeFiles/rewrite.dir/srcs/print.c.o
+rewrite: CMakeFiles/rewrite.dir/srcs/support_functions.c.o
 rewrite: CMakeFiles/rewrite.dir/build.make
 rewrite: CMakeFiles/rewrite.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable rewrite"

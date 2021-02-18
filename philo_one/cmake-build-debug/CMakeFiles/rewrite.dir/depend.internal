@@ -6,8 +6,8 @@ CMakeFiles/rewrite.dir/main.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/initialise_philos.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
+ /home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
  /home/qli/CLionProjects/philosophers/philo_one/main.c
- /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/libft.h
 CMakeFiles/rewrite.dir/srcs/check_status.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
@@ -23,8 +23,6 @@ CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one/srcs/initialise_philos.c
-CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
- /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/srcs/ft_atoi.c
 CMakeFiles/rewrite.dir/srcs/print.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/print.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
@@ -33,7 +31,7 @@ CMakeFiles/rewrite.dir/srcs/print.c.o
 CMakeFiles/rewrite.dir/srcs/process_input.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
- /home/qli/CLionProjects/philosophers/philo_one/srcs/libft/libft.h
+ /home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
  /home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c
 CMakeFiles/rewrite.dir/srcs/start_action.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/print.h
@@ -41,6 +39,9 @@ CMakeFiles/rewrite.dir/srcs/start_action.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
  /home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c
+CMakeFiles/rewrite.dir/srcs/support_functions.c.o
+ /home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
+ /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c
 CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
  /home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c
