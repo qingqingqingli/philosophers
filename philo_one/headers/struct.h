@@ -16,6 +16,7 @@ typedef struct 		s_setup
 	int 			number_to_eat_exist;
 	int				life_status;
 	pthread_mutex_t	*fork_mutexs;
+	pthread_mutex_t write_mutex;
 }					t_setup;
 
 typedef struct 		s_philosopher

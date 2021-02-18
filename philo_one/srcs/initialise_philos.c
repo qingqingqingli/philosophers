@@ -61,6 +61,11 @@ void	init_philo_threads(t_philosopher *philos, int num)
 	}
 }
 
+void 	init_write_mutex(t_philosopher *philo)
+{
+	pthread_mutex_init(&philo->setup->write_mutex, NULL);
+}
+
 int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 {
 	int num;
@@ -68,6 +73,7 @@ int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 	num = setup->number_of_philosophers;
 	setup_each_philo(setup, philos);
 	set_philo_fork_mutexs(philos, num);
+	init_write_mutex(philos);
 	init_philo_threads(philos, num);
 	return (0);
 }
