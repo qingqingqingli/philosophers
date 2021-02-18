@@ -6,5 +6,4 @@
 #include "../headers/struct.h"
 #include <stdlib.h>
 
-int 	clean_up(t_philosopher *philos, int return_value);
-int 	destroy_mutexes(pthread_mutex_t *mutexs);
+int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value);

@@ -11,22 +11,27 @@ void 	clean_up_philos(t_philosopher *philos)
 		free(philos);
 }
 
-int destroy_mutexes(pthread_mutex_t *mutexs)
+void 	clean_up_mutexes(t_setup *setup, t_philosopher *philos)
 {
-	pthread_mutex_destroy(mutexs);
-	free(mutexs);
-	return (-1);
+	int i;
+
+	i = 0;
+	if (setup->fork_mutexs)
+	{
+		while (i < setup->number_of_philosophers)
+		{
+			pthread_mutex_destroy(&setup->fork_mutexs[i]);
+			pthread_mutex_destroy(&philos[i].status_mutex);
+			i++;
+		}
+		free(setup->fork_mutexs);
+	}
+	pthread_mutex_destroy(&setup->write_mutex);
 }
 
-//void 	clean_up_setup(t_setup *setup)
-//{
-//	if (setup->fork_mutexs)
-//		free(setup->fork_mutexs);
-//}
-
-int 	clean_up(t_philosopher *philos, int return_value)
+int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
 {
+	clean_up_mutexes(setup, philos);
 	clean_up_philos(philos);
-//	clean_up_setup(setup);
 	return (return_value);
 }

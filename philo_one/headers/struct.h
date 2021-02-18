@@ -15,7 +15,7 @@ typedef struct 		s_setup
 	int				number_of_times_each_philosopher_must_eat;
 	int 			number_to_eat_exist;
 	int				life_status;
-	pthread_mutex_t	*fork_mutexs;
+	pthread_mutex_t	*fork_mutexs; 		// malloc
 	pthread_mutex_t write_mutex;
 }					t_setup;
 
@@ -32,7 +32,7 @@ typedef struct 		s_philosopher
 	pthread_mutex_t status_mutex;
 	pthread_t 		philo_thread;
 	pthread_t 		philo_status_thread;
-}					t_philosopher;
+}					t_philosopher; 		//malloc
 
 enum values
 {
