@@ -7,7 +7,7 @@
 #include "../headers/start_action.h"
 #include "../headers/check_status.h"
 
-void setup_each_philo(t_setup *setup, t_philosopher *philos)
+int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
 	int i;
 
@@ -19,9 +19,11 @@ void setup_each_philo(t_setup *setup, t_philosopher *philos)
 		philos[i].time_of_eaten = 0;
 		gettimeofday(&philos[i].begin_time, NULL);
 		gettimeofday(&philos[i].last_eat_time, NULL);
-		pthread_mutex_init(&philos[i].status_mutex, NULL);
+		if (pthread_mutex_init(&philos[i].status_mutex, NULL))
+			return (-1);
 		i++;
 	}
+	return (0);
 }
 
 void set_philo_fork_mutexs(t_philosopher *philos, int num)
@@ -40,29 +42,37 @@ void set_philo_fork_mutexs(t_philosopher *philos, int num)
 	}
 }
 
-void	init_philo_threads(t_philosopher *philos, int num)
+int		init_philo_threads(t_philosopher *philos, int num)
 {
 	int i;
 
 	i = 0;
 	while (i < num)
 	{
-		pthread_create(&philos[i].philo_thread, NULL, start_action, &philos[i]);
-		pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]);
+		if (pthread_create(&philos[i].philo_thread, NULL, start_action, &philos[i]))
+			return (-1);
+		usleep(10);
+		if (pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]))
+			return (-1);
 		i++;
 	}
 	i = 0;
 	while (i < num)
 	{
-		pthread_join(philos[i].philo_thread, NULL);
-		pthread_join(philos[i].philo_status_thread, NULL);
+		if (pthread_join(philos[i].philo_thread, NULL))
+			return (-1);
+		if (pthread_join(philos[i].philo_status_thread, NULL))
+			return (-1);
 		i++;
 	}
+	return (0);
 }
 
-void 	init_write_mutex(t_philosopher *philo)
+int 	init_write_mutex(t_philosopher *philo)
 {
-	pthread_mutex_init(&philo->setup->write_mutex, NULL);
+	if (pthread_mutex_init(&philo->setup->write_mutex, NULL))
+		return (-1);
+	return (0);
 }
 
 int 	initialise_philos(t_setup *setup, t_philosopher *philos)
@@ -70,9 +80,10 @@ int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 	int num;
 
 	num = setup->number_of_philosophers;
-	setup_each_philo(setup, philos);
+	if (setup_each_philo(setup, philos) == -1)
+		return (-1);
 	set_philo_fork_mutexs(philos, num);
-	init_write_mutex(philos);
-	init_philo_threads(philos, num);
+	if (init_write_mutex(philos) == -1 || init_philo_threads(philos, num) == -1)
+		return (-1);
 	return (0);
 }

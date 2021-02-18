@@ -12,13 +12,13 @@ void*	check_status(void *arg)
 	struct timeval	check;
 
 	philo = arg;
-	while(philo->setup->life_status)
+	while(philo->setup->life_status && philo->setup->mutex_status)
 	{
 		pthread_mutex_lock(&philo->status_mutex);
 		gettimeofday(&check, NULL);
-		if (get_elapsed_milli(&philo->last_eat_time, &check) >= philo->setup->time_to_die)
+		if (get_elapsed_milli(&philo->last_eat_time, &check) >= philo->setup->time_to_die || !philo->setup->mutex_status)
 		{
-			philo->setup->life_status = dead;
+			philo->setup->life_status = 0;
 			printf(BLACK"[%ld] \t [%d] \t has died\n"RESET"", get_elapsed_milli(&philo->begin_time, &check), philo->num);
 			pthread_mutex_unlock(&philo->status_mutex);
 			return (NULL);

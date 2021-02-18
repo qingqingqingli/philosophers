@@ -12,7 +12,8 @@ int check_only_digit(char *string)
 	i = 0;
 	while (string[i] != '\0')
 	{
-		if (!ft_isdigit(string[i]) || (string[i] == '+' && i != 0) || (string[i] == '-' && i != 0))
+		if (!ft_isdigit(string[i]) || (string[i] == '+' && i != 0) \
+		|| (string[i] == '-' && i != 0))
 		{
 			printf("Provided data not valid.\n");
 			return (-1);
@@ -38,7 +39,9 @@ int	check_argc_all_digits(int argc, char **argv)
 
 int process_setup_data(int argc, char **argv, t_setup *setup)
 {
-	setup->life_status = alive;
+	setup->life_status = 1;
+	setup->mutex_status = 1;
+	setup->fork_mutexs = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
 	setup->time_to_eat = ft_atoi(argv[3]);
@@ -53,7 +56,6 @@ int process_setup_data(int argc, char **argv, t_setup *setup)
 		setup->number_to_eat_exist = 0;
 		setup->number_of_times_each_philosopher_must_eat = 0;
 	}
-	setup->fork_mutexs = NULL;
 	return (0);
 }
 
