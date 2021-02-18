@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
+stdio.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
+pthread.h
+-
+sys/time.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
+sys/time.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one/srcs/check_status.c
+stdio.h
+-
+../headers/check_status.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
+../headers/time_calculation.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h
+
