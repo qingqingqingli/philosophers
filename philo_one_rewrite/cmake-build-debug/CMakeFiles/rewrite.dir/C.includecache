@@ -6,10 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
 struct.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
 stdio.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
+../headers/struct.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+stdlib.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
@@ -26,15 +32,13 @@ pthread.h
 sys/time.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
-sys/time.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/initialise_philos.c
+stdio.h
 -
-
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c
+../headers/initialise_philos.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/initialise_philos.h
 ../headers/start_action.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
-../headers/time_calculation.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
+../headers/check_status.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/check_status.h
 
