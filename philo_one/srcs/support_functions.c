@@ -25,7 +25,7 @@ void 	accurately_sleep(long int amount_to_sleep)
 	starting_time = get_current_time_micro();
 	while (get_current_time_micro() - starting_time < amount_to_sleep)
 	{
-		usleep(100);
+		usleep(50);
 	}
 }
 
