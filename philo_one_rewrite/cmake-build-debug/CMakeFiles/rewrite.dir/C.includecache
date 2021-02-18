@@ -12,6 +12,14 @@ struct.h
 stdio.h
 -
 
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
+stdio.h
+-
+unistd.h
+-
+
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/struct.h
 pthread.h
 -
@@ -22,9 +30,11 @@ sys/time.h
 sys/time.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/print.c
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/srcs/start_action.c
+../headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/start_action.h
 ../headers/time_calculation.h
 /home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/time_calculation.h
+../headers/print.h
+/home/qli/CLionProjects/philosophers/philo_one_rewrite/headers/print.h
 

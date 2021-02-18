@@ -18,7 +18,7 @@ void*	check_status(void *arg)
 		gettimeofday(&check, NULL);
 		if (get_elapsed_milli(&philo->last_eat_time, &check)>= philo->setup->time_to_die)
 		{
-			philo->setup->life_status = 0;
+			philo->setup->life_status = dead;
 			printf(BLACK"[%ld] \t [%d] \t has died\n"RESET"", get_elapsed_milli(&philo->begin_time, &check), philo->num);
 			pthread_mutex_unlock(&philo->status_mutex);
 			return (NULL);
