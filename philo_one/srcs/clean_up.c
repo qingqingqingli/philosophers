@@ -11,15 +11,15 @@ void 	clean_up_philos(t_philosopher *philos)
 		free(philos);
 }
 
-void 	clean_up_setup(t_setup *setup)
-{
-	if (setup->fork_mutexs)
-		free(setup->fork_mutexs);
-}
+//void 	clean_up_setup(t_setup *setup)
+//{
+//	if (setup->fork_mutexs)
+//		free(setup->fork_mutexs);
+//}
 
-int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
+int 	clean_up(t_philosopher *philos, int return_value)
 {
 	clean_up_philos(philos);
-	clean_up_setup(setup);
+//	clean_up_setup(setup);
 	return (return_value);
 }

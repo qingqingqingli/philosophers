@@ -1,1 +1,0 @@
-gcc  -pthread -g   CMakeFiles/practice.dir/thread_1.c.o  -o practice 
