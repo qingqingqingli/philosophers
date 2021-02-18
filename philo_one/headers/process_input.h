@@ -4,7 +4,7 @@
 
 #pragma once
 #include "../headers/struct.h"
-#include "../srcs/libft/libft.h"
+#include "../headers/support_functions.h"
 #include <stdio.h> 	// printf
 #include <stdlib.h>	// malloc
 

@@ -3,7 +3,7 @@
 //
 
 #include "../headers/print.h"
-#include "../headers/time_calculation.h"
+#include "../headers/support_functions.h"
 
 int 	print_prompt(t_philosopher *philo, char *prompt)
 {

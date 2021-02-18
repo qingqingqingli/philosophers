@@ -3,7 +3,7 @@
 //
 
 #include "../headers/start_action.h"
-#include "../headers/time_calculation.h"
+#include "../headers/support_functions.h"
 #include "../headers/print.h"
 
 int 	lock_left_fork(t_philosopher *philo)

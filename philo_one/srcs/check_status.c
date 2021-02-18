@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include "../headers/check_status.h"
-#include "../headers/time_calculation.h"
+#include "../headers/support_functions.h"
 
 void*	check_status(void *arg)
 {
