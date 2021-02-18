@@ -55,6 +55,7 @@ void	init_philo_threads(t_philosopher *philos, int num)
 	while (i < num)
 	{
 		pthread_join(philos[i].philo_thread, NULL);
+		usleep(1000);
 		pthread_join(philos[i].philo_status_thread, NULL);
 		i++;
 	}
