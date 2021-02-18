@@ -2,7 +2,6 @@
 // Created by qli on 17/02/2021.
 //
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "headers/struct.h"
 #include "headers/process_input.h"
