@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named philo_one
+# Target rules for targets named rewrite
 
 # Build rule for target.
-philo_one: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 philo_one
-.PHONY : philo_one
+rewrite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rewrite
+.PHONY : rewrite
 
 # fast build rule for target.
-philo_one/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/build
-.PHONY : philo_one/fast
+rewrite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/build
+.PHONY : rewrite/fast
 
 main.o: main.c.o
 
@@ -149,7 +149,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -158,7 +158,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -167,7 +167,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.s
 .PHONY : main.c.s
 
 srcs/check_status.o: srcs/check_status.c.o
@@ -176,7 +176,7 @@ srcs/check_status.o: srcs/check_status.c.o
 
 # target to build an object file
 srcs/check_status.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/check_status.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.o
 .PHONY : srcs/check_status.c.o
 
 srcs/check_status.i: srcs/check_status.c.i
@@ -185,7 +185,7 @@ srcs/check_status.i: srcs/check_status.c.i
 
 # target to preprocess a source file
 srcs/check_status.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/check_status.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.i
 .PHONY : srcs/check_status.c.i
 
 srcs/check_status.s: srcs/check_status.c.s
@@ -194,7 +194,7 @@ srcs/check_status.s: srcs/check_status.c.s
 
 # target to generate assembly for a file
 srcs/check_status.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/check_status.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.s
 .PHONY : srcs/check_status.c.s
 
 srcs/clean_up.o: srcs/clean_up.c.o
@@ -203,7 +203,7 @@ srcs/clean_up.o: srcs/clean_up.c.o
 
 # target to build an object file
 srcs/clean_up.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/clean_up.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.o
 .PHONY : srcs/clean_up.c.o
 
 srcs/clean_up.i: srcs/clean_up.c.i
@@ -212,7 +212,7 @@ srcs/clean_up.i: srcs/clean_up.c.i
 
 # target to preprocess a source file
 srcs/clean_up.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/clean_up.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.i
 .PHONY : srcs/clean_up.c.i
 
 srcs/clean_up.s: srcs/clean_up.c.s
@@ -221,7 +221,7 @@ srcs/clean_up.s: srcs/clean_up.c.s
 
 # target to generate assembly for a file
 srcs/clean_up.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/clean_up.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.s
 .PHONY : srcs/clean_up.c.s
 
 srcs/initialise_philos.o: srcs/initialise_philos.c.o
@@ -230,7 +230,7 @@ srcs/initialise_philos.o: srcs/initialise_philos.c.o
 
 # target to build an object file
 srcs/initialise_philos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/initialise_philos.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
 .PHONY : srcs/initialise_philos.c.o
 
 srcs/initialise_philos.i: srcs/initialise_philos.c.i
@@ -239,7 +239,7 @@ srcs/initialise_philos.i: srcs/initialise_philos.c.i
 
 # target to preprocess a source file
 srcs/initialise_philos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/initialise_philos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.i
 .PHONY : srcs/initialise_philos.c.i
 
 srcs/initialise_philos.s: srcs/initialise_philos.c.s
@@ -248,8 +248,35 @@ srcs/initialise_philos.s: srcs/initialise_philos.c.s
 
 # target to generate assembly for a file
 srcs/initialise_philos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/initialise_philos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s
 .PHONY : srcs/initialise_philos.c.s
+
+srcs/libft/srcs/ft_atoi.o: srcs/libft/srcs/ft_atoi.c.o
+
+.PHONY : srcs/libft/srcs/ft_atoi.o
+
+# target to build an object file
+srcs/libft/srcs/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
+.PHONY : srcs/libft/srcs/ft_atoi.c.o
+
+srcs/libft/srcs/ft_atoi.i: srcs/libft/srcs/ft_atoi.c.i
+
+.PHONY : srcs/libft/srcs/ft_atoi.i
+
+# target to preprocess a source file
+srcs/libft/srcs/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i
+.PHONY : srcs/libft/srcs/ft_atoi.c.i
+
+srcs/libft/srcs/ft_atoi.s: srcs/libft/srcs/ft_atoi.c.s
+
+.PHONY : srcs/libft/srcs/ft_atoi.s
+
+# target to generate assembly for a file
+srcs/libft/srcs/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s
+.PHONY : srcs/libft/srcs/ft_atoi.c.s
 
 srcs/print.o: srcs/print.c.o
 
@@ -257,7 +284,7 @@ srcs/print.o: srcs/print.c.o
 
 # target to build an object file
 srcs/print.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/print.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.o
 .PHONY : srcs/print.c.o
 
 srcs/print.i: srcs/print.c.i
@@ -266,7 +293,7 @@ srcs/print.i: srcs/print.c.i
 
 # target to preprocess a source file
 srcs/print.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/print.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.i
 .PHONY : srcs/print.c.i
 
 srcs/print.s: srcs/print.c.s
@@ -275,7 +302,7 @@ srcs/print.s: srcs/print.c.s
 
 # target to generate assembly for a file
 srcs/print.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/print.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.s
 .PHONY : srcs/print.c.s
 
 srcs/process_input.o: srcs/process_input.c.o
@@ -284,7 +311,7 @@ srcs/process_input.o: srcs/process_input.c.o
 
 # target to build an object file
 srcs/process_input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/process_input.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.o
 .PHONY : srcs/process_input.c.o
 
 srcs/process_input.i: srcs/process_input.c.i
@@ -293,7 +320,7 @@ srcs/process_input.i: srcs/process_input.c.i
 
 # target to preprocess a source file
 srcs/process_input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/process_input.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.i
 .PHONY : srcs/process_input.c.i
 
 srcs/process_input.s: srcs/process_input.c.s
@@ -302,7 +329,7 @@ srcs/process_input.s: srcs/process_input.c.s
 
 # target to generate assembly for a file
 srcs/process_input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/process_input.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.s
 .PHONY : srcs/process_input.c.s
 
 srcs/start_action.o: srcs/start_action.c.o
@@ -311,7 +338,7 @@ srcs/start_action.o: srcs/start_action.c.o
 
 # target to build an object file
 srcs/start_action.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/start_action.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.o
 .PHONY : srcs/start_action.c.o
 
 srcs/start_action.i: srcs/start_action.c.i
@@ -320,7 +347,7 @@ srcs/start_action.i: srcs/start_action.c.i
 
 # target to preprocess a source file
 srcs/start_action.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/start_action.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.i
 .PHONY : srcs/start_action.c.i
 
 srcs/start_action.s: srcs/start_action.c.s
@@ -329,35 +356,8 @@ srcs/start_action.s: srcs/start_action.c.s
 
 # target to generate assembly for a file
 srcs/start_action.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/start_action.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.s
 .PHONY : srcs/start_action.c.s
-
-srcs/support_functions.o: srcs/support_functions.c.o
-
-.PHONY : srcs/support_functions.o
-
-# target to build an object file
-srcs/support_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.o
-.PHONY : srcs/support_functions.c.o
-
-srcs/support_functions.i: srcs/support_functions.c.i
-
-.PHONY : srcs/support_functions.i
-
-# target to preprocess a source file
-srcs/support_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.i
-.PHONY : srcs/support_functions.c.i
-
-srcs/support_functions.s: srcs/support_functions.c.s
-
-.PHONY : srcs/support_functions.s
-
-# target to generate assembly for a file
-srcs/support_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.s
-.PHONY : srcs/support_functions.c.s
 
 srcs/time_calculation.o: srcs/time_calculation.c.o
 
@@ -365,7 +365,7 @@ srcs/time_calculation.o: srcs/time_calculation.c.o
 
 # target to build an object file
 srcs/time_calculation.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
 .PHONY : srcs/time_calculation.c.o
 
 srcs/time_calculation.i: srcs/time_calculation.c.i
@@ -374,7 +374,7 @@ srcs/time_calculation.i: srcs/time_calculation.c.i
 
 # target to preprocess a source file
 srcs/time_calculation.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.i
 .PHONY : srcs/time_calculation.c.i
 
 srcs/time_calculation.s: srcs/time_calculation.c.s
@@ -383,7 +383,7 @@ srcs/time_calculation.s: srcs/time_calculation.c.s
 
 # target to generate assembly for a file
 srcs/time_calculation.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.s
 .PHONY : srcs/time_calculation.c.s
 
 # Help Target
@@ -394,7 +394,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... philo_one"
+	@echo "... rewrite"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -407,6 +407,9 @@ help:
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"
+	@echo "... srcs/libft/srcs/ft_atoi.o"
+	@echo "... srcs/libft/srcs/ft_atoi.i"
+	@echo "... srcs/libft/srcs/ft_atoi.s"
 	@echo "... srcs/print.o"
 	@echo "... srcs/print.i"
 	@echo "... srcs/print.s"
@@ -416,9 +419,6 @@ help:
 	@echo "... srcs/start_action.o"
 	@echo "... srcs/start_action.i"
 	@echo "... srcs/start_action.s"
-	@echo "... srcs/support_functions.o"
-	@echo "... srcs/support_functions.i"
-	@echo "... srcs/support_functions.s"
 	@echo "... srcs/time_calculation.o"
 	@echo "... srcs/time_calculation.i"
 	@echo "... srcs/time_calculation.s"

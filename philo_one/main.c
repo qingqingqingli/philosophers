@@ -15,7 +15,7 @@ int 	main(int argc, char **argv)
 	t_philosopher 	*philos;
 
 	if (process_input(argc, argv, &setup) == error)
-		return (error);
+		return clean_up(&setup, NULL, error);
 	philos = malloc(sizeof(t_philosopher) * setup.number_of_philosophers);
 	if (!philos)
 		return (clean_up(&setup, philos, error));
