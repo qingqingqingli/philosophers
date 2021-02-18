@@ -41,7 +41,8 @@ int		philo_eat(t_philosopher *philo)
 	print_prompt(philo, "is eating");
 	gettimeofday(&philo->last_eat_time, NULL);
 	pthread_mutex_unlock(&philo->status_mutex);
-	usleep(philo->setup->time_to_eat * 1000);
+	usleep(philo->setup->time_to_eat / 2 * 1000);
+	usleep(philo->setup->time_to_eat / 2 * 1000);
 	philo->time_of_eaten++;
 	pthread_mutex_unlock(philo->left_fork_mutex);
 	pthread_mutex_unlock(philo->right_fork_mutex);
@@ -54,7 +55,8 @@ int 	philo_sleep(t_philosopher *philo)
 {
 	if (print_prompt(philo, "is sleeping") == 1)
 		return (1);
-	usleep(philo->setup->time_to_sleep * 1000);
+	usleep(philo->setup->time_to_sleep / 2 * 1000);
+	usleep(philo->setup->time_to_sleep / 2 * 1000);
 	return 0;
 }
 
