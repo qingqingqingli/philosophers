@@ -5,13 +5,20 @@
 #include <stdio.h>
 #include "../headers/clean_up.h"
 
-void 	clean_up_philos(t_philosopher *philos)
+void 	clean_up_philos(t_setup *setup, t_philosopher *philos)
 {
-	if (philos)
-		free(philos);
+	int i;
+
+	i = 0;
+	while (i < setup->number_of_philosophers)
+	{
+		pthread_mutex_destroy(&philos[i].status_mutex);
+		i++;
+	}
+	free(philos);
 }
 
-void 	clean_up_mutexes(t_setup *setup, t_philosopher *philos)
+void 	clean_up_setup_mutexes(t_setup *setup)
 {
 	int i;
 
@@ -21,17 +28,17 @@ void 	clean_up_mutexes(t_setup *setup, t_philosopher *philos)
 		while (i < setup->number_of_philosophers)
 		{
 			pthread_mutex_destroy(&setup->fork_mutexs[i]);
-			pthread_mutex_destroy(&philos[i].status_mutex);
 			i++;
 		}
-		free(setup->fork_mutexs);
+//		free(setup->fork_mutexs);
+		pthread_mutex_destroy(&setup->write_mutex);
 	}
-	pthread_mutex_destroy(&setup->write_mutex);
 }
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
 {
-	clean_up_mutexes(setup, philos);
-	clean_up_philos(philos);
+	clean_up_setup_mutexes(setup);
+	if (philos)
+		clean_up_philos(setup, philos);
 	return (return_value);
 }

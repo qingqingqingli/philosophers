@@ -13,7 +13,10 @@ int check_only_digit(char *string)
 	while (string[i] != '\0')
 	{
 		if (!ft_isdigit(string[i]) || (string[i] == '+' && i != 0) || (string[i] == '-' && i != 0))
-			return (1);
+		{
+			printf("Provided data not valid.\n");
+			return (-1);
+		}
 		i++;
 	}
 	return (0);
@@ -27,7 +30,7 @@ int	check_argc_all_digits(int argc, char **argv)
 	while (i < argc - 1)
 	{
 		if (check_only_digit(argv[i]))
-			return (1);
+			return (-1);
 		i++;
 	}
 	return (0);
@@ -50,6 +53,7 @@ int process_setup_data(int argc, char **argv, t_setup *setup)
 		setup->number_to_eat_exist = 0;
 		setup->number_of_times_each_philosopher_must_eat = 0;
 	}
+	setup->fork_mutexs = NULL;
 	return (0);
 }
 
@@ -58,7 +62,7 @@ int validate_setup_data(t_setup setup)
 	if (setup.number_of_philosophers <= 0 || setup.time_to_die <= 0 || setup.time_to_eat <= 0 || setup.time_to_sleep <= 0 || (setup.number_to_eat_exist == 1 && setup.number_of_times_each_philosopher_must_eat <= 0))
 	{
 		printf("Provided data not valid.\n");
-		return (1);
+		return (-1);
 	}
 	return (0);
 }
@@ -82,7 +86,8 @@ int create_fork_mutexes(t_setup *setup)
 		return (-1);
 	while (i < setup->number_of_philosophers)
 	{
-		pthread_mutex_init(&setup->fork_mutexs[i], NULL);
+		if (pthread_mutex_init(&setup->fork_mutexs[i], NULL))
+			return (-1);
 		i++;
 	}
 	return (0);
@@ -95,11 +100,12 @@ int process_input(int argc, char **argv, t_setup *setup)
 		printf("Arguments not correct.\n");
 		return (-1);
 	}
-	if (check_argc_all_digits(argc, argv) \
-	|| process_setup_data(argc, argv, setup) \
-	|| validate_setup_data(*setup))
+	if (check_argc_all_digits(argc, argv) == -1 \
+	|| process_setup_data(argc, argv, setup) == -1 \
+	|| validate_setup_data(*setup) == -1)
 		return (-1);
 	print_setup_date(*setup); // remove later
-	create_fork_mutexes(setup);
+	if (create_fork_mutexes(setup) == -1)
+		return (-1);
 	return (0);
 }

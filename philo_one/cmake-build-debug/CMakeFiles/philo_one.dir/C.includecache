@@ -12,15 +12,29 @@
 stdlib.h
 -
 
+/home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
+../headers/struct.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
+../headers/support_functions.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
+stdio.h
+-
+stdlib.h
+-
+
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
 pthread.h
 -
 sys/time.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one/srcs/clean_up.c
-stdio.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
+sys/time.h
 -
+
+/home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c
+../headers/process_input.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
 ../headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
 
