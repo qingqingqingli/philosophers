@@ -7,3 +7,4 @@
 #include <stdlib.h>
 
 int 	clean_up(t_philosopher *philos, int return_value);
+int 	destroy_mutexes(pthread_mutex_t *mutexs);

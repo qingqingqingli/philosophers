@@ -11,6 +11,13 @@ void 	clean_up_philos(t_philosopher *philos)
 		free(philos);
 }
 
+int destroy_mutexes(pthread_mutex_t *mutexs)
+{
+	pthread_mutex_destroy(mutexs);
+	free(mutexs);
+	return (-1);
+}
+
 //void 	clean_up_setup(t_setup *setup)
 //{
 //	if (setup->fork_mutexs)

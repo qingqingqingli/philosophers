@@ -14,12 +14,12 @@ int 	main(int argc, char **argv)
 	t_setup 		setup;
 	t_philosopher 	*philos;
 
-	if (process_input(argc, argv, &setup) == error)
-		return (error);
+	if (process_input(argc, argv, &setup) == -1)
+		return (-1);
 	philos = malloc(sizeof(t_philosopher) * setup.number_of_philosophers);
 	if (!philos)
-		return (clean_up(philos, error));
-	if (initialise_philos(&setup, philos) == error)
-		return clean_up(philos, error);
+		return (clean_up(philos, -1));
+	if (initialise_philos(&setup, philos) == -1)
+		return clean_up(philos, -1);
 	return (clean_up(philos, 0));
 }

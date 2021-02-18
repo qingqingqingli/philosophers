@@ -2,10 +2,9 @@
 // Created by qli on 17/02/2021.
 //
 
-
 #include "../headers/process_input.h"
+#include "../headers/clean_up.h"
 
-// remove later
 void print_setup_date(t_setup setup)
 {
 	printf("number_of_philosophers = [%d]\n", setup.number_of_philosophers);
@@ -55,17 +54,41 @@ int create_fork_mutexes(t_setup *setup)
 	{
 		ret = pthread_mutex_init(&setup->fork_mutexs[i], NULL);
 		if (ret)
-			return (error);
+			return (-1);
 		i++;
 	}
 	return (0);
 }
 
-int destroy_mutexes(pthread_mutex_t *mutexs)
+int check_only_digit(char *string)
 {
-	pthread_mutex_destroy(mutexs);
-	free(mutexs);
-	return (error);
+	int i;
+
+	i = 0;
+	while (string[i] != '\0')
+	{
+		if (!ft_isdigit(string[i]) || (string[i] == '+' && i != 0) || (string[i] == '-' && i != 0))
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+int	check_argc_all_digits(int argc, char **argv)
+{
+	int i;
+
+	i = 1;
+	while (i < argc - 1)
+	{
+		if (!check_only_digit(argv[i]))
+		{
+			printf("Provided data not valid.\n");
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
 
 int process_input(int argc, char **argv, t_setup *setup)
@@ -73,13 +96,15 @@ int process_input(int argc, char **argv, t_setup *setup)
 	if (argc != 5 && argc != 6)
 	{
 		printf("Arguments not correct.\n");
-		return (error);
+		return (-1);
 	}
+	if (!check_argc_all_digits(argc, argv))
+		return (-1);
 	process_setup_data(argc, argv, setup);
-	if (validate_setup_data(*setup) == error)
-		return (error);
+	if (validate_setup_data(*setup) == -1)
+		return (-1);
 	print_setup_date(*setup); // remove later
-	if (create_fork_mutexes(setup) == error)
+	if (create_fork_mutexes(setup) == -1)
 		return (destroy_mutexes(setup->fork_mutexs));
 	return (0);
 }

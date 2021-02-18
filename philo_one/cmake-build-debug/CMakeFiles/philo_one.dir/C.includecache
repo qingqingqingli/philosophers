@@ -6,28 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
--
-
 /home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
 ../headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
 stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/headers/initialise_philos.h
-../headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
@@ -38,14 +20,6 @@ stdio.h
 stdio.h
 -
 stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-stdio.h
--
-unistd.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
@@ -58,49 +32,9 @@ sys/time.h
 sys/time.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_one/main.c
-stdio.h
--
-stdlib.h
--
-headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
-headers/process_input.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
-headers/initialise_philos.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/initialise_philos.h
-headers/clean_up.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/check_status.c
-stdio.h
--
-../headers/check_status.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
-../headers/support_functions.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/print.c
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-../headers/support_functions.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
-
 /home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c
 ../headers/process_input.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
-../headers/support_functions.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
-../headers/print.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/print.h
-
-/home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c
-unistd.h
--
-../headers/support_functions.h
-/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
+../headers/clean_up.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
 

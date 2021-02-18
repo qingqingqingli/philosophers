@@ -29,6 +29,7 @@ CMakeFiles/philo_one.dir/srcs/print.c.o
  /home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
  /home/qli/CLionProjects/philosophers/philo_one/srcs/print.c
 CMakeFiles/philo_one.dir/srcs/process_input.c.o
+ /home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/process_input.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h

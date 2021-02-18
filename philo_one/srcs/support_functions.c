@@ -57,3 +57,12 @@ int		ft_atoi(const char *str)
 	}
 	return ((int)output * neg);
 }
+
+int	ft_isdigit(int c)
+{
+	if (c <= '9' && c >= '0')
+	{
+		return (1);
+	}
+	return (0);
+}

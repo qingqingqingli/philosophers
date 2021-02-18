@@ -28,6 +28,7 @@ CMakeFiles/philo_one.dir/srcs/print.c.o: ../headers/struct.h
 CMakeFiles/philo_one.dir/srcs/print.c.o: ../headers/support_functions.h
 CMakeFiles/philo_one.dir/srcs/print.c.o: ../srcs/print.c
 
+CMakeFiles/philo_one.dir/srcs/process_input.c.o: ../headers/clean_up.h
 CMakeFiles/philo_one.dir/srcs/process_input.c.o: ../headers/process_input.h
 CMakeFiles/philo_one.dir/srcs/process_input.c.o: ../headers/struct.h
 CMakeFiles/philo_one.dir/srcs/process_input.c.o: ../headers/support_functions.h
