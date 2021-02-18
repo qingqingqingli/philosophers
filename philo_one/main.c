@@ -1,29 +1,25 @@
 //
-// Created by qli on 08/02/2021.
+// Created by qli on 17/02/2021.
 //
 
-#include "philo_one.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "headers/struct.h"
+#include "headers/process_input.h"
+#include "headers/initialise_philos.h"
+#include "headers/clean_up.h"
 
 int 	main(int argc, char **argv)
 {
-	t_setup_data setup;
+	t_setup 		setup;
+	t_philosopher 	*philos;
 
-	life_status = 1;
-	if (argc == 5 || argc == 6)
-	{
-		process_argv_input(argc, argv, &setup);
-		if (validate_setup_data(setup) == -1)
-			return (-1);
-		print_philo_data(setup);
-		init_each_philo(&setup);
-		init_fork_mutexes(&setup);
-		set_philo_fork_mutexs(&setup);
-		init_philo_threads(&setup);
-	}
-	else
-	{
-		printf("Arguments not correct.\n");
-		return (-1);
-	}
-	return (0);
+	if (process_input(argc, argv, &setup) == error)
+		return clean_up(&setup, NULL, error);
+	philos = malloc(sizeof(t_philosopher) * setup.number_of_philosophers);
+	if (!philos)
+		return (clean_up(&setup, philos, error));
+	if (initialise_philos(&setup, philos) == error)
+		return clean_up(&setup, philos, error);
+	return (clean_up(&setup, philos, 0));
 }

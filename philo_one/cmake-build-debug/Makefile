@@ -131,98 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named practice
+# Target rules for targets named rewrite
 
 # Build rule for target.
-practice: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice
-.PHONY : practice
+rewrite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rewrite
+.PHONY : rewrite
 
 # fast build rule for target.
-practice/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
-.PHONY : practice/fast
-
-check_status.o: check_status.c.o
-
-.PHONY : check_status.o
-
-# target to build an object file
-check_status.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.o
-.PHONY : check_status.c.o
-
-check_status.i: check_status.c.i
-
-.PHONY : check_status.i
-
-# target to preprocess a source file
-check_status.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.i
-.PHONY : check_status.c.i
-
-check_status.s: check_status.c.s
-
-.PHONY : check_status.s
-
-# target to generate assembly for a file
-check_status.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/check_status.c.s
-.PHONY : check_status.c.s
-
-init_program_setup.o: init_program_setup.c.o
-
-.PHONY : init_program_setup.o
-
-# target to build an object file
-init_program_setup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.o
-.PHONY : init_program_setup.c.o
-
-init_program_setup.i: init_program_setup.c.i
-
-.PHONY : init_program_setup.i
-
-# target to preprocess a source file
-init_program_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.i
-.PHONY : init_program_setup.c.i
-
-init_program_setup.s: init_program_setup.c.s
-
-.PHONY : init_program_setup.s
-
-# target to generate assembly for a file
-init_program_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/init_program_setup.c.s
-.PHONY : init_program_setup.c.s
-
-libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
-
-.PHONY : libft/srcs/ft_atoi.o
-
-# target to build an object file
-libft/srcs/ft_atoi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.o
-.PHONY : libft/srcs/ft_atoi.c.o
-
-libft/srcs/ft_atoi.i: libft/srcs/ft_atoi.c.i
-
-.PHONY : libft/srcs/ft_atoi.i
-
-# target to preprocess a source file
-libft/srcs/ft_atoi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.i
-.PHONY : libft/srcs/ft_atoi.c.i
-
-libft/srcs/ft_atoi.s: libft/srcs/ft_atoi.c.s
-
-.PHONY : libft/srcs/ft_atoi.s
-
-# target to generate assembly for a file
-libft/srcs/ft_atoi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/libft/srcs/ft_atoi.c.s
-.PHONY : libft/srcs/ft_atoi.c.s
+rewrite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/build
+.PHONY : rewrite/fast
 
 main.o: main.c.o
 
@@ -230,7 +149,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -239,7 +158,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -248,62 +167,224 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/main.c.s
 .PHONY : main.c.s
 
-start_action.o: start_action.c.o
+srcs/check_status.o: srcs/check_status.c.o
 
-.PHONY : start_action.o
-
-# target to build an object file
-start_action.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.o
-.PHONY : start_action.c.o
-
-start_action.i: start_action.c.i
-
-.PHONY : start_action.i
-
-# target to preprocess a source file
-start_action.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.i
-.PHONY : start_action.c.i
-
-start_action.s: start_action.c.s
-
-.PHONY : start_action.s
-
-# target to generate assembly for a file
-start_action.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/start_action.c.s
-.PHONY : start_action.c.s
-
-support_functions.o: support_functions.c.o
-
-.PHONY : support_functions.o
+.PHONY : srcs/check_status.o
 
 # target to build an object file
-support_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.o
-.PHONY : support_functions.c.o
+srcs/check_status.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.o
+.PHONY : srcs/check_status.c.o
 
-support_functions.i: support_functions.c.i
+srcs/check_status.i: srcs/check_status.c.i
 
-.PHONY : support_functions.i
+.PHONY : srcs/check_status.i
 
 # target to preprocess a source file
-support_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.i
-.PHONY : support_functions.c.i
+srcs/check_status.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.i
+.PHONY : srcs/check_status.c.i
 
-support_functions.s: support_functions.c.s
+srcs/check_status.s: srcs/check_status.c.s
 
-.PHONY : support_functions.s
+.PHONY : srcs/check_status.s
 
 # target to generate assembly for a file
-support_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/support_functions.c.s
-.PHONY : support_functions.c.s
+srcs/check_status.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/check_status.c.s
+.PHONY : srcs/check_status.c.s
+
+srcs/clean_up.o: srcs/clean_up.c.o
+
+.PHONY : srcs/clean_up.o
+
+# target to build an object file
+srcs/clean_up.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.o
+.PHONY : srcs/clean_up.c.o
+
+srcs/clean_up.i: srcs/clean_up.c.i
+
+.PHONY : srcs/clean_up.i
+
+# target to preprocess a source file
+srcs/clean_up.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.i
+.PHONY : srcs/clean_up.c.i
+
+srcs/clean_up.s: srcs/clean_up.c.s
+
+.PHONY : srcs/clean_up.s
+
+# target to generate assembly for a file
+srcs/clean_up.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/clean_up.c.s
+.PHONY : srcs/clean_up.c.s
+
+srcs/initialise_philos.o: srcs/initialise_philos.c.o
+
+.PHONY : srcs/initialise_philos.o
+
+# target to build an object file
+srcs/initialise_philos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.o
+.PHONY : srcs/initialise_philos.c.o
+
+srcs/initialise_philos.i: srcs/initialise_philos.c.i
+
+.PHONY : srcs/initialise_philos.i
+
+# target to preprocess a source file
+srcs/initialise_philos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.i
+.PHONY : srcs/initialise_philos.c.i
+
+srcs/initialise_philos.s: srcs/initialise_philos.c.s
+
+.PHONY : srcs/initialise_philos.s
+
+# target to generate assembly for a file
+srcs/initialise_philos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/initialise_philos.c.s
+.PHONY : srcs/initialise_philos.c.s
+
+srcs/libft/srcs/ft_atoi.o: srcs/libft/srcs/ft_atoi.c.o
+
+.PHONY : srcs/libft/srcs/ft_atoi.o
+
+# target to build an object file
+srcs/libft/srcs/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.o
+.PHONY : srcs/libft/srcs/ft_atoi.c.o
+
+srcs/libft/srcs/ft_atoi.i: srcs/libft/srcs/ft_atoi.c.i
+
+.PHONY : srcs/libft/srcs/ft_atoi.i
+
+# target to preprocess a source file
+srcs/libft/srcs/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.i
+.PHONY : srcs/libft/srcs/ft_atoi.c.i
+
+srcs/libft/srcs/ft_atoi.s: srcs/libft/srcs/ft_atoi.c.s
+
+.PHONY : srcs/libft/srcs/ft_atoi.s
+
+# target to generate assembly for a file
+srcs/libft/srcs/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/libft/srcs/ft_atoi.c.s
+.PHONY : srcs/libft/srcs/ft_atoi.c.s
+
+srcs/print.o: srcs/print.c.o
+
+.PHONY : srcs/print.o
+
+# target to build an object file
+srcs/print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.o
+.PHONY : srcs/print.c.o
+
+srcs/print.i: srcs/print.c.i
+
+.PHONY : srcs/print.i
+
+# target to preprocess a source file
+srcs/print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.i
+.PHONY : srcs/print.c.i
+
+srcs/print.s: srcs/print.c.s
+
+.PHONY : srcs/print.s
+
+# target to generate assembly for a file
+srcs/print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/print.c.s
+.PHONY : srcs/print.c.s
+
+srcs/process_input.o: srcs/process_input.c.o
+
+.PHONY : srcs/process_input.o
+
+# target to build an object file
+srcs/process_input.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.o
+.PHONY : srcs/process_input.c.o
+
+srcs/process_input.i: srcs/process_input.c.i
+
+.PHONY : srcs/process_input.i
+
+# target to preprocess a source file
+srcs/process_input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.i
+.PHONY : srcs/process_input.c.i
+
+srcs/process_input.s: srcs/process_input.c.s
+
+.PHONY : srcs/process_input.s
+
+# target to generate assembly for a file
+srcs/process_input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/process_input.c.s
+.PHONY : srcs/process_input.c.s
+
+srcs/start_action.o: srcs/start_action.c.o
+
+.PHONY : srcs/start_action.o
+
+# target to build an object file
+srcs/start_action.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.o
+.PHONY : srcs/start_action.c.o
+
+srcs/start_action.i: srcs/start_action.c.i
+
+.PHONY : srcs/start_action.i
+
+# target to preprocess a source file
+srcs/start_action.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.i
+.PHONY : srcs/start_action.c.i
+
+srcs/start_action.s: srcs/start_action.c.s
+
+.PHONY : srcs/start_action.s
+
+# target to generate assembly for a file
+srcs/start_action.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/start_action.c.s
+.PHONY : srcs/start_action.c.s
+
+srcs/time_calculation.o: srcs/time_calculation.c.o
+
+.PHONY : srcs/time_calculation.o
+
+# target to build an object file
+srcs/time_calculation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.o
+.PHONY : srcs/time_calculation.c.o
+
+srcs/time_calculation.i: srcs/time_calculation.c.i
+
+.PHONY : srcs/time_calculation.i
+
+# target to preprocess a source file
+srcs/time_calculation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.i
+.PHONY : srcs/time_calculation.c.i
+
+srcs/time_calculation.s: srcs/time_calculation.c.s
+
+.PHONY : srcs/time_calculation.s
+
+# target to generate assembly for a file
+srcs/time_calculation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rewrite.dir/build.make CMakeFiles/rewrite.dir/srcs/time_calculation.c.s
+.PHONY : srcs/time_calculation.c.s
 
 # Help Target
 help:
@@ -313,25 +394,34 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... practice"
-	@echo "... check_status.o"
-	@echo "... check_status.i"
-	@echo "... check_status.s"
-	@echo "... init_program_setup.o"
-	@echo "... init_program_setup.i"
-	@echo "... init_program_setup.s"
-	@echo "... libft/srcs/ft_atoi.o"
-	@echo "... libft/srcs/ft_atoi.i"
-	@echo "... libft/srcs/ft_atoi.s"
+	@echo "... rewrite"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... start_action.o"
-	@echo "... start_action.i"
-	@echo "... start_action.s"
-	@echo "... support_functions.o"
-	@echo "... support_functions.i"
-	@echo "... support_functions.s"
+	@echo "... srcs/check_status.o"
+	@echo "... srcs/check_status.i"
+	@echo "... srcs/check_status.s"
+	@echo "... srcs/clean_up.o"
+	@echo "... srcs/clean_up.i"
+	@echo "... srcs/clean_up.s"
+	@echo "... srcs/initialise_philos.o"
+	@echo "... srcs/initialise_philos.i"
+	@echo "... srcs/initialise_philos.s"
+	@echo "... srcs/libft/srcs/ft_atoi.o"
+	@echo "... srcs/libft/srcs/ft_atoi.i"
+	@echo "... srcs/libft/srcs/ft_atoi.s"
+	@echo "... srcs/print.o"
+	@echo "... srcs/print.i"
+	@echo "... srcs/print.s"
+	@echo "... srcs/process_input.o"
+	@echo "... srcs/process_input.i"
+	@echo "... srcs/process_input.s"
+	@echo "... srcs/start_action.o"
+	@echo "... srcs/start_action.i"
+	@echo "... srcs/start_action.s"
+	@echo "... srcs/time_calculation.o"
+	@echo "... srcs/time_calculation.i"
+	@echo "... srcs/time_calculation.s"
 .PHONY : help
 
 
