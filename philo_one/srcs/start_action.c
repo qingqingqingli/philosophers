@@ -22,7 +22,7 @@ int 	lock_right_fork(t_philosopher *philo)
 
 int 	grab_forks(t_philosopher *philo)
 {
-	if (!philo->num % 2)
+	if (philo->num % 2)
 	{
 		lock_left_fork(philo);
 		lock_right_fork(philo);
