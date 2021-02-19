@@ -2,38 +2,39 @@
 // Created by qli on 17/02/2021.
 //
 
-#pragma once
-#include <pthread.h> // threads
-#include <sys/time.h> // gettimeofday
+#ifndef STRUCT_H
+# define STRUCT_H
+# include <pthread.h>
+# include <sys/time.h>
 
-typedef struct 		s_setup
+typedef struct s_setup
 {
 	int				number_of_philosophers;
-	long long int 	time_to_die;
-	long long int 	time_to_eat;
-	long long int 	time_to_sleep;
+	long long int	time_to_die;
+	long long int	time_to_eat;
+	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
 	pthread_mutex_t	*fork_mutexs;
-	pthread_mutex_t status_mutex;
-	pthread_mutex_t write_mutex;
+	pthread_mutex_t	status_mutex;
+	pthread_mutex_t	write_mutex;
 }					t_setup;
 
-typedef struct 		s_philosopher
+typedef struct s_philosopher
 {
 	t_setup			*setup;
-	int 			num;
+	int				num;
 	int				time_of_eaten;
 	struct timeval	begin_time;
 	struct timeval	now;
 	struct timeval	last_eat_time;
-	pthread_mutex_t *left_fork_mutex;
-	pthread_mutex_t *right_fork_mutex;
-	pthread_t 		philo_thread;
-	pthread_t 		philo_status_thread;
+	pthread_mutex_t	*left_fork_mutex;
+	pthread_mutex_t	*right_fork_mutex;
+	pthread_t		philo_thread;
+	pthread_t		philo_status_thread;
 }					t_philosopher;
 
-enum values
+enum e_values
 {
 	yes = 1,
 	no = 0,
@@ -41,3 +42,5 @@ enum values
 	dead = 0,
 	error = -1
 };
+
+#endif
