@@ -4,10 +4,11 @@
 
 #include "../headers/process_input.h"
 #include "../headers/clean_up.h"
+#include "../headers/libft_functions.h"
 
 int	check_argc_all_digits(int argc, char **argv)
 {
-	int num;
+	int	num;
 	int	i;
 
 	i = 0;
@@ -15,7 +16,7 @@ int	check_argc_all_digits(int argc, char **argv)
 	while (num < argc)
 	{
 		i = 0;
-		while(argv[num][i] != '\0')
+		while (argv[num][i] != '\0')
 		{
 			if (ft_isdigit(argv[num][i]))
 				i++;
@@ -32,7 +33,7 @@ int	check_argc_all_digits(int argc, char **argv)
 	return (0);
 }
 
-void process_setup_data(int argc, char **argv, t_setup *setup)
+void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = 1;
 	setup->fork_mutexs = NULL;
@@ -46,21 +47,23 @@ void process_setup_data(int argc, char **argv, t_setup *setup)
 		setup->number_of_times_each_philosopher_must_eat = 0;
 }
 
-void print_setup_date(t_setup setup)
+void	print_setup_date(t_setup setup)
 {
 	printf("number_of_philosophers = [%d]\n", setup.number_of_philosophers);
 	printf("time_to_die = [%lld]\n", setup.time_to_die);
 	printf("time_to_eat = [%lld]\n", setup.time_to_eat);
 	printf("time_to_sleep = [%lld]\n", setup.time_to_sleep);
-	printf("number_of_times_each_philosopher_must_eat = [%d]\n", setup.number_of_times_each_philosopher_must_eat);
+	printf("number_of_times_each_philosopher_must_eat = [%d]\n", \
+	setup.number_of_times_each_philosopher_must_eat);
 }
 
-int create_fork_mutexes(t_setup *setup)
+int	create_fork_mutexes(t_setup *setup)
 {
 	int	i;
 
 	i = 0;
-	setup->fork_mutexs = malloc(sizeof(pthread_mutex_t) * setup->number_of_philosophers);
+	setup->fork_mutexs = malloc(sizeof(pthread_mutex_t) * \
+	setup->number_of_philosophers);
 	if (!setup->fork_mutexs)
 		return (-1);
 	while (i < setup->number_of_philosophers)
@@ -72,7 +75,7 @@ int create_fork_mutexes(t_setup *setup)
 	return (0);
 }
 
-int process_input(int argc, char **argv, t_setup *setup)
+int	process_input(int argc, char **argv, t_setup *setup)
 {
 	if (argc != 5 && argc != 6)
 	{
@@ -85,7 +88,7 @@ int process_input(int argc, char **argv, t_setup *setup)
 		return (-1);
 	}
 	process_setup_data(argc, argv, setup);
-	print_setup_date(*setup); // remove later
+	print_setup_date(*setup);
 	if (create_fork_mutexes(setup) == -1)
 		return (-1);
 	return (0);

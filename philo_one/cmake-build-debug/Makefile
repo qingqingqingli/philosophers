@@ -224,6 +224,33 @@ srcs/clean_up.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/clean_up.c.s
 .PHONY : srcs/clean_up.c.s
 
+srcs/grab_forks.o: srcs/grab_forks.c.o
+
+.PHONY : srcs/grab_forks.o
+
+# target to build an object file
+srcs/grab_forks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/grab_forks.c.o
+.PHONY : srcs/grab_forks.c.o
+
+srcs/grab_forks.i: srcs/grab_forks.c.i
+
+.PHONY : srcs/grab_forks.i
+
+# target to preprocess a source file
+srcs/grab_forks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/grab_forks.c.i
+.PHONY : srcs/grab_forks.c.i
+
+srcs/grab_forks.s: srcs/grab_forks.c.s
+
+.PHONY : srcs/grab_forks.s
+
+# target to generate assembly for a file
+srcs/grab_forks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/grab_forks.c.s
+.PHONY : srcs/grab_forks.c.s
+
 srcs/initialise_philos.o: srcs/initialise_philos.c.o
 
 .PHONY : srcs/initialise_philos.o
@@ -250,6 +277,33 @@ srcs/initialise_philos.s: srcs/initialise_philos.c.s
 srcs/initialise_philos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/initialise_philos.c.s
 .PHONY : srcs/initialise_philos.c.s
+
+srcs/libft_functions.o: srcs/libft_functions.c.o
+
+.PHONY : srcs/libft_functions.o
+
+# target to build an object file
+srcs/libft_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/libft_functions.c.o
+.PHONY : srcs/libft_functions.c.o
+
+srcs/libft_functions.i: srcs/libft_functions.c.i
+
+.PHONY : srcs/libft_functions.i
+
+# target to preprocess a source file
+srcs/libft_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/libft_functions.c.i
+.PHONY : srcs/libft_functions.c.i
+
+srcs/libft_functions.s: srcs/libft_functions.c.s
+
+.PHONY : srcs/libft_functions.s
+
+# target to generate assembly for a file
+srcs/libft_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/libft_functions.c.s
+.PHONY : srcs/libft_functions.c.s
 
 srcs/print.o: srcs/print.c.o
 
@@ -377,9 +431,15 @@ help:
 	@echo "... srcs/clean_up.o"
 	@echo "... srcs/clean_up.i"
 	@echo "... srcs/clean_up.s"
+	@echo "... srcs/grab_forks.o"
+	@echo "... srcs/grab_forks.i"
+	@echo "... srcs/grab_forks.s"
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"
+	@echo "... srcs/libft_functions.o"
+	@echo "... srcs/libft_functions.i"
+	@echo "... srcs/libft_functions.s"
 	@echo "... srcs/print.o"
 	@echo "... srcs/print.i"
 	@echo "... srcs/print.s"

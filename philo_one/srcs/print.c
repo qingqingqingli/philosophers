@@ -3,12 +3,19 @@
 //
 
 #include "../headers/print.h"
-#include "../headers/support_functions.h"
+#include "../headers/time_calculation.h"
+#include "../headers/libft_functions.h"
 
-int 	print_prompt(t_philosopher *philo, char *prompt)
+int	print_prompt(t_philosopher *philo, char *prompt)
 {
-	char *color[6]= {"\033[31m", "\033[32m", "\033[33m", "\033[34m", "\033[35m", "\033[36m"};
+	char	*color[6];
 
+	color[0] = RED;
+	color[1] = GREEN;
+	color[2] = YELLOW;
+	color[3] = BLUE;
+	color[4] = MAGENTA;
+	color[5] = CYAN;
 	if (!philo->setup->life_status)
 		return (1);
 	pthread_mutex_lock(&philo->setup->write_mutex);

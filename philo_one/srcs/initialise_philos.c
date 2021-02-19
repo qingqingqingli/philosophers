@@ -9,7 +9,7 @@
 
 int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < setup->number_of_philosophers)
@@ -24,9 +24,9 @@ int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 	return (0);
 }
 
-void set_philo_fork_mutexs(t_philosopher *philos, int num)
+void	set_philo_fork_mutexs(t_philosopher *philos, int num)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	philos[i].left_fork_mutex = &philos->setup->fork_mutexs[i];
@@ -40,16 +40,18 @@ void set_philo_fork_mutexs(t_philosopher *philos, int num)
 	}
 }
 
-int		init_philo_threads(t_philosopher *philos, int num)
+int	init_philo_threads(t_philosopher *philos, int num)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < num)
 	{
-		if (pthread_create(&philos[i].philo_thread, NULL, start_action, &philos[i]))
+		if (pthread_create(&philos[i].philo_thread, NULL, \
+		start_action, &philos[i]))
 			return (-1);
-		if (pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]))
+		if (pthread_create(&philos[i].philo_status_thread, NULL, \
+		check_status, &philos[i]))
 			return (-1);
 		i++;
 	}
@@ -76,7 +78,7 @@ int 	init_write_mutex(t_philosopher *philo)
 
 int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 {
-	int num;
+	int	num;
 
 	num = setup->number_of_philosophers;
 	if (setup_each_philo(setup, philos) == -1)

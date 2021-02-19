@@ -88,7 +88,13 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/clean_up.h">
 			<Option target="philo_one"/>
 		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/grab_forks.h">
+			<Option target="philo_one"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/initialise_philos.h">
+			<Option target="philo_one"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/libft_functions.h">
 			<Option target="philo_one"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/print.h">
@@ -115,7 +121,13 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/clean_up.c">
 			<Option target="philo_one"/>
 		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/grab_forks.c">
+			<Option target="philo_one"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/initialise_philos.c">
+			<Option target="philo_one"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/libft_functions.c">
 			<Option target="philo_one"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/print.c">

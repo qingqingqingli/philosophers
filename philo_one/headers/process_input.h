@@ -5,7 +5,6 @@
 #ifndef PROCESS_INPUT_H
 # define PROCESS_INPUT_H
 # include "../headers/struct.h"
-# include "../headers/support_functions.h"
 # include <stdio.h>
 # include <stdlib.h>
 

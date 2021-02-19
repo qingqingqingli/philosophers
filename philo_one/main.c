@@ -10,8 +10,8 @@
 
 int 	main(int argc, char **argv)
 {
-	t_setup 		setup;
-	t_philosopher 	*philos;
+	t_setup			setup;
+	t_philosopher	*philos;
 
 	if (process_input(argc, argv, &setup) == -1)
 		return (clean_up(&setup, NULL, -1));
