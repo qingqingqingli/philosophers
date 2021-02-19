@@ -32,6 +32,10 @@ pthread.h
 sys/time.h
 -
 
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
+sys/time.h
+-
+
 /home/qli/CLionProjects/philosophers/philo_one/srcs/initialise_philos.c
 stdio.h
 -
@@ -41,4 +45,10 @@ stdio.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/start_action.h
 ../headers/check_status.h
 /home/qli/CLionProjects/philosophers/philo_one/headers/check_status.h
+
+/home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c
+unistd.h
+-
+../headers/support_functions.h
+/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h
 
