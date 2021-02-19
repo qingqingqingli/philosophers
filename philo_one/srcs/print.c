@@ -13,8 +13,14 @@ int 	print_prompt(t_philosopher *philo, char *prompt)
 		return (1);
 	pthread_mutex_lock(&philo->setup->write_mutex);
 	gettimeofday(&philo->now, NULL);
-	printf("%s", color[philo->num % 6]);
-	printf("[%ld] \t [%d] \t %s\n", get_elapsed_milli(&philo->begin_time, &philo->now), philo->num, prompt);
+	write(STDOUT_FILENO, color[philo->num % 6], ft_strlen(color[philo->num % 6]));
+	write(STDOUT_FILENO, "[", 1);
+	ft_putnbr(get_elapsed_milli(&philo->begin_time, &philo->now));
+	write(STDOUT_FILENO, "] \t", 3);
+	write(STDOUT_FILENO, "[", 1);
+	ft_putnbr(philo->num);
+	write(STDOUT_FILENO, "] \t", 3);
+	write(STDOUT_FILENO, prompt, ft_strlen(prompt));
 	pthread_mutex_unlock(&philo->setup->write_mutex);
 	return (0);
 }

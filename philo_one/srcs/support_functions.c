@@ -66,3 +66,25 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
+
+size_t		ft_strlen(const char *s)
+{
+	size_t len;
+
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
+
+void	ft_putchar(char c)
+{
+	write(STDOUT_FILENO, &c, 1);
+}
+
+void	ft_putnbr(long int n)
+{
+	if (n >= 10)
+		ft_putnbr(n / 10);
+	ft_putchar('0' + (n % 10));
+}
