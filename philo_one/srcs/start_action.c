@@ -37,10 +37,10 @@ int 	grab_forks(t_philosopher *philo)
 
 int		philo_eat(t_philosopher *philo)
 {
-	pthread_mutex_lock(&philo->status_mutex);
+	pthread_mutex_lock(&philo->setup->status_mutex);
 	print_prompt(philo, "is eating\n");
 	gettimeofday(&philo->last_eat_time, NULL);
-	pthread_mutex_unlock(&philo->status_mutex);
+	pthread_mutex_unlock(&philo->setup->status_mutex);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
 	pthread_mutex_unlock(philo->left_fork_mutex);
@@ -70,8 +70,10 @@ void*	start_action(void *arg)
 	philo = arg;
 	while (philo->setup->life_status)
 	{
-		if (grab_forks(philo) || philo_eat(philo) || philo_sleep(philo) || philo_think(philo))
-			return NULL;
+		grab_forks(philo);
+		philo_eat(philo);
+		philo_sleep(philo);
+		philo_think(philo);
 	}
 	return NULL;
 }

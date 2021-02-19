@@ -17,6 +17,7 @@ typedef struct 		s_setup
 	int				life_status;
 	int				mutex_status;
 	pthread_mutex_t	*fork_mutexs;
+	pthread_mutex_t status_mutex;
 	pthread_mutex_t write_mutex;
 }					t_setup;
 
@@ -30,7 +31,6 @@ typedef struct 		s_philosopher
 	struct timeval	last_eat_time;
 	pthread_mutex_t *left_fork_mutex;
 	pthread_mutex_t *right_fork_mutex;
-	pthread_mutex_t status_mutex;
 	pthread_t 		philo_thread;
 	pthread_t 		philo_status_thread;
 }					t_philosopher;

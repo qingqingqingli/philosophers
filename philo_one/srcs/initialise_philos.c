@@ -19,8 +19,6 @@ int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 		philos[i].time_of_eaten = 0;
 		gettimeofday(&philos[i].begin_time, NULL);
 		gettimeofday(&philos[i].last_eat_time, NULL);
-		if (pthread_mutex_init(&philos[i].status_mutex, NULL))
-			return (-1);
 		i++;
 	}
 	return (0);
@@ -69,6 +67,8 @@ int		init_philo_threads(t_philosopher *philos, int num)
 
 int 	init_write_mutex(t_philosopher *philo)
 {
+	if (pthread_mutex_init(&philo->setup->status_mutex, NULL))
+		return (-1);
 	if (pthread_mutex_init(&philo->setup->write_mutex, NULL))
 		return (-1);
 	return (0);

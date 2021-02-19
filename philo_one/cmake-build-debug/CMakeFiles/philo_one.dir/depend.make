@@ -9,6 +9,7 @@ CMakeFiles/philo_one.dir/main.c.o: ../headers/support_functions.h
 CMakeFiles/philo_one.dir/main.c.o: ../main.c
 
 CMakeFiles/philo_one.dir/srcs/check_status.c.o: ../headers/check_status.h
+CMakeFiles/philo_one.dir/srcs/check_status.c.o: ../headers/print.h
 CMakeFiles/philo_one.dir/srcs/check_status.c.o: ../headers/struct.h
 CMakeFiles/philo_one.dir/srcs/check_status.c.o: ../headers/support_functions.h
 CMakeFiles/philo_one.dir/srcs/check_status.c.o: ../srcs/check_status.c
