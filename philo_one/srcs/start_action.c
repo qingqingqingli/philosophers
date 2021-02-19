@@ -20,22 +20,7 @@ int 	lock_right_fork(t_philosopher *philo)
 	return 0;
 }
 
-//int 	grab_forks(t_philosopher *philo)
-//{
-//	if (!philo->num % 2)
-//	{
-//		lock_left_fork(philo);
-//		lock_right_fork(philo);
-//	}
-//	else
-//	{
-//		lock_right_fork(philo);
-//		lock_left_fork(philo);
-//	}
-//	return 0;
-//}
-
-int		philo_eat(t_philosopher *philo)
+int 	grab_forks(t_philosopher *philo)
 {
 	if (!philo->num % 2)
 	{
@@ -47,6 +32,11 @@ int		philo_eat(t_philosopher *philo)
 		lock_right_fork(philo);
 		lock_left_fork(philo);
 	}
+	return 0;
+}
+
+int		philo_eat(t_philosopher *philo)
+{
 	pthread_mutex_lock(&philo->status_mutex);
 	print_prompt(philo, "is eating");
 	gettimeofday(&philo->last_eat_time, NULL);
@@ -80,7 +70,7 @@ void*	start_action(void *arg)
 	philo = arg;
 	while (philo->setup->life_status)
 	{
-		if (philo_eat(philo) || philo_sleep(philo) || philo_think(philo))
+		if (grab_forks(philo) || philo_eat(philo) || philo_sleep(philo) || philo_think(philo))
 			return NULL;
 	}
 	return NULL;
