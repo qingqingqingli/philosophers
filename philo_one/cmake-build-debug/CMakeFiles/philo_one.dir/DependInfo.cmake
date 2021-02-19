@@ -13,7 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_one/srcs/print.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/philo_one.dir/srcs/print.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/srcs/process_input.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/philo_one.dir/srcs/process_input.c.o"
   "/home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/philo_one.dir/srcs/start_action.c.o"
-  "/home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/philo_one.dir/srcs/support_functions.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c" "/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles/philo_one.dir/srcs/time_calculation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

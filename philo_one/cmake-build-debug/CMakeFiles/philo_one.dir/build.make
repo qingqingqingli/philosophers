@@ -155,18 +155,18 @@ CMakeFiles/philo_one.dir/srcs/check_status.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/philo_one.dir/srcs/check_status.c.s"
 	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/check_status.c -o CMakeFiles/philo_one.dir/srcs/check_status.c.s
 
-CMakeFiles/philo_one.dir/srcs/support_functions.c.o: CMakeFiles/philo_one.dir/flags.make
-CMakeFiles/philo_one.dir/srcs/support_functions.c.o: ../srcs/support_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/philo_one.dir/srcs/support_functions.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo_one.dir/srcs/support_functions.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c
+CMakeFiles/philo_one.dir/srcs/time_calculation.c.o: CMakeFiles/philo_one.dir/flags.make
+CMakeFiles/philo_one.dir/srcs/time_calculation.c.o: ../srcs/time_calculation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_one/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/philo_one.dir/srcs/time_calculation.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/philo_one.dir/srcs/time_calculation.c.o   -c /home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c
 
-CMakeFiles/philo_one.dir/srcs/support_functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/philo_one.dir/srcs/support_functions.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c > CMakeFiles/philo_one.dir/srcs/support_functions.c.i
+CMakeFiles/philo_one.dir/srcs/time_calculation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/philo_one.dir/srcs/time_calculation.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c > CMakeFiles/philo_one.dir/srcs/time_calculation.c.i
 
-CMakeFiles/philo_one.dir/srcs/support_functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/philo_one.dir/srcs/support_functions.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c -o CMakeFiles/philo_one.dir/srcs/support_functions.c.s
+CMakeFiles/philo_one.dir/srcs/time_calculation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/philo_one.dir/srcs/time_calculation.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c -o CMakeFiles/philo_one.dir/srcs/time_calculation.c.s
 
 CMakeFiles/philo_one.dir/srcs/print.c.o: CMakeFiles/philo_one.dir/flags.make
 CMakeFiles/philo_one.dir/srcs/print.c.o: ../srcs/print.c
@@ -215,7 +215,7 @@ philo_one_OBJECTS = \
 "CMakeFiles/philo_one.dir/srcs/clean_up.c.o" \
 "CMakeFiles/philo_one.dir/srcs/start_action.c.o" \
 "CMakeFiles/philo_one.dir/srcs/check_status.c.o" \
-"CMakeFiles/philo_one.dir/srcs/support_functions.c.o" \
+"CMakeFiles/philo_one.dir/srcs/time_calculation.c.o" \
 "CMakeFiles/philo_one.dir/srcs/print.c.o" \
 "CMakeFiles/philo_one.dir/srcs/grab_forks.c.o" \
 "CMakeFiles/philo_one.dir/srcs/libft_functions.c.o"
@@ -229,7 +229,7 @@ philo_one: CMakeFiles/philo_one.dir/srcs/initialise_philos.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/clean_up.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/start_action.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/check_status.c.o
-philo_one: CMakeFiles/philo_one.dir/srcs/support_functions.c.o
+philo_one: CMakeFiles/philo_one.dir/srcs/time_calculation.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/print.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/grab_forks.c.o
 philo_one: CMakeFiles/philo_one.dir/srcs/libft_functions.c.o

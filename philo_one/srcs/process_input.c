@@ -35,7 +35,7 @@ int	check_argc_all_digits(int argc, char **argv)
 
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
-	setup->life_status = 1;
+	setup->life_status = alive;
 	setup->fork_mutexs = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);

@@ -8,7 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/philo_one.dir/srcs/print.c.o"
   "CMakeFiles/philo_one.dir/srcs/process_input.c.o"
   "CMakeFiles/philo_one.dir/srcs/start_action.c.o"
-  "CMakeFiles/philo_one.dir/srcs/support_functions.c.o"
+  "CMakeFiles/philo_one.dir/srcs/time_calculation.c.o"
   "philo_one"
   "philo_one.pdb"
 )

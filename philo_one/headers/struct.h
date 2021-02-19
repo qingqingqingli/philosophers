@@ -36,11 +36,8 @@ typedef struct s_philosopher
 
 enum e_values
 {
-	yes = 1,
-	no = 0,
 	alive = 1,
-	dead = 0,
-	error = -1
+	dead = 0
 };
 
 #endif

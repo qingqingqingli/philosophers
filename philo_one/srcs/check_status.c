@@ -21,7 +21,7 @@ void	*check_status(void *arg)
 		philo->setup->time_to_die)
 		{
 			print_prompt(philo, "has died.\n");
-			philo->setup->life_status = 0;
+			philo->setup->life_status = dead;
 			pthread_mutex_unlock(&philo->setup->status_mutex);
 			return (NULL);
 		}

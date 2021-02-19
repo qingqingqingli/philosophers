@@ -386,32 +386,32 @@ srcs/start_action.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/start_action.c.s
 .PHONY : srcs/start_action.c.s
 
-srcs/support_functions.o: srcs/support_functions.c.o
+srcs/time_calculation.o: srcs/time_calculation.c.o
 
-.PHONY : srcs/support_functions.o
+.PHONY : srcs/time_calculation.o
 
 # target to build an object file
-srcs/support_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.o
-.PHONY : srcs/support_functions.c.o
+srcs/time_calculation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.o
+.PHONY : srcs/time_calculation.c.o
 
-srcs/support_functions.i: srcs/support_functions.c.i
+srcs/time_calculation.i: srcs/time_calculation.c.i
 
-.PHONY : srcs/support_functions.i
+.PHONY : srcs/time_calculation.i
 
 # target to preprocess a source file
-srcs/support_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.i
-.PHONY : srcs/support_functions.c.i
+srcs/time_calculation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.i
+.PHONY : srcs/time_calculation.c.i
 
-srcs/support_functions.s: srcs/support_functions.c.s
+srcs/time_calculation.s: srcs/time_calculation.c.s
 
-.PHONY : srcs/support_functions.s
+.PHONY : srcs/time_calculation.s
 
 # target to generate assembly for a file
-srcs/support_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/support_functions.c.s
-.PHONY : srcs/support_functions.c.s
+srcs/time_calculation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_one.dir/build.make CMakeFiles/philo_one.dir/srcs/time_calculation.c.s
+.PHONY : srcs/time_calculation.c.s
 
 # Help Target
 help:
@@ -449,9 +449,9 @@ help:
 	@echo "... srcs/start_action.o"
 	@echo "... srcs/start_action.i"
 	@echo "... srcs/start_action.s"
-	@echo "... srcs/support_functions.o"
-	@echo "... srcs/support_functions.i"
-	@echo "... srcs/support_functions.s"
+	@echo "... srcs/time_calculation.o"
+	@echo "... srcs/time_calculation.i"
+	@echo "... srcs/time_calculation.s"
 .PHONY : help
 
 

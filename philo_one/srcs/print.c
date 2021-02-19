@@ -16,7 +16,7 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	color[3] = BLUE;
 	color[4] = MAGENTA;
 	color[5] = CYAN;
-	if (!philo->setup->life_status)
+	if (philo->setup->life_status == dead)
 		return (1);
 	pthread_mutex_lock(&philo->setup->write_mutex);
 	gettimeofday(&philo->now, NULL);

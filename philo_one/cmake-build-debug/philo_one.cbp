@@ -109,7 +109,7 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/struct.h">
 			<Option target="philo_one"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/support_functions.h">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/headers/time_calculation.h">
 			<Option target="philo_one"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/main.c">
@@ -139,7 +139,7 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/start_action.c">
 			<Option target="philo_one"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/support_functions.c">
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/srcs/time_calculation.c">
 			<Option target="philo_one"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_one/CMakeLists.txt">
