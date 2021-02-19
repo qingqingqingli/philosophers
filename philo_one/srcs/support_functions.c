@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include "../headers/support_functions.h"
 
-long int get_elapsed_milli(struct timeval *previous, struct timeval *now)
+int get_elapsed_milli(struct timeval *previous, struct timeval *now)
 {
 	return ((now->tv_sec - previous->tv_sec) * 1000000 + (now->tv_usec - previous->tv_usec)) / 1000;
 }
@@ -65,4 +65,44 @@ int	ft_isdigit(int c)
 		return (1);
 	}
 	return (0);
+}
+
+size_t		ft_strlen(const char *s)
+{
+	size_t len;
+
+	len = 0;
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (n < 0)
+	{
+		if (n == -2147483648)
+		{
+			ft_putchar_fd('-', fd);
+			ft_putchar_fd('2', fd);
+			n = 147483648;
+		}
+		else
+		{
+			ft_putchar_fd('-', fd);
+			n = n * -1;
+		}
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+	}
+	ft_putchar_fd('0' + (n % 10), fd);
 }
