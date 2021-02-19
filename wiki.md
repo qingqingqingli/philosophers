@@ -132,7 +132,18 @@
 
 ### semaphore
 
-- Semaphores can count higher than one
+- Semaphores can count higher than one. It is a variable used to control access to common resource by multiple processes and avoid critical section problems in a concurrent system. 
+
+- A semaphore can be thought as `a record of how many units of a particular resource are available`, coupled with operations to adjust that record safely.
+
+- Semaphores which allow an arbitrary resource count are called `counting semaphores`, while semaphores which are restricted to the values 0 and 1 are called `binary semaphores` and are used to implement locks.
+
+- A semaphore is a signalling mechanism. `A thread that is waiting on a semaphore can be signaled by another thread`. This is different than a mutex as the mutex can be signaled only by the thread that called the wait function.
+
+- Semaphore is simply a variable which is non-negative and shared between threads. There are mainly two types of semaphores: `counting semaphores` and `binary semaphores`.
+    - Binary Semaphore – This is also known as mutex lock. It can have only two values – 0 and 1. Its value is initialized to 1. It is used to implement the solution of critical section problem with multiple processes.
+    - Counting Semaphore – Its value can range over an unrestricted domain. It is used to control access to a resource that has multiple instances.
+
 
 ### Differences between mutex and semaphore
 
