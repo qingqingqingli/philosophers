@@ -35,22 +35,15 @@ int	check_argc_all_digits(int argc, char **argv)
 void process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = 1;
-	setup->mutex_status = 1;
 	setup->fork_mutexs = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
 	setup->time_to_eat = ft_atoi(argv[3]);
 	setup->time_to_sleep = ft_atoi(argv[4]);
 	if (argc == 6)
-	{
-		setup->number_to_eat_exist = 1;
 		setup->number_of_times_each_philosopher_must_eat = ft_atoi(argv[5]);
-	}
 	else
-	{
-		setup->number_to_eat_exist = 0;
 		setup->number_of_times_each_philosopher_must_eat = 0;
-	}
 }
 
 void print_setup_date(t_setup setup)
