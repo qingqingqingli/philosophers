@@ -2,7 +2,6 @@
 // Created by qli on 17/02/2021.
 //
 
-#include <stdio.h>
 #include "../headers/clean_up.h"
 
 void 	clean_up_philos(t_setup *setup, t_philosopher *philos)

@@ -5,39 +5,34 @@
 #include "../headers/process_input.h"
 #include "../headers/clean_up.h"
 
-int check_only_digit(char *string)
-{
-	int i;
-
-	i = 0;
-	while (string[i] != '\0')
-	{
-		if (!ft_isdigit(string[i]) || (string[i] == '+' && i != 0) \
-		|| (string[i] == '-' && i != 0))
-		{
-			printf("Provided data not valid.\n");
-			return (-1);
-		}
-		i++;
-	}
-	return (0);
-}
-
 int	check_argc_all_digits(int argc, char **argv)
 {
-	int i;
+	int num;
+	int	i;
 
-	i = 1;
-	while (i < argc - 1)
+	i = 0;
+	num = 1;
+	while (num < argc)
 	{
-		if (check_only_digit(argv[i]))
-			return (-1);
-		i++;
+		i = 0;
+		while(argv[num][i] != '\0')
+		{
+			if (ft_isdigit(argv[num][i]))
+				i++;
+			else
+			{
+				if (argv[num][i] == '+' && i == 0)
+					i++;
+				else
+					return (-1);
+			}
+		}
+		num++;
 	}
 	return (0);
 }
 
-int process_setup_data(int argc, char **argv, t_setup *setup)
+void process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = 1;
 	setup->mutex_status = 1;
@@ -56,17 +51,6 @@ int process_setup_data(int argc, char **argv, t_setup *setup)
 		setup->number_to_eat_exist = 0;
 		setup->number_of_times_each_philosopher_must_eat = 0;
 	}
-	return (0);
-}
-
-int validate_setup_data(t_setup setup)
-{
-	if (setup.number_of_philosophers <= 0 || setup.time_to_die <= 0 || setup.time_to_eat <= 0 || setup.time_to_sleep <= 0 || (setup.number_to_eat_exist == 1 && setup.number_of_times_each_philosopher_must_eat <= 0))
-	{
-		printf("Provided data not valid.\n");
-		return (-1);
-	}
-	return (0);
 }
 
 void print_setup_date(t_setup setup)
@@ -102,10 +86,12 @@ int process_input(int argc, char **argv, t_setup *setup)
 		printf("Arguments not correct.\n");
 		return (-1);
 	}
-	if (check_argc_all_digits(argc, argv) == -1 \
-	|| process_setup_data(argc, argv, setup) == -1 \
-	|| validate_setup_data(*setup) == -1)
+	if (check_argc_all_digits(argc, argv) == -1)
+	{
+		printf("Provided data not valid.\n");
 		return (-1);
+	}
+	process_setup_data(argc, argv, setup);
 	print_setup_date(*setup); // remove later
 	if (create_fork_mutexes(setup) == -1)
 		return (-1);
