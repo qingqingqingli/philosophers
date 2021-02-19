@@ -19,7 +19,9 @@ SOURCE			= 	main.c \
 					srcs/print.c \
 					srcs/process_input.c \
 					srcs/start_action.c \
-					srcs/support_functions.c
+					srcs/time_calculation.c \
+					srcs/grab_forks.c \
+					srcs/libft_functions.c
 
 OBJECT			=	$(SOURCE:.c=.o)
 
