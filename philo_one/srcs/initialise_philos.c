@@ -60,6 +60,7 @@ int		init_philo_threads(t_philosopher *philos, int num)
 	{
 		if (pthread_join(philos[i].philo_thread, NULL))
 			return (-1);
+		usleep(100);
 		if (pthread_join(philos[i].philo_status_thread, NULL))
 			return (-1);
 		i++;
