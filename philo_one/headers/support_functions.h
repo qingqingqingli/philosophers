@@ -9,3 +9,4 @@
 long int	get_elapsed_milli(struct timeval *previous, struct timeval *now);
 void 		accurately_sleep(long int amount_to_sleep);
 int			ft_isdigit(int c);
+int			ft_atoi(const char *str);
