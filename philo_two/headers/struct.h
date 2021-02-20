@@ -18,8 +18,7 @@ typedef struct s_setup
 	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
-	pthread_mutex_t	*fork_mutexs;
-	sem_t 			fork_semaphore;
+	sem_t 			*fork_sema;
 	pthread_mutex_t	status_mutex;
 	pthread_mutex_t	write_mutex;
 }					t_setup;

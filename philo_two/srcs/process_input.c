@@ -36,7 +36,7 @@ int	check_argc_all_digits(int argc, char **argv)
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = alive;
-	setup->fork_mutexs = NULL;
+	setup->fork_sema = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
 	setup->time_to_eat = ft_atoi(argv[3]);
@@ -57,21 +57,14 @@ void	print_setup_date(t_setup setup)
 	setup.number_of_times_each_philosopher_must_eat);
 }
 
-int	create_fork_mutexes(t_setup *setup)
+int	create_fork_semaphores(t_setup *setup)
 {
-	int	i;
-
-	i = 0;
-	setup->fork_mutexs = malloc(sizeof(pthread_mutex_t) * \
-	setup->number_of_philosophers);
-	if (!setup->fork_mutexs)
+	//	setup->fork_sema = malloc(sizeof(sem_t)); // apparently you don't need to malloc
+	setup->fork_sema = sem_open("fork_sema", O_CREAT, 0644, setup->number_of_philosophers);
+	if (setup->fork_sema == SEM_FAILED)
 		return (-1);
-	while (i < setup->number_of_philosophers)
-	{
-		if (pthread_mutex_init(&setup->fork_mutexs[i], NULL))
-			return (-1);
-		i++;
-	}
+	// so sema will not be left forever when the program crashes during execution
+	sem_unlink("fork_sema");
 	return (0);
 }
 
@@ -89,7 +82,7 @@ int	process_input(int argc, char **argv, t_setup *setup)
 	}
 	process_setup_data(argc, argv, setup);
 	print_setup_date(*setup);
-	if (create_fork_mutexes(setup) == -1)
+	if (create_fork_semaphores(setup) == -1)
 		return (-1);
 	return (0);
 }

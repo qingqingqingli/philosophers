@@ -224,33 +224,6 @@ srcs/clean_up.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_two.dir/build.make CMakeFiles/philo_two.dir/srcs/clean_up.c.s
 .PHONY : srcs/clean_up.c.s
 
-srcs/grab_forks.o: srcs/grab_forks.c.o
-
-.PHONY : srcs/grab_forks.o
-
-# target to build an object file
-srcs/grab_forks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_two.dir/build.make CMakeFiles/philo_two.dir/srcs/grab_forks.c.o
-.PHONY : srcs/grab_forks.c.o
-
-srcs/grab_forks.i: srcs/grab_forks.c.i
-
-.PHONY : srcs/grab_forks.i
-
-# target to preprocess a source file
-srcs/grab_forks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_two.dir/build.make CMakeFiles/philo_two.dir/srcs/grab_forks.c.i
-.PHONY : srcs/grab_forks.c.i
-
-srcs/grab_forks.s: srcs/grab_forks.c.s
-
-.PHONY : srcs/grab_forks.s
-
-# target to generate assembly for a file
-srcs/grab_forks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_two.dir/build.make CMakeFiles/philo_two.dir/srcs/grab_forks.c.s
-.PHONY : srcs/grab_forks.c.s
-
 srcs/initialise_philos.o: srcs/initialise_philos.c.o
 
 .PHONY : srcs/initialise_philos.o
@@ -431,9 +404,6 @@ help:
 	@echo "... srcs/clean_up.o"
 	@echo "... srcs/clean_up.i"
 	@echo "... srcs/clean_up.s"
-	@echo "... srcs/grab_forks.o"
-	@echo "... srcs/grab_forks.i"
-	@echo "... srcs/grab_forks.s"
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"

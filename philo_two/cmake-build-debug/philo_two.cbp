@@ -91,9 +91,6 @@
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/clean_up.c">
 			<Option target="philo_two"/>
 		</Unit>
-		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/grab_forks.c">
-			<Option target="philo_two"/>
-		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/initialise_philos.c">
 			<Option target="philo_two"/>
 		</Unit>

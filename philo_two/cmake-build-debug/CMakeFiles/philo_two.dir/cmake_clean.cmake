@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/philo_two.dir/main.c.o"
   "CMakeFiles/philo_two.dir/srcs/check_status.c.o"
   "CMakeFiles/philo_two.dir/srcs/clean_up.c.o"
-  "CMakeFiles/philo_two.dir/srcs/grab_forks.c.o"
   "CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o"
   "CMakeFiles/philo_two.dir/srcs/libft_functions.c.o"
   "CMakeFiles/philo_two.dir/srcs/print.c.o"

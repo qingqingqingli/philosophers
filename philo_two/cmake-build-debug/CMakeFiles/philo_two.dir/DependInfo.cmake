@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_two/main.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/main.c.o"
   "/home/qli/CLionProjects/philosophers/philo_two/srcs/check_status.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/check_status.c.o"
   "/home/qli/CLionProjects/philosophers/philo_two/srcs/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/clean_up.c.o"
-  "/home/qli/CLionProjects/philosophers/philo_two/srcs/grab_forks.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/grab_forks.c.o"
   "/home/qli/CLionProjects/philosophers/philo_two/srcs/initialise_philos.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o"
   "/home/qli/CLionProjects/philosophers/philo_two/srcs/libft_functions.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/libft_functions.c.o"
   "/home/qli/CLionProjects/philosophers/philo_two/srcs/print.c" "/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/CMakeFiles/philo_two.dir/srcs/print.c.o"

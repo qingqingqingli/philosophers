@@ -5,20 +5,14 @@
 #include "../headers/start_action.h"
 #include "../headers/time_calculation.h"
 #include "../headers/print.h"
-#include "../headers/grab_forks.h"
 
 int 	grab_forks(t_philosopher *philo)
 {
-	if (philo->num % 2)
-	{
-		lock_left_fork(philo);
-		lock_right_fork(philo);
-	}
-	else
-	{
-		lock_right_fork(philo);
-		lock_left_fork(philo);
-	}
+	// grab two forks
+	sem_wait(philo->setup->fork_sema);
+	print_prompt(philo, "has taken a fork\n");
+	sem_wait(philo->setup->fork_sema);
+	print_prompt(philo, "has taken a fork\n");
 	return (0);
 }
 
@@ -30,8 +24,9 @@ int	philo_eat(t_philosopher *philo)
 	pthread_mutex_unlock(&philo->setup->status_mutex);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
-	pthread_mutex_unlock(philo->left_fork_mutex);
-	pthread_mutex_unlock(philo->right_fork_mutex);
+	// give back two forks
+	sem_post(philo->setup->fork_sema);
+	sem_post(philo->setup->fork_sema);
 	if (philo->time_of_eaten == \
 	philo->setup->number_of_times_each_philosopher_must_eat)
 		return (1);

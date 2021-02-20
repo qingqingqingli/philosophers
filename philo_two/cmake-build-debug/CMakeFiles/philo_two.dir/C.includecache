@@ -6,16 +6,24 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_two/headers/grab_forks.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
-print.h
-/home/qli/CLionProjects/philosophers/philo_two/headers/print.h
-
-/home/qli/CLionProjects/philosophers/philo_two/headers/print.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/check_status.h
 struct.h
 /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
 stdio.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_two/headers/initialise_philos.h
+../headers/struct.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
+stdlib.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_two/headers/start_action.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
+stdio.h
+-
+unistd.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
@@ -23,8 +31,20 @@ pthread.h
 -
 sys/time.h
 -
+fcntl.h
+-
+sys/stat.h
+-
+semaphore.h
+-
 
-/home/qli/CLionProjects/philosophers/philo_two/srcs/grab_forks.c
-../headers/grab_forks.h
-/home/qli/CLionProjects/philosophers/philo_two/headers/grab_forks.h
+/home/qli/CLionProjects/philosophers/philo_two/srcs/initialise_philos.c
+stdio.h
+-
+../headers/initialise_philos.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/initialise_philos.h
+../headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/start_action.h
+../headers/check_status.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/check_status.h
 
