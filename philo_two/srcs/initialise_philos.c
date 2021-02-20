@@ -34,7 +34,7 @@ int	init_philo_threads(t_philosopher *philos, int num)
 		if (pthread_create(&philos[i].philo_thread, NULL, \
 		start_action, &philos[i]))
 			return (-1);
-		usleep(500);
+		usleep(100);
 		if (pthread_create(&philos[i].philo_status_thread, NULL, \
 		check_status, &philos[i]))
 			return (-1);
