@@ -18,10 +18,10 @@ int 	grab_forks(t_philosopher *philo)
 
 int	philo_eat(t_philosopher *philo)
 {
-	pthread_mutex_lock(&philo->setup->status_mutex);
+	sem_wait(philo->setup->status_sema);
 	print_prompt(philo, "is eating\n");
 	gettimeofday(&philo->last_eat_time, NULL);
-	pthread_mutex_unlock(&philo->setup->status_mutex);
+	sem_post(philo->setup->status_sema);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
 	// give back two forks

@@ -54,10 +54,16 @@ int	init_philo_threads(t_philosopher *philos, int num)
 
 int 	init_write_mutex(t_philosopher *philo)
 {
-	if (pthread_mutex_init(&philo->setup->status_mutex, NULL))
+
+	philo->setup->status_sema = sem_open("status_sema", O_CREAT, 0644, 1);
+	if (philo->setup->status_sema == SEM_FAILED)
 		return (-1);
-	if (pthread_mutex_init(&philo->setup->write_mutex, NULL))
+	sem_unlink("status_sema");
+	philo->setup->write_sema = sem_open("write_sema", O_CREAT, 0644, 1);
+	if (philo->setup->write_sema == SEM_FAILED)
 		return (-1);
+	sem_unlink("write_sema");
+
 	return (0);
 }
 

@@ -19,8 +19,8 @@ typedef struct s_setup
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
 	sem_t 			*fork_sema;
-	pthread_mutex_t	status_mutex;
-	pthread_mutex_t	write_mutex;
+	sem_t			*status_sema;
+	sem_t			*write_sema;
 }					t_setup;
 
 typedef struct s_philosopher
@@ -31,8 +31,6 @@ typedef struct s_philosopher
 	struct timeval	begin_time;
 	struct timeval	now;
 	struct timeval	last_eat_time;
-	pthread_mutex_t	*left_fork_mutex;
-	pthread_mutex_t	*right_fork_mutex;
 	pthread_t		philo_thread;
 	pthread_t		philo_status_thread;
 }					t_philosopher;

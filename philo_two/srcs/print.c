@@ -18,7 +18,7 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	color[5] = CYAN;
 	if (philo->setup->life_status == dead)
 		return (1);
-	pthread_mutex_lock(&philo->setup->write_mutex);
+	sem_wait(philo->setup->write_sema);
 	gettimeofday(&philo->now, NULL);
 	write(STDOUT_FILENO, color[philo->num % 6], ft_strlen(color[philo->num % 6]));
 	write(STDOUT_FILENO, "[", 1);
@@ -28,6 +28,6 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	ft_putnbr(philo->num);
 	write(STDOUT_FILENO, "] \t", 3);
 	write(STDOUT_FILENO, prompt, ft_strlen(prompt));
-	pthread_mutex_unlock(&philo->setup->write_mutex);
+	sem_post(philo->setup->write_sema);
 	return (0);
 }
