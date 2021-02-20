@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qli/CLionProjects/philosophers/philo_two/headers/grab_forks.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
+print.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/print.h
+
+/home/qli/CLionProjects/philosophers/philo_two/headers/print.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
+stdio.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
+pthread.h
+-
+sys/time.h
+-
+
+/home/qli/CLionProjects/philosophers/philo_two/srcs/grab_forks.c
+../headers/grab_forks.h
+/home/qli/CLionProjects/philosophers/philo_two/headers/grab_forks.h
+

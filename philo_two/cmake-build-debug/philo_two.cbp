@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="philo_two"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="philo_two">
+				<Option output="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/philo_two" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 philo_two"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="philo_two/fast">
+				<Option output="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/philo_two" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 philo_two/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/qli/CLionProjects/philosophers/philo_two/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/main.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/check_status.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/clean_up.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/grab_forks.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/initialise_philos.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/libft_functions.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/print.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/process_input.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/start_action.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/srcs/time_calculation.c">
+			<Option target="philo_two"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_two/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

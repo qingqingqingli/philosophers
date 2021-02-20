@@ -1,1 +1,1 @@
-gcc  -pthread -g   CMakeFiles/practice_1.dir/main.c.o  -o practice_1 
+gcc  -pthread -g   CMakeFiles/practice_1.dir/test1.c.o  -o practice_1 

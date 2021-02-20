@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/qli/CLionProjects/philosophers/philo_two/practice/main.c" "/home/qli/CLionProjects/philosophers/philo_two/practice/cmake-build-debug/CMakeFiles/practice_1.dir/main.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_two/practice/test1.c" "/home/qli/CLionProjects/philosophers/philo_two/practice/cmake-build-debug/CMakeFiles/practice_1.dir/test1.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

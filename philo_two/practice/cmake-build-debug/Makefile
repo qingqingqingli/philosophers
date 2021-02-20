@@ -143,32 +143,32 @@ practice_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/build
 .PHONY : practice_1/fast
 
-main.o: main.c.o
+test1.o: test1.c.o
 
-.PHONY : main.o
+.PHONY : test1.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/main.c.o
-.PHONY : main.c.o
+test1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/test1.c.o
+.PHONY : test1.c.o
 
-main.i: main.c.i
+test1.i: test1.c.i
 
-.PHONY : main.i
+.PHONY : test1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/main.c.i
-.PHONY : main.c.i
+test1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/test1.c.i
+.PHONY : test1.c.i
 
-main.s: main.c.s
+test1.s: test1.c.s
 
-.PHONY : main.s
+.PHONY : test1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/main.c.s
-.PHONY : main.c.s
+test1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practice_1.dir/build.make CMakeFiles/practice_1.dir/test1.c.s
+.PHONY : test1.c.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practice_1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test1.o"
+	@echo "... test1.i"
+	@echo "... test1.s"
 .PHONY : help
 
 

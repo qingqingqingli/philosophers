@@ -77,27 +77,27 @@ include CMakeFiles/practice_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/practice_1.dir/flags.make
 
-CMakeFiles/practice_1.dir/main.c.o: CMakeFiles/practice_1.dir/flags.make
-CMakeFiles/practice_1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_two/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/practice_1.dir/main.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice_1.dir/main.c.o   -c /home/qli/CLionProjects/philosophers/philo_two/practice/main.c
+CMakeFiles/practice_1.dir/test1.c.o: CMakeFiles/practice_1.dir/flags.make
+CMakeFiles/practice_1.dir/test1.c.o: ../test1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qli/CLionProjects/philosophers/philo_two/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/practice_1.dir/test1.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/practice_1.dir/test1.c.o   -c /home/qli/CLionProjects/philosophers/philo_two/practice/test1.c
 
-CMakeFiles/practice_1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice_1.dir/main.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_two/practice/main.c > CMakeFiles/practice_1.dir/main.c.i
+CMakeFiles/practice_1.dir/test1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/practice_1.dir/test1.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/qli/CLionProjects/philosophers/philo_two/practice/test1.c > CMakeFiles/practice_1.dir/test1.c.i
 
-CMakeFiles/practice_1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice_1.dir/main.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_two/practice/main.c -o CMakeFiles/practice_1.dir/main.c.s
+CMakeFiles/practice_1.dir/test1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/practice_1.dir/test1.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/qli/CLionProjects/philosophers/philo_two/practice/test1.c -o CMakeFiles/practice_1.dir/test1.c.s
 
 # Object files for target practice_1
 practice_1_OBJECTS = \
-"CMakeFiles/practice_1.dir/main.c.o"
+"CMakeFiles/practice_1.dir/test1.c.o"
 
 # External object files for target practice_1
 practice_1_EXTERNAL_OBJECTS =
 
-practice_1: CMakeFiles/practice_1.dir/main.c.o
+practice_1: CMakeFiles/practice_1.dir/test1.c.o
 practice_1: CMakeFiles/practice_1.dir/build.make
 practice_1: CMakeFiles/practice_1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qli/CLionProjects/philosophers/philo_two/practice/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable practice_1"
