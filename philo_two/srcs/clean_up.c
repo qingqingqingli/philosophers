@@ -11,12 +11,8 @@ void 	clean_up_philos(t_philosopher *philos)
 
 void 	clean_up_setup_semaphores(t_setup *setup)
 {
-	if (setup->fork_sema)
-	{
-		sem_destroy(setup->fork_sema);
-		pthread_mutex_destroy(&setup->write_mutex); // need to replace
-		pthread_mutex_destroy(&setup->status_mutex); // need to replace
-	}
+	pthread_mutex_destroy(&setup->write_mutex); // need to replace
+	pthread_mutex_destroy(&setup->status_mutex); // need to replace
 }
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)

@@ -59,7 +59,7 @@ void	print_setup_date(t_setup setup)
 
 int	create_fork_semaphores(t_setup *setup)
 {
-	//	setup->fork_sema = malloc(sizeof(sem_t)); // apparently you don't need to malloc
+//	setup->fork_sema = malloc(sizeof(sem_t)); // apparently you don't need to malloc
 	setup->fork_sema = sem_open("fork_sema", O_CREAT, 0644, setup->number_of_philosophers);
 	if (setup->fork_sema == SEM_FAILED)
 		return (-1);
