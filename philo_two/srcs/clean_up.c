@@ -12,7 +12,6 @@ int	set_sema_dead(t_setup *setup, int return_val)
 	return (return_val);
 }
 
-
 void 	clean_up_philos(t_philosopher *philos)
 {
 	free(philos);
