@@ -62,11 +62,11 @@ void	print_setup_date(t_setup setup)
 
 int	create_fork_semaphores(t_setup *setup)
 {
-	setup->fork_sema = sem_open("fork_sema", O_CREAT, 0644, \
+	setup->fork_sema = sem_open(FORK_SEMA, O_CREAT, 0644, \
 	setup->number_of_philosophers);
 	if (setup->fork_sema == SEM_FAILED)
 		return (set_sema_dead(setup, -1));
-	sem_unlink("fork_sema");
+	sem_unlink(FORK_SEMA);
 	return (0);
 }
 
