@@ -68,7 +68,7 @@ int	init_philo_threads(t_philosopher *philos, int num)
 	return (0);
 }
 
-int 	init_write_mutex(t_philosopher *philo)
+int 	init_write_and_status_mutex(t_philosopher *philo)
 {
 	if (pthread_mutex_init(&philo->setup->check_status_mutex, NULL))
 		return (set_mutex_dead(philo->setup, -1));

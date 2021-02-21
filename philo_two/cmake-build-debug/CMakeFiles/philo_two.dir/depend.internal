@@ -15,10 +15,12 @@ CMakeFiles/philo_two.dir/srcs/check_status.c.o
  /home/qli/CLionProjects/philosophers/philo_two/srcs/check_status.c
 CMakeFiles/philo_two.dir/srcs/clean_up.c.o
  /home/qli/CLionProjects/philosophers/philo_two/headers/clean_up.h
+ /home/qli/CLionProjects/philosophers/philo_two/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_two/srcs/clean_up.c
 CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o
  /home/qli/CLionProjects/philosophers/philo_two/headers/check_status.h
+ /home/qli/CLionProjects/philosophers/philo_two/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/initialise_philos.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
@@ -27,6 +29,7 @@ CMakeFiles/philo_two.dir/srcs/libft_functions.c.o
  /home/qli/CLionProjects/philosophers/philo_two/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_two/srcs/libft_functions.c
 CMakeFiles/philo_two.dir/srcs/print.c.o
+ /home/qli/CLionProjects/philosophers/philo_two/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/print.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
@@ -39,6 +42,7 @@ CMakeFiles/philo_two.dir/srcs/process_input.c.o
  /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_two/srcs/process_input.c
 CMakeFiles/philo_two.dir/srcs/start_action.c.o
+ /home/qli/CLionProjects/philosophers/philo_two/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/print.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_two/headers/struct.h

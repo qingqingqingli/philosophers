@@ -14,10 +14,12 @@ CMakeFiles/philo_two.dir/srcs/check_status.c.o: ../headers/time_calculation.h
 CMakeFiles/philo_two.dir/srcs/check_status.c.o: ../srcs/check_status.c
 
 CMakeFiles/philo_two.dir/srcs/clean_up.c.o: ../headers/clean_up.h
+CMakeFiles/philo_two.dir/srcs/clean_up.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_two.dir/srcs/clean_up.c.o: ../headers/struct.h
 CMakeFiles/philo_two.dir/srcs/clean_up.c.o: ../srcs/clean_up.c
 
 CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../headers/check_status.h
+CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../headers/clean_up.h
 CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../headers/initialise_philos.h
 CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../headers/start_action.h
 CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../headers/struct.h
@@ -26,6 +28,7 @@ CMakeFiles/philo_two.dir/srcs/initialise_philos.c.o: ../srcs/initialise_philos.c
 CMakeFiles/philo_two.dir/srcs/libft_functions.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_two.dir/srcs/libft_functions.c.o: ../srcs/libft_functions.c
 
+CMakeFiles/philo_two.dir/srcs/print.c.o: ../headers/clean_up.h
 CMakeFiles/philo_two.dir/srcs/print.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_two.dir/srcs/print.c.o: ../headers/print.h
 CMakeFiles/philo_two.dir/srcs/print.c.o: ../headers/struct.h
@@ -38,6 +41,7 @@ CMakeFiles/philo_two.dir/srcs/process_input.c.o: ../headers/process_input.h
 CMakeFiles/philo_two.dir/srcs/process_input.c.o: ../headers/struct.h
 CMakeFiles/philo_two.dir/srcs/process_input.c.o: ../srcs/process_input.c
 
+CMakeFiles/philo_two.dir/srcs/start_action.c.o: ../headers/clean_up.h
 CMakeFiles/philo_two.dir/srcs/start_action.c.o: ../headers/print.h
 CMakeFiles/philo_two.dir/srcs/start_action.c.o: ../headers/start_action.h
 CMakeFiles/philo_two.dir/srcs/start_action.c.o: ../headers/struct.h
