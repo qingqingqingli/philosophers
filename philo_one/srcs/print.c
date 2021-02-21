@@ -5,6 +5,7 @@
 #include "../headers/print.h"
 #include "../headers/time_calculation.h"
 #include "../headers/libft_functions.h"
+#include "../headers/clean_up.h"
 
 int	print_prompt(t_philosopher *philo, char *prompt)
 {
@@ -18,7 +19,8 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	color[5] = CYAN;
 	if (philo->setup->life_status == dead)
 		return (1);
-	pthread_mutex_lock(&philo->setup->write_mutex);
+	if (pthread_mutex_lock(&philo->setup->write_mutex))
+		return (set_mutex_dead(philo->setup, 1));
 	gettimeofday(&philo->now, NULL);
 	write(STDOUT_FILENO, color[philo->num % 6], ft_strlen(color[philo->num % 6]));
 	write(STDOUT_FILENO, "[", 1);

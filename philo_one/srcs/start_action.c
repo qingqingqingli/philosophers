@@ -6,28 +6,44 @@
 #include "../headers/time_calculation.h"
 #include "../headers/print.h"
 #include "../headers/grab_forks.h"
+#include "../headers/clean_up.h"
 
 int 	grab_forks(t_philosopher *philo)
 {
 	if (philo->num % 2)
 	{
-		lock_left_fork(philo);
-		lock_right_fork(philo);
+		if (lock_left_fork(philo))
+			return (1);
+		if (lock_right_fork(philo))
+		{
+			pthread_mutex_unlock(philo->left_fork_mutex);
+			return (1);
+		}
 	}
 	else
 	{
-		lock_right_fork(philo);
-		lock_left_fork(philo);
+		if (lock_right_fork(philo))
+			return (1);
+		if (lock_left_fork(philo))
+		{
+			pthread_mutex_unlock(philo->right_fork_mutex);
+			return (1);
+		}
 	}
 	return (0);
 }
 
 int	philo_eat(t_philosopher *philo)
 {
-	pthread_mutex_lock(&philo->setup->status_mutex);
+	if (pthread_mutex_lock(&philo->setup->check_status_mutex))
+	{
+		pthread_mutex_unlock(philo->left_fork_mutex);
+		pthread_mutex_unlock(philo->right_fork_mutex);
+		return (set_mutex_dead(philo->setup, 1));
+	}
 	print_prompt(philo, "is eating\n");
 	gettimeofday(&philo->last_eat_time, NULL);
-	pthread_mutex_unlock(&philo->setup->status_mutex);
+	pthread_mutex_unlock(&philo->setup->check_status_mutex);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
 	pthread_mutex_unlock(philo->left_fork_mutex);
@@ -58,8 +74,7 @@ void	*start_action(void *arg)
 	philo = arg;
 	while (philo->setup->life_status)
 	{
-		grab_forks(philo);
-		if (philo_eat(philo))
+		if (grab_forks(philo) || philo_eat(philo))
 			return (NULL);
 		philo_sleep(philo);
 		philo_think(philo);

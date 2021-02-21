@@ -6,6 +6,7 @@
 #include "../headers/initialise_philos.h"
 #include "../headers/start_action.h"
 #include "../headers/check_status.h"
+#include "../headers/clean_up.h"
 
 int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
@@ -69,10 +70,10 @@ int	init_philo_threads(t_philosopher *philos, int num)
 
 int 	init_write_mutex(t_philosopher *philo)
 {
-	if (pthread_mutex_init(&philo->setup->status_mutex, NULL))
-		return (-1);
+	if (pthread_mutex_init(&philo->setup->check_status_mutex, NULL))
+		return (set_mutex_dead(philo->setup, -1));
 	if (pthread_mutex_init(&philo->setup->write_mutex, NULL))
-		return (-1);
+		return (set_mutex_dead(philo->setup, -1));
 	return (0);
 }
 

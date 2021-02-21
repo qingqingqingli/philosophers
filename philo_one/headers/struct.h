@@ -6,6 +6,7 @@
 # define STRUCT_H
 # include <pthread.h>
 # include <sys/time.h>
+# define MUTEX_ERROR "Mutexes process error\n"
 
 typedef struct s_setup
 {
@@ -15,8 +16,9 @@ typedef struct s_setup
 	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
+	int				mutexes_status;
 	pthread_mutex_t	*fork_mutexs;
-	pthread_mutex_t	status_mutex;
+	pthread_mutex_t	check_status_mutex;
 	pthread_mutex_t	write_mutex;
 }					t_setup;
 

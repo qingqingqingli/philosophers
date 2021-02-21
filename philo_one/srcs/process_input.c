@@ -36,6 +36,7 @@ int	check_argc_all_digits(int argc, char **argv)
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = alive;
+	setup->mutexes_status = alive;
 	setup->fork_mutexs = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
@@ -65,11 +66,11 @@ int	create_fork_mutexes(t_setup *setup)
 	setup->fork_mutexs = malloc(sizeof(pthread_mutex_t) * \
 	setup->number_of_philosophers);
 	if (!setup->fork_mutexs)
-		return (-1);
+		return (set_mutex_dead(setup, 1));
 	while (i < setup->number_of_philosophers)
 	{
 		if (pthread_mutex_init(&setup->fork_mutexs[i], NULL))
-			return (-1);
+			return (set_mutex_dead(setup, 1));
 		i++;
 	}
 	return (0);
