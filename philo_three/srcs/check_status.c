@@ -17,7 +17,7 @@ void	*check_status(void *arg)
 	{
 		sem_wait(philo->setup->status_sema);
 		gettimeofday(&check, NULL);
-		if (get_elapsed_milli(&philo->last_eat_time, &check) > \
+		if (get_elapsed_milli(&philo->last_eat_time, &check) >= \
 		philo->setup->time_to_die)
 		{
 			print_prompt(philo, "has died.\n");
