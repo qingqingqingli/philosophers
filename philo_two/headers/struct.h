@@ -18,7 +18,7 @@ typedef struct s_setup
 	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
-	sem_t 			*fork_sema;
+	sem_t			*fork_sema;
 	sem_t			*status_sema;
 	sem_t			*write_sema;
 }					t_setup;

@@ -8,7 +8,6 @@
 
 int 	grab_forks(t_philosopher *philo)
 {
-	// grab two forks
 	sem_wait(philo->setup->fork_sema);
 	print_prompt(philo, "has taken a fork\n");
 	sem_wait(philo->setup->fork_sema);
@@ -24,7 +23,6 @@ int	philo_eat(t_philosopher *philo)
 	sem_post(philo->setup->status_sema);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
-	// give back two forks
 	sem_post(philo->setup->fork_sema);
 	sem_post(philo->setup->fork_sema);
 	if (philo->time_of_eaten == \
