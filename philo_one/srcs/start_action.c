@@ -74,8 +74,8 @@ void	*start_action(void *arg)
 	philo = arg;
 	while (philo->setup->life_status)
 	{
-		if (grab_forks(philo) || philo_eat(philo) \
-		|| philo_sleep(philo) || philo_think(philo))
+		if (grab_forks(philo) || philo_eat(philo) || \
+		philo_sleep(philo) || philo_think(philo))
 			return (NULL);
 	}
 	return (NULL);

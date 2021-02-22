@@ -9,10 +9,12 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <semaphore.h>
+
 # define SEMA_ERROR "semaphore process error\n"
 # define FORK_SEMA "fork_sema"
 # define WRITE_SEMA "write_sema"
 # define CHECK_STATUS_SEMA "check_status_sema"
+# define MODE 0644
 
 typedef struct s_setup
 {
