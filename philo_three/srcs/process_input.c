@@ -36,7 +36,10 @@ int	check_argc_all_digits(int argc, char **argv)
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = alive;
+	setup->sema_status = alive;
 	setup->fork_sema = NULL;
+	setup->write_sema = NULL;
+	setup->check_status_sema = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
 	setup->time_to_eat = ft_atoi(argv[3]);
@@ -59,10 +62,11 @@ void	print_setup_date(t_setup setup)
 
 int	create_fork_semaphores(t_setup *setup)
 {
-	setup->fork_sema = sem_open("fork_sema", O_CREAT, 0644, setup->number_of_philosophers);
+	setup->fork_sema = sem_open(FORK_SEMA, O_CREAT, 0644, \
+	setup->number_of_philosophers);
 	if (setup->fork_sema == SEM_FAILED)
-		return (-1);
-	sem_unlink("fork_sema");
+		return (set_sema_dead(setup, -1));
+	sem_unlink(FORK_SEMA);
 	return (0);
 }
 

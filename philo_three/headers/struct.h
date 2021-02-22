@@ -10,6 +10,12 @@
 # include <sys/stat.h>
 # include <semaphore.h>
 
+# define SEMA_ERROR "semaphore process error\n"
+# define FORK_SEMA "fork_sema"
+# define WRITE_SEMA "write_sema"
+# define CHECK_STATUS_SEMA "check_status_sema"
+# define MODE 0644
+
 typedef struct s_setup
 {
 	int				number_of_philosophers;
@@ -18,8 +24,9 @@ typedef struct s_setup
 	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
 	int				life_status;
-	sem_t 			*fork_sema;
-	sem_t			*status_sema;
+	int				sema_status;
+	sem_t			*fork_sema;
+	sem_t			*check_status_sema;
 	sem_t			*write_sema;
 }					t_setup;
 
