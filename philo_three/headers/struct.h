@@ -9,12 +9,14 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <semaphore.h>
+# include <sys/types.h> // fork
+# include <unistd.h> // fork
+
 
 # define SEMA_ERROR "semaphore process error\n"
 # define FORK_SEMA "fork_sema"
 # define WRITE_SEMA "write_sema"
 # define CHECK_STATUS_SEMA "check_status_sema"
-# define MODE 0644
 
 typedef struct s_setup
 {
@@ -23,7 +25,6 @@ typedef struct s_setup
 	long long int	time_to_eat;
 	long long int	time_to_sleep;
 	int				number_of_times_each_philosopher_must_eat;
-	int				life_status;
 	int				sema_status;
 	sem_t			*fork_sema;
 	sem_t			*check_status_sema;
@@ -38,8 +39,9 @@ typedef struct s_philosopher
 	struct timeval	begin_time;
 	struct timeval	now;
 	struct timeval	last_eat_time;
-	pthread_t		philo_thread;
-	pthread_t		philo_status_thread;
+	pid_t			fork_id;
+//	pthread_t		philo_thread;
+//	pthread_t		philo_status_thread;
 }					t_philosopher;
 
 enum e_values

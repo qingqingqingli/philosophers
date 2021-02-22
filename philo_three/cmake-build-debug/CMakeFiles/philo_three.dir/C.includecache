@@ -63,6 +63,10 @@ sys/stat.h
 -
 semaphore.h
 -
+sys/types.h
+-
+unistd.h
+-
 
 /home/qli/CLionProjects/philosophers/philo_three/headers/time_calculation.h
 sys/time.h
@@ -70,6 +74,8 @@ sys/time.h
 
 /home/qli/CLionProjects/philosophers/philo_three/main.c
 stdlib.h
+-
+wait.h
 -
 headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -82,6 +88,8 @@ headers/clean_up.h
 
 /home/qli/CLionProjects/philosophers/philo_three/srcs/check_status.c
 stdio.h
+-
+stdlib.h
 -
 ../headers/check_status.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
@@ -98,6 +106,8 @@ stdio.h
 
 /home/qli/CLionProjects/philosophers/philo_three/srcs/initialise_philos.c
 stdio.h
+-
+sys/wait.h
 -
 ../headers/initialise_philos.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
@@ -117,6 +127,8 @@ stdio.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
 ../headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
+../headers/check_status.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
 
 /home/qli/CLionProjects/philosophers/philo_three/srcs/process_input.c
 ../headers/process_input.h
@@ -135,4 +147,6 @@ stdio.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/print.h
 ../headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
+../headers/check_status.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
 

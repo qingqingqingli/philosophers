@@ -28,6 +28,7 @@ CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../srcs/initialise_philos
 CMakeFiles/philo_three.dir/srcs/libft_functions.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_three.dir/srcs/libft_functions.c.o: ../srcs/libft_functions.c
 
+CMakeFiles/philo_three.dir/srcs/print.c.o: ../headers/check_status.h
 CMakeFiles/philo_three.dir/srcs/print.c.o: ../headers/clean_up.h
 CMakeFiles/philo_three.dir/srcs/print.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_three.dir/srcs/print.c.o: ../headers/print.h
@@ -41,6 +42,7 @@ CMakeFiles/philo_three.dir/srcs/process_input.c.o: ../headers/process_input.h
 CMakeFiles/philo_three.dir/srcs/process_input.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/srcs/process_input.c.o: ../srcs/process_input.c
 
+CMakeFiles/philo_three.dir/srcs/start_action.c.o: ../headers/check_status.h
 CMakeFiles/philo_three.dir/srcs/start_action.c.o: ../headers/clean_up.h
 CMakeFiles/philo_three.dir/srcs/start_action.c.o: ../headers/print.h
 CMakeFiles/philo_three.dir/srcs/start_action.c.o: ../headers/start_action.h

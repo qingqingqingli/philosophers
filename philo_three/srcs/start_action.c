@@ -6,6 +6,7 @@
 #include "../headers/time_calculation.h"
 #include "../headers/print.h"
 #include "../headers/clean_up.h"
+#include "../headers/check_status.h"
 
 int 	grab_forks(t_philosopher *philo)
 {
@@ -20,18 +21,20 @@ int 	grab_forks(t_philosopher *philo)
 
 int	philo_eat(t_philosopher *philo)
 {
-	if (sem_wait(philo->setup->check_status_sema))
-		return (set_sema_dead(philo->setup, 1));
+
 	print_prompt(philo, "is eating\n");
 	gettimeofday(&philo->last_eat_time, NULL);
-	sem_post(philo->setup->check_status_sema);
 	accurately_sleep(philo->setup->time_to_eat * 1000);
 	philo->time_of_eaten++;
 	sem_post(philo->setup->fork_sema);
 	sem_post(philo->setup->fork_sema);
 	if (philo->time_of_eaten == \
 	philo->setup->number_of_times_each_philosopher_must_eat)
-		return (1);
+	{
+		print_prompt(philo, "has died.\n");
+		sem_post(philo->setup->check_status_sema);
+		exit (0);
+	}
 	return (0);
 }
 
@@ -48,16 +51,18 @@ int 	philo_think(t_philosopher *philo)
 	return (print_prompt(philo, "is thinking\n"));
 }
 
-void	*start_action(void *arg)
+int 	start_action(t_philosopher	*philo)
 {
-	t_philosopher	*philo;
-
-	philo = arg;
-	while (philo->setup->life_status)
+	while (check_status(philo))
 	{
-		if (grab_forks(philo) || philo_eat(philo) || \
-		philo_sleep(philo) || philo_think(philo))
-			return (NULL);
+		if (check_status(philo))
+			grab_forks(philo);
+		if (check_status(philo))
+			philo_eat(philo);
+		if (check_status(philo))
+			philo_sleep(philo);
+		if (check_status(philo))
+			philo_think(philo);
 	}
-	return (NULL);
+	return (0);
 }

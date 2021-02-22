@@ -35,7 +35,6 @@ int	check_argc_all_digits(int argc, char **argv)
 
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
-	setup->life_status = alive;
 	setup->sema_status = alive;
 	setup->fork_sema = NULL;
 	setup->write_sema = NULL;
