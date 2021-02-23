@@ -55,11 +55,11 @@ int	init_philo_threads(t_philosopher *philos, int num)
 
 int 	init_write_and_status_sema(t_philosopher *philo)
 {
-	philo->setup->check_status_sema = sem_open(CHECK_STATUS_SEMA, O_CREAT, O_RDWR, 1);
+	philo->setup->check_status_sema = sem_open(CHECK_STATUS_SEMA, O_CREAT, MODE, 1);
 	if (philo->setup->check_status_sema == SEM_FAILED)
 		return (set_sema_dead(philo->setup, 1));
 	sem_unlink(CHECK_STATUS_SEMA);
-	philo->setup->write_sema = sem_open(WRITE_SEMA, O_CREAT, O_RDWR, 1);
+	philo->setup->write_sema = sem_open(WRITE_SEMA, O_CREAT, MODE, 1);
 	if (philo->setup->write_sema == SEM_FAILED)
 		return (set_sema_dead(philo->setup, 1));
 	sem_unlink(WRITE_SEMA);

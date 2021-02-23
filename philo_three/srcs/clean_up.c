@@ -5,6 +5,8 @@
 #include "../headers/clean_up.h"
 #include "../headers/libft_functions.h"
 
+// need to consider how to kill all child processes when a program terminates
+
 int	set_sema_dead(t_setup *setup, int return_val)
 {
 	setup->sema_status = dead;

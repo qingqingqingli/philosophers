@@ -3,6 +3,7 @@
 
 CMakeFiles/philo_three.dir/main.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
+ /home/qli/CLionProjects/philosophers/philo_three/headers/fork_child_process.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/process_input.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -18,15 +19,11 @@ CMakeFiles/philo_three.dir/srcs/clean_up.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/clean_up.c
-<<<<<<< HEAD
 CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o
- /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/fork_child_process.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/fork_child_process.c
-=======
->>>>>>> parent of dbe587a... philo_three - create separate fork files
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
@@ -38,6 +35,7 @@ CMakeFiles/philo_three.dir/srcs/libft_functions.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/libft_functions.c
 CMakeFiles/philo_three.dir/srcs/print.c.o
+ /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/print.h
@@ -51,6 +49,7 @@ CMakeFiles/philo_three.dir/srcs/process_input.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/process_input.c
 CMakeFiles/philo_three.dir/srcs/start_action.c.o
+ /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/print.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/start_action.h

@@ -7,6 +7,6 @@
 # include "struct.h"
 # include <stdio.h>
 
-void	*check_status(void *arg);
+int	check_status(t_philosopher	*philo);
 
 #endif

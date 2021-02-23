@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/headers/fork_child_process.h">
+			<Option target="philo_three"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/main.c">
 			<Option target="philo_three"/>
 		</Unit>

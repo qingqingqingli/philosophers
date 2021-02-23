@@ -3,20 +3,9 @@
 //
 
 #include <stdlib.h>
-#include <wait.h>
 #include "../headers/fork_child_process.h"
 #include "../headers/start_action.h"
-#include "../headers/check_status.h"
-
-int	init_philo_check_status_thread(t_philosopher *philo)
-{
-	if (pthread_create(&philo->philo_status_thread, NULL, \
-		check_status, philo))
-		return (1);
-//	if (pthread_join(philo->philo_status_thread, NULL))
-//		return (1);
-	return (0);
-}
+#include <wait.h>
 
 int	fork_philo_processes(t_philosopher *philos, int num)
 {
@@ -30,9 +19,7 @@ int	fork_philo_processes(t_philosopher *philos, int num)
 			return (1); // need to update
 		if (philos[i].fork_id == 0)
 		{
-			if (init_philo_check_status_thread(&philos[i]))
-				exit(0);
-			start_action(philos);
+			start_action(&philos[i]);
 			exit (0);
 		}
 		usleep(100);
