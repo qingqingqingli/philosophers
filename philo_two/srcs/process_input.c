@@ -58,8 +58,7 @@ int	process_setup_data(int argc, char **argv, t_setup *setup)
 int		validate_input_value(t_setup *setup)
 {
 	if (setup->number_of_philosophers <= 0 || setup->time_to_sleep <= 0 || \
-	setup->time_to_die <= 0 || setup->time_to_eat <= 0 || \
-	setup->number_of_times_each_philosopher_must_eat <= 0)
+	setup->time_to_die <= 0 || setup->time_to_eat <= 0)
 		return (-1);
 	return (0);
 }
