@@ -27,7 +27,7 @@ OBJECT			=	$(SOURCE:.c=.o)
 
 COMPILE			= 	gcc
 
-FLAGS			= 	-Wall -Wextra -Werror -pthread -g --address=sanitizer
+FLAGS			= 	-Wall -Wextra -Werror -pthread -g -fsanitize=address
 
 RESET			= 	\033[0m
 GREEN 			= 	\033[38;5;46m
