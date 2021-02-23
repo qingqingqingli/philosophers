@@ -22,7 +22,8 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	if (pthread_mutex_lock(&philo->setup->write_mutex))
 		return (set_mutex_dead(philo->setup, 1));
 	gettimeofday(&philo->now, NULL);
-	write(STDOUT_FILENO, color[philo->num % 6], ft_strlen(color[philo->num % 6]));
+	write(STDOUT_FILENO, color[philo->num % 6], \
+	ft_strlen(color[philo->num % 6]));
 	write(STDOUT_FILENO, "[", 1);
 	ft_putnbr(get_elapsed_milli(&philo->begin_time, &philo->now));
 	write(STDOUT_FILENO, "] \t", 3);

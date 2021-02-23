@@ -22,7 +22,8 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	if (sem_wait(philo->setup->write_sema))
 		return (set_sema_dead(philo->setup, 1));
 	gettimeofday(&philo->now, NULL);
-	write(STDOUT_FILENO, color[philo->num % 6], ft_strlen(color[philo->num % 6]));
+	write(STDOUT_FILENO, color[philo->num % 6], \
+	ft_strlen(color[philo->num % 6]));
 	write(STDOUT_FILENO, "[", 1);
 	ft_putnbr(get_elapsed_milli(&philo->begin_time, &philo->now));
 	write(STDOUT_FILENO, "] \t", 3);

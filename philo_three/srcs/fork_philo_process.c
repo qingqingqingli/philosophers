@@ -22,13 +22,18 @@ int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 			return (-1);
 		if (philos[i].fork_id == 0)
 		{
-			pthread_create(&philos[i].philo_status_thread, NULL, check_status, &philos[i]);
+			pthread_create(&philos[i].philo_status_thread, NULL, \
+			check_status, &philos[i]);
 			start_action(&philos[i]);
 			pthread_join(philos[i].philo_status_thread, NULL);
 		}
 		usleep(100);
 		i++;
 	}
-	while (waitpid(-1, &status, 0) > 0);
+	while (1)
+	{
+		if (waitpid(-1, &status, 0) <= 0)
+			break ;
+	}
 	return (0);
 }
