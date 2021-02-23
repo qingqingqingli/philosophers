@@ -224,6 +224,33 @@ srcs/clean_up.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/clean_up.c.s
 .PHONY : srcs/clean_up.c.s
 
+srcs/fork_child_process.o: srcs/fork_child_process.c.o
+
+.PHONY : srcs/fork_child_process.o
+
+# target to build an object file
+srcs/fork_child_process.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o
+.PHONY : srcs/fork_child_process.c.o
+
+srcs/fork_child_process.i: srcs/fork_child_process.c.i
+
+.PHONY : srcs/fork_child_process.i
+
+# target to preprocess a source file
+srcs/fork_child_process.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/fork_child_process.c.i
+.PHONY : srcs/fork_child_process.c.i
+
+srcs/fork_child_process.s: srcs/fork_child_process.c.s
+
+.PHONY : srcs/fork_child_process.s
+
+# target to generate assembly for a file
+srcs/fork_child_process.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/fork_child_process.c.s
+.PHONY : srcs/fork_child_process.c.s
+
 srcs/initialise_philos.o: srcs/initialise_philos.c.o
 
 .PHONY : srcs/initialise_philos.o
@@ -404,6 +431,9 @@ help:
 	@echo "... srcs/clean_up.o"
 	@echo "... srcs/clean_up.i"
 	@echo "... srcs/clean_up.s"
+	@echo "... srcs/fork_child_process.o"
+	@echo "... srcs/fork_child_process.i"
+	@echo "... srcs/fork_child_process.s"
 	@echo "... srcs/initialise_philos.o"
 	@echo "... srcs/initialise_philos.i"
 	@echo "... srcs/initialise_philos.s"
