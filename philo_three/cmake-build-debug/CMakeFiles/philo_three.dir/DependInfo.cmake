@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_three/main.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/main.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/check_status.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/check_status.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/clean_up.c.o"
-  "/home/qli/CLionProjects/philosophers/philo_three/srcs/fork_child_process.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/initialise_philos.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/libft_functions.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/libft_functions.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/print.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/print.c.o"

@@ -13,6 +13,7 @@ void	*check_status(void *arg)
 	t_philosopher	*philo;
 	struct timeval	check;
 
+<<<<<<< HEAD
 	philo = arg;
 	while (philo->setup->life_status)
 	{
@@ -34,4 +35,17 @@ void	*check_status(void *arg)
 		sem_post(philo->setup->check_status_sema);
 	}
 	return (NULL);
+=======
+	if (sem_wait(philo->setup->check_status_sema))
+		exit (0);
+	gettimeofday(&check, NULL);
+	if (get_elapsed_milli(&philo->last_eat_time, &check) > philo->setup->time_to_die)
+	{
+		print_prompt(philo, "has died.\n");
+//		sem_post(philo->setup->check_status_sema);
+		exit (0);
+	}
+	sem_post(philo->setup->check_status_sema);
+	return (1);
+>>>>>>> parent of dbe587a... philo_three - create separate fork files
 }

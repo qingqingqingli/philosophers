@@ -85,7 +85,7 @@ int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 	if (setup_each_philo(setup, philos) == -1)
 		return (-1);
 	set_philo_fork_mutexs(philos, num);
-	if (init_write_and_status_mutex(philos) == -1 || init_philo_threads(philos, num) == -1)
+	if (init_write_mutex(philos) == -1 || init_philo_threads(philos, num) == -1)
 		return (-1);
 	return (0);
 }
