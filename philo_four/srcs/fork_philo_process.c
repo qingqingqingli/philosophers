@@ -31,7 +31,7 @@ int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 	}
 	while (1)
 	{
-		if (waitpid(-1, &status, 0) <= 0)
+		if (waitpid(-1, &status, 0))
 			break;
 	}
 	return (0);

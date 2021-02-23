@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "../headers/check_status.h"
 #include "../headers/time_calculation.h"
 #include "../headers/print.h"
