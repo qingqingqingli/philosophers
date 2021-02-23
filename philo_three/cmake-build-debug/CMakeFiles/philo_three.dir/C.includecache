@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
-struct.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
-stdio.h
--
-
 /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
 ../headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -20,34 +14,14 @@ stdlib.h
 unistd.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_three/headers/fork_child_process.h
-../headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
-
-/home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
-../headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
-stdlib.h
--
-
 /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
 unistd.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_three/headers/process_input.h
-../headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
-stdio.h
--
-stdlib.h
--
-
-/home/qli/CLionProjects/philosophers/philo_three/headers/start_action.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/print.h
 struct.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
 stdio.h
--
-unistd.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -66,39 +40,17 @@ sys/types.h
 unistd.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_three/main.c
-stdlib.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/time_calculation.h
+sys/time.h
 -
-headers/struct.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
-headers/process_input.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/process_input.h
-headers/initialise_philos.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
-headers/clean_up.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
-headers/fork_child_process.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/fork_child_process.h
 
-/home/qli/CLionProjects/philosophers/philo_three/srcs/initialise_philos.c
-stdio.h
--
-sys/wait.h
--
-../headers/initialise_philos.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
-../headers/start_action.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/start_action.h
-../headers/check_status.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
-../headers/clean_up.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
-
-/home/qli/CLionProjects/philosophers/philo_three/srcs/process_input.c
-../headers/process_input.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/process_input.h
-../headers/clean_up.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
+/home/qli/CLionProjects/philosophers/philo_three/srcs/print.c
+../headers/print.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/print.h
+../headers/time_calculation.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/time_calculation.h
 ../headers/libft_functions.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
+../headers/clean_up.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
 
