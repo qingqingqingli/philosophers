@@ -21,6 +21,5 @@ int 	main(int argc, char **argv)
 		return (clean_up(&setup, philos, -1));
 	if (initialise_philos(&setup, philos) || fork_philo_processes(philos, setup.number_of_philosophers))
 		return (clean_up(&setup, philos, -1));
-	wait_for_child_processes(philos, setup.number_of_philosophers);
 	return (clean_up(&setup, philos, 0));
 }
