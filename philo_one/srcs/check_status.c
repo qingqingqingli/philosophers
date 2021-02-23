@@ -25,7 +25,7 @@ void	*check_status(void *arg)
 		if (get_elapsed_milli(&philo->last_eat_time, &check) > \
 		philo->setup->time_to_die)
 		{
-			print_prompt(philo, "has died.\n");
+			print_prompt(philo, "has died\n");
 			philo->setup->life_status = dead;
 			pthread_mutex_unlock(&philo->setup->check_status_mutex);
 			return (NULL);

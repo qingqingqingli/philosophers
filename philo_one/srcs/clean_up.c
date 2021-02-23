@@ -17,7 +17,7 @@ void 	clean_up_philos(t_philosopher *philos)
 	free(philos);
 }
 
-void 	clean_up_setup_semaphores(t_setup *setup)
+void 	clean_up_setup_mutexes(t_setup *setup)
 {
 	int	i;
 
