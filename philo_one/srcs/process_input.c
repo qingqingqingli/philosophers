@@ -33,7 +33,7 @@ int	check_argc_all_digits(int argc, char **argv)
 	return (0);
 }
 
-void	process_setup_data(int argc, char **argv, t_setup *setup)
+int	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = alive;
 	setup->mutexes_status = alive;
@@ -43,16 +43,21 @@ void	process_setup_data(int argc, char **argv, t_setup *setup)
 	setup->time_to_eat = ft_atoi(argv[3]);
 	setup->time_to_sleep = ft_atoi(argv[4]);
 	if (argc == 6)
+	{
 		setup->number_of_times_each_philosopher_must_eat = ft_atoi(argv[5]);
+		if (setup->number_of_times_each_philosopher_must_eat <= 0)
+			return (-1);
+	}
 	else
 		setup->number_of_times_each_philosopher_must_eat = 0;
+	return (0);
 }
 
 int		validate_input_value(t_setup *setup)
 {
 	if (setup->number_of_philosophers <= 0 || setup->time_to_sleep <= 0 || \
 	setup->time_to_die <= 0 || setup->time_to_eat <= 0 || \
-	setup->number_of_times_each_philosopher_must_eat <= 0)
+	setup->number_of_times_each_philosopher_must_eat < 0)
 		return (-1);
 	return (0);
 }
@@ -93,12 +98,12 @@ int	process_input(int argc, char **argv, t_setup *setup)
 		return (-1);
 	}
 	if (check_argc_all_digits(argc, argv) == -1 || \
+	process_setup_data(argc, argv, setup) == -1 || \
 	validate_input_value(setup) == -1)
 	{
 		printf("Provided data not valid.\n");
 		return (-1);
 	}
-	process_setup_data(argc, argv, setup);
 	print_setup_date(*setup);
 	if (create_fork_mutexes(setup) == -1)
 		return (-1);
