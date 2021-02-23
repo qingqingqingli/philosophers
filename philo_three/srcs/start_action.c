@@ -55,12 +55,11 @@ int 	philo_think(t_philosopher *philo)
 
 int 	start_action(t_philosopher	*philo)
 {
-	while (check_status(philo))
+	while (philo->setup->life_status)
 	{
-		grab_forks(philo);
-		philo_eat(philo);
-		philo_sleep(philo);
-		philo_think(philo);
+		if (grab_forks(philo) || philo_eat(philo) || \
+		philo_sleep(philo) || philo_think(philo))
+			return (0);
 	}
 	return (0);
 }

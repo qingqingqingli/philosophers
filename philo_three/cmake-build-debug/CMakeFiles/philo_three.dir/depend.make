@@ -19,6 +19,7 @@ CMakeFiles/philo_three.dir/srcs/clean_up.c.o: ../headers/libft_functions.h
 CMakeFiles/philo_three.dir/srcs/clean_up.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/srcs/clean_up.c.o: ../srcs/clean_up.c
 
+CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o: ../headers/check_status.h
 CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o: ../headers/fork_child_process.h
 CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o: ../headers/start_action.h
 CMakeFiles/philo_three.dir/srcs/fork_child_process.c.o: ../headers/struct.h
