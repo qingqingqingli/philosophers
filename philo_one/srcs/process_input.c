@@ -48,6 +48,15 @@ void	process_setup_data(int argc, char **argv, t_setup *setup)
 		setup->number_of_times_each_philosopher_must_eat = 0;
 }
 
+int		validate_input_value(t_setup *setup)
+{
+	if (!setup->number_of_philosophers || !setup->time_to_sleep || \
+	!setup->time_to_die || !setup->time_to_eat || \
+	!setup->number_of_times_each_philosopher_must_eat)
+		return (-1);
+	return (0);
+}
+
 void	print_setup_date(t_setup setup)
 {
 	printf("number_of_philosophers = [%d]\n", setup.number_of_philosophers);
@@ -83,7 +92,8 @@ int	process_input(int argc, char **argv, t_setup *setup)
 		printf("Arguments not correct.\n");
 		return (-1);
 	}
-	if (check_argc_all_digits(argc, argv) == -1)
+	if (check_argc_all_digits(argc, argv) == -1 || \
+	validate_input_value(setup) == -1)
 	{
 		printf("Provided data not valid.\n");
 		return (-1);
