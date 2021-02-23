@@ -45,9 +45,14 @@ void	process_setup_data(int argc, char **argv, t_setup *setup)
 	setup->time_to_eat = ft_atoi(argv[3]);
 	setup->time_to_sleep = ft_atoi(argv[4]);
 	if (argc == 6)
+	{
 		setup->number_of_times_each_philosopher_must_eat = ft_atoi(argv[5]);
+		if (setup->number_of_times_each_philosopher_must_eat <= 0)
+			return (-1);
+	}
 	else
 		setup->number_of_times_each_philosopher_must_eat = 0;
+	return (0);
 }
 
 int		validate_input_value(t_setup *setup)
@@ -87,6 +92,7 @@ int	process_input(int argc, char **argv, t_setup *setup)
 		return (-1);
 	}
 	if (check_argc_all_digits(argc, argv) == -1 || \
+	process_setup_data(argc, argv, setup) == -1 || \
 	validate_input_value(setup) == -1)
 	{
 		printf("Provided data not valid.\n");
