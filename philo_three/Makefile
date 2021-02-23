@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME			= 	philo_two
+NAME			= 	philo_three
 
 SOURCE			= 	main.c \
 					srcs/check_status.c \
@@ -20,7 +20,8 @@ SOURCE			= 	main.c \
 					srcs/process_input.c \
 					srcs/start_action.c \
 					srcs/time_calculation.c \
-					srcs/libft_functions.c
+					srcs/libft_functions.c \
+					srcs/fork_philo_process.c
 
 OBJECT			=	$(SOURCE:.c=.o)
 
