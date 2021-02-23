@@ -20,8 +20,8 @@ SOURCE			= 	main.c \
 					srcs/process_input.c \
 					srcs/start_action.c \
 					srcs/time_calculation.c \
-					srcs/libft_functions.c \
-					srcs/fork_philo_process.c
+					srcs/fork_philo_process.c \
+					srcs/libft_functions.c
 
 OBJECT			=	$(SOURCE:.c=.o)
 
