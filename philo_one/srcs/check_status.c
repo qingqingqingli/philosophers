@@ -28,6 +28,8 @@ void	*check_status(void *arg)
 			print_prompt(philo, "has died\n");
 			philo->setup->life_status = dead;
 			pthread_mutex_unlock(&philo->setup->check_status_mutex);
+			pthread_mutex_unlock(philo->left_fork_mutex);
+			pthread_mutex_unlock(philo->right_fork_mutex);
 			return (NULL);
 		}
 		pthread_mutex_unlock(&philo->setup->check_status_mutex);

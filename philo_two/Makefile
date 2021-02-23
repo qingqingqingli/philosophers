@@ -26,6 +26,8 @@ OBJECT			=	$(SOURCE:.c=.o)
 
 COMPILE			= 	gcc
 
+INCLUDE			= 	-I/headers
+
 FLAGS			= 	-Wall -Wextra -Werror -pthread
 
 RESET			= 	\033[0m
@@ -39,7 +41,7 @@ all: $(NAME)
 
 %.o: %.c
 	@echo "$(GREY)Compiling...				$(GREY)$<"
-	@$(COMPILE) $(FLAGS) -c $< -o $@
+	@$(COMPILE) $(FLAGS) $(INCLUDE) -c $< -o $@
 
 $(NAME): $(OBJECT)
 	@echo "$(GREEN)----------------------------------------------------"
