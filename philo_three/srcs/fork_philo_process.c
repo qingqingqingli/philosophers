@@ -2,8 +2,6 @@
 // Created by qli on 23/02/2021.
 //
 
-#include <unistd.h>
-#include <wait.h>
 #include "../headers/fork_philo_process.h"
 #include "../headers/check_status.h"
 #include "../headers/start_action.h"
