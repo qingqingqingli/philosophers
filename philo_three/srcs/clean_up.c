@@ -5,11 +5,10 @@
 #include "../headers/clean_up.h"
 #include "../headers/libft_functions.h"
 
-// need to consider how to kill all child processes when a program terminates
-
 int	set_sema_dead(t_setup *setup, int return_val)
 {
 	setup->sema_status = dead;
+	setup->life_status = dead;
 	return (return_val);
 }
 
@@ -24,6 +23,8 @@ void 	clean_up_setup_semaphores(t_setup *setup)
 		sem_close(setup->fork_sema);
 	if (setup->write_sema)
 		sem_close(setup->write_sema);
+	if (setup->check_status_sema)
+		sem_close(setup->check_status_sema);
 }
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)

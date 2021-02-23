@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME			= 	philo_three
+NAME			= 	philo_two
 
 SOURCE			= 	main.c \
 					srcs/check_status.c \

@@ -8,6 +8,6 @@
 # include <stdio.h>
 # include <unistd.h>
 
-int 	start_action(t_philosopher	*philo);
+void	*start_action(void *arg);
 
 #endif

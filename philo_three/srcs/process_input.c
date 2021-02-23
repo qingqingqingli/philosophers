@@ -35,8 +35,8 @@ int	check_argc_all_digits(int argc, char **argv)
 
 void	process_setup_data(int argc, char **argv, t_setup *setup)
 {
-	setup->sema_status = alive;
 	setup->life_status = alive;
+	setup->sema_status = alive;
 	setup->fork_sema = NULL;
 	setup->write_sema = NULL;
 	setup->check_status_sema = NULL;
@@ -65,7 +65,7 @@ int	create_fork_semaphores(t_setup *setup)
 	setup->fork_sema = sem_open(FORK_SEMA, O_CREAT, 0644, \
 	setup->number_of_philosophers);
 	if (setup->fork_sema == SEM_FAILED)
-		return (set_sema_dead(setup, 1));
+		return (set_sema_dead(setup, -1));
 	sem_unlink(FORK_SEMA);
 	return (0);
 }
@@ -75,16 +75,16 @@ int	process_input(int argc, char **argv, t_setup *setup)
 	if (argc != 5 && argc != 6)
 	{
 		printf("Arguments not correct.\n");
-		return (1);
+		return (-1);
 	}
 	if (check_argc_all_digits(argc, argv) == -1)
 	{
 		printf("Provided data not valid.\n");
-		return (1);
+		return (-1);
 	}
 	process_setup_data(argc, argv, setup);
 	print_setup_date(*setup);
-	if (create_fork_semaphores(setup))
-		return (1);
+	if (create_fork_semaphores(setup) == -1)
+		return (-1);
 	return (0);
 }

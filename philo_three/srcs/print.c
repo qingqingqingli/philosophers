@@ -6,7 +6,6 @@
 #include "../headers/time_calculation.h"
 #include "../headers/libft_functions.h"
 #include "../headers/clean_up.h"
-#include "../headers/check_status.h"
 
 int	print_prompt(t_philosopher *philo, char *prompt)
 {
@@ -18,7 +17,6 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	color[3] = BLUE;
 	color[4] = MAGENTA;
 	color[5] = CYAN;
-
 	if (philo->setup->life_status == dead)
 		return (1);
 	if (sem_wait(philo->setup->write_sema))
