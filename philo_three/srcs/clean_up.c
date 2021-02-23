@@ -37,7 +37,7 @@ int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
 	if (philos)
 	{
 		clean_up_setup_semaphores(setup);
-//		clean_up_philos(philos);
+		clean_up_philos(philos);
 	}
 	return (return_value);
 }
