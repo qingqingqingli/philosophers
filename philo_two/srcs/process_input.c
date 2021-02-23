@@ -33,7 +33,7 @@ int	check_argc_all_digits(int argc, char **argv)
 	return (0);
 }
 
-void	process_setup_data(int argc, char **argv, t_setup *setup)
+int	process_setup_data(int argc, char **argv, t_setup *setup)
 {
 	setup->life_status = alive;
 	setup->sema_status = alive;
