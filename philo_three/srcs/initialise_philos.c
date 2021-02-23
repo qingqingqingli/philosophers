@@ -16,6 +16,7 @@ int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 	while (i < setup->number_of_philosophers)
 	{
 		philos[i].setup = setup;
+		philos[i].release_fork = 0;
 		philos[i].num = i + 1;
 		philos[i].time_of_eaten = 0;
 		gettimeofday(&philos[i].begin_time, NULL);

@@ -11,9 +11,11 @@ int 	grab_forks(t_philosopher *philo)
 {
 	if (sem_wait(philo->setup->fork_sema))
 		return (set_sema_dead(philo->setup, 1));
+	philo->release_fork += 1;
 	print_prompt(philo, "has taken a fork\n");
 	if (sem_wait(philo->setup->fork_sema))
 		return (set_sema_dead(philo->setup, 1));
+	philo->release_fork -= 1;
 	print_prompt(philo, "has taken a fork\n");
 	return (0);
 }

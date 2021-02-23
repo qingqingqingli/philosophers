@@ -28,7 +28,8 @@ void	*check_status(void *arg)
 		{
 			print_prompt(philo, "has died.\n");
 			philo->setup->life_status = dead;
-			sem_post(philo->setup->fork_sema);
+			if (philo->release_fork)
+				sem_post(philo->setup->fork_sema);
 			sem_post(philo->setup->check_status_sema);
 			return (NULL);
 		}

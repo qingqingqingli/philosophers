@@ -39,6 +39,7 @@ typedef struct s_philosopher
 	struct timeval	now;
 	struct timeval	last_eat_time;
 	int 			fork_id;
+	int				release_fork;
 	pthread_t		philo_status_thread;
 }					t_philosopher;
 
