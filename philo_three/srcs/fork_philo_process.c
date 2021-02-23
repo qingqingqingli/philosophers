@@ -29,6 +29,6 @@ int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 		usleep(100);
 		i++;
 	}
-	while (!waitpid(-1, &status, 0));
+	while (waitpid(-1, &status, 0) > 0);
 	return (0);
 }

@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/qli/CLionProjects/philosophers/philo_three/cmake-build-
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/philo_four.dir/all
+all: CMakeFiles/philo_three.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/philo_four.dir/clean
+clean: CMakeFiles/philo_three.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/philo_four.dir
+# Target rules for target CMakeFiles/philo_three.dir
 
 # All Build rule for target.
-CMakeFiles/philo_four.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_four.dir/build.make CMakeFiles/philo_four.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_four.dir/build.make CMakeFiles/philo_four.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target philo_four"
-.PHONY : CMakeFiles/philo_four.dir/all
+CMakeFiles/philo_three.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target philo_three"
+.PHONY : CMakeFiles/philo_three.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/philo_four.dir/rule: cmake_check_build_system
+CMakeFiles/philo_three.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/philo_four.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/philo_three.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/philo_four.dir/rule
+.PHONY : CMakeFiles/philo_three.dir/rule
 
 # Convenience name for target.
-philo_four: CMakeFiles/philo_four.dir/rule
+philo_three: CMakeFiles/philo_three.dir/rule
 
-.PHONY : philo_four
+.PHONY : philo_three
 
 # clean rule for target.
-CMakeFiles/philo_four.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_four.dir/build.make CMakeFiles/philo_four.dir/clean
-.PHONY : CMakeFiles/philo_four.dir/clean
+CMakeFiles/philo_three.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/clean
+.PHONY : CMakeFiles/philo_three.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
