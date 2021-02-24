@@ -12,6 +12,7 @@ void 	*handle_philo_death(t_philosopher *philo)
 {
 	gettimeofday(&philo->now, NULL);
 	philo->setup->life_status = dead;
+	sem_wait(philo->setup->death_block_sema);
 	printf(BLACK"[%ld]\t[%d] \thas died.\n", \
 	get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
 	sem_post(philo->setup->check_death_sema);

@@ -23,7 +23,6 @@ void	*check_death(void *arg)
 
 	philos = arg;
 	sem_wait(philos->setup->check_death_sema);
-	sem_wait(philos->setup->death_block_sema);
 	kill_all_process(philos);
 	sem_post(philos->setup->death_block_sema);
 	sem_post(philos->setup->check_death_sema);
