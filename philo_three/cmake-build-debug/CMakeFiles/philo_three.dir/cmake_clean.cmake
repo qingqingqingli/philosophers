@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/philo_three.dir/main.c.o"
+  "CMakeFiles/philo_three.dir/srcs/check_death.c.o"
   "CMakeFiles/philo_three.dir/srcs/check_status.c.o"
   "CMakeFiles/philo_three.dir/srcs/clean_up.c.o"
   "CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o"

@@ -8,6 +8,10 @@ CMakeFiles/philo_three.dir/main.c.o: ../headers/process_input.h
 CMakeFiles/philo_three.dir/main.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/main.c.o: ../main.c
 
+CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../headers/check_death.h
+CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../headers/struct.h
+CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../srcs/check_death.c
+
 CMakeFiles/philo_three.dir/srcs/check_status.c.o: ../headers/check_status.h
 CMakeFiles/philo_three.dir/srcs/check_status.c.o: ../headers/print.h
 CMakeFiles/philo_three.dir/srcs/check_status.c.o: ../headers/struct.h
@@ -25,10 +29,9 @@ CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o: ../headers/start_action.
 CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o: ../srcs/fork_philo_process.c
 
-CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/check_status.h
+CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/check_death.h
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/clean_up.h
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/initialise_philos.h
-CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/start_action.h
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o: ../srcs/initialise_philos.c
 

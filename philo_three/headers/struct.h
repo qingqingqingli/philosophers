@@ -14,6 +14,7 @@
 # define FORK_SEMA "fork_sema"
 # define WRITE_SEMA "write_sema"
 # define CHECK_STATUS_SEMA "check_status_sema"
+# define DEATH_SEMA "death_sema"
 # define MODE 0644
 
 typedef struct s_setup
@@ -28,6 +29,8 @@ typedef struct s_setup
 	sem_t			*fork_sema;
 	sem_t			*check_status_sema;
 	sem_t			*write_sema;
+	sem_t			*check_death_sema;
+	pthread_t		check_death_thread;
 }					t_setup;
 
 typedef struct s_philosopher

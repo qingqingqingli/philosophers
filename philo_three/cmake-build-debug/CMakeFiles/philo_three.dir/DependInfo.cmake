@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/qli/CLionProjects/philosophers/philo_three/main.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/main.c.o"
+  "/home/qli/CLionProjects/philosophers/philo_three/srcs/check_death.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/check_death.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/check_status.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/check_status.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/clean_up.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/clean_up.c.o"
   "/home/qli/CLionProjects/philosophers/philo_three/srcs/fork_philo_process.c" "/home/qli/CLionProjects/philosophers/philo_three/cmake-build-debug/CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o"

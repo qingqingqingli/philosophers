@@ -8,6 +8,19 @@
 #include "../headers/time_calculation.h"
 #include "../headers/print.h"
 
+void 	*handle_philo_death(t_philosopher *philo)
+{
+	gettimeofday(&philo->now, NULL);
+	philo->setup->life_status = dead;
+	printf(BLACK"[%ld]\t[%d] \thas died.\n", \
+	get_elapsed_milli(&philo->begin_time, &philo->now), philo->num);
+	sem_post(philo->setup->check_death_sema);
+	if (philo->release_fork)
+		sem_post(philo->setup->fork_sema);
+	sem_post(philo->setup->check_status_sema);
+	return (NULL);
+}
+
 void	*check_status(void *arg)
 {
 	t_philosopher	*philo;
@@ -25,14 +38,7 @@ void	*check_status(void *arg)
 		gettimeofday(&check, NULL);
 		if (get_elapsed_milli(&philo->last_eat_time, &check) > \
 		philo->setup->time_to_die)
-		{
-			print_prompt(philo, "has died.\n");
-			philo->setup->life_status = dead;
-			if (philo->release_fork)
-				sem_post(philo->setup->fork_sema);
-			sem_post(philo->setup->check_status_sema);
-			return (NULL);
-		}
+			return (handle_philo_death(philo));
 		sem_post(philo->setup->check_status_sema);
 	}
 	return (NULL);

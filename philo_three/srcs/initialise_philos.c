@@ -4,9 +4,8 @@
 
 #include <stdio.h>
 #include "../headers/initialise_philos.h"
-#include "../headers/start_action.h"
-#include "../headers/check_status.h"
 #include "../headers/clean_up.h"
+#include "../headers/check_death.h"
 
 int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 {
@@ -26,7 +25,7 @@ int 	setup_each_philo(t_setup *setup, t_philosopher *philos)
 	return (0);
 }
 
-int 	init_write_and_status_sema(t_philosopher *philo)
+int 	init_semaphores(t_philosopher *philo)
 {
 	philo->setup->check_status_sema = sem_open(CHECK_STATUS_SEMA, \
 	O_CREAT, MODE, 1);
@@ -37,13 +36,17 @@ int 	init_write_and_status_sema(t_philosopher *philo)
 	if (philo->setup->write_sema == SEM_FAILED)
 		return (set_sema_dead(philo->setup, 1));
 	sem_unlink(WRITE_SEMA);
+	philo->setup->check_death_sema = sem_open(DEATH_SEMA, O_CREAT, MODE, 0);
+	if (philo->setup->check_death_sema == SEM_FAILED)
+		return (set_sema_dead(philo->setup, 1));
+	sem_unlink(DEATH_SEMA);
 	return (0);
 }
 
 int 	initialise_philos(t_setup *setup, t_philosopher *philos)
 {
 	setup_each_philo(setup, philos);
-	if (init_write_and_status_sema(philos))
+	if (init_semaphores(philos) || create_check_death_thread(setup, philos))
 		return (-1);
 	return (0);
 }

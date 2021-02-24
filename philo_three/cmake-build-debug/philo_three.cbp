@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/headers/check_death.h">
+			<Option target="philo_three"/>
+		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/headers/fork_philo_process.h">
 			<Option target="philo_three"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/main.c">
+			<Option target="philo_three"/>
+		</Unit>
+		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/srcs/check_death.c">
 			<Option target="philo_three"/>
 		</Unit>
 		<Unit filename="/home/qli/CLionProjects/philosophers/philo_three/srcs/check_status.c">

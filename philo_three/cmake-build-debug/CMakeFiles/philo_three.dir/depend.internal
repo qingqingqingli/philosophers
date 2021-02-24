@@ -8,6 +8,10 @@ CMakeFiles/philo_three.dir/main.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/process_input.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/main.c
+CMakeFiles/philo_three.dir/srcs/check_death.c.o
+ /home/qli/CLionProjects/philosophers/philo_three/headers/check_death.h
+ /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
+ /home/qli/CLionProjects/philosophers/philo_three/srcs/check_death.c
 CMakeFiles/philo_three.dir/srcs/check_status.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/print.h
@@ -26,10 +30,9 @@ CMakeFiles/philo_three.dir/srcs/fork_philo_process.c.o
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/fork_philo_process.c
 CMakeFiles/philo_three.dir/srcs/initialise_philos.c.o
- /home/qli/CLionProjects/philosophers/philo_three/headers/check_status.h
+ /home/qli/CLionProjects/philosophers/philo_three/headers/check_death.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
- /home/qli/CLionProjects/philosophers/philo_three/headers/start_action.h
  /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
  /home/qli/CLionProjects/philosophers/philo_three/srcs/initialise_philos.c
 CMakeFiles/philo_three.dir/srcs/libft_functions.c.o

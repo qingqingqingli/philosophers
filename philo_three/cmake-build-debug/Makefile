@@ -170,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/main.c.s
 .PHONY : main.c.s
 
+srcs/check_death.o: srcs/check_death.c.o
+
+.PHONY : srcs/check_death.o
+
+# target to build an object file
+srcs/check_death.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/check_death.c.o
+.PHONY : srcs/check_death.c.o
+
+srcs/check_death.i: srcs/check_death.c.i
+
+.PHONY : srcs/check_death.i
+
+# target to preprocess a source file
+srcs/check_death.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/check_death.c.i
+.PHONY : srcs/check_death.c.i
+
+srcs/check_death.s: srcs/check_death.c.s
+
+.PHONY : srcs/check_death.s
+
+# target to generate assembly for a file
+srcs/check_death.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/philo_three.dir/build.make CMakeFiles/philo_three.dir/srcs/check_death.c.s
+.PHONY : srcs/check_death.c.s
+
 srcs/check_status.o: srcs/check_status.c.o
 
 .PHONY : srcs/check_status.o
@@ -425,6 +452,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... srcs/check_death.o"
+	@echo "... srcs/check_death.i"
+	@echo "... srcs/check_death.s"
 	@echo "... srcs/check_status.o"
 	@echo "... srcs/check_status.i"
 	@echo "... srcs/check_status.s"
