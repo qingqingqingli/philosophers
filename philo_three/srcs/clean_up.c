@@ -29,13 +29,13 @@ void 	clean_up_setup_semaphores(t_setup *setup)
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
 {
-	if (!setup->sema_status)
-	{
-		write(STDERR_FILENO, SEMA_ERROR, ft_strlen(SEMA_ERROR));
-		return_value = -1;
-	}
 	if (philos)
 	{
+		if (!setup->sema_status)
+		{
+			write(STDERR_FILENO, SEMA_ERROR, ft_strlen(SEMA_ERROR));
+			return_value = -1;
+		}
 		clean_up_setup_semaphores(setup);
 		clean_up_philos(philos);
 	}

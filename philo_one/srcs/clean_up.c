@@ -37,13 +37,13 @@ void 	clean_up_setup_mutexes(t_setup *setup)
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)
 {
-	if (!setup->mutexes_status)
-	{
-		write(STDERR_FILENO, MUTEX_ERROR, ft_strlen(MUTEX_ERROR));
-		return_value = -1;
-	}
 	if (philos)
 	{
+		if (!setup->mutexes_status)
+		{
+			write(STDERR_FILENO, MUTEX_ERROR, ft_strlen(MUTEX_ERROR));
+			return_value = -1;
+		}
 		clean_up_setup_mutexes(setup);
 		clean_up_philos(philos);
 	}
