@@ -21,7 +21,8 @@ SOURCE			= 	main.c \
 					srcs/start_action.c \
 					srcs/time_calculation.c \
 					srcs/fork_philo_process.c \
-					srcs/libft_functions.c
+					srcs/libft_functions.c \
+					srcs/check_death.c
 
 OBJECT			=	$(SOURCE:.c=.o)
 
