@@ -2,6 +2,7 @@
 // Created by qli on 17/02/2021.
 //
 
+#include <stdio.h>
 #include "../headers/clean_up.h"
 #include "../headers/libft_functions.h"
 
@@ -25,6 +26,8 @@ void 	clean_up_setup_semaphores(t_setup *setup)
 		sem_close(setup->write_sema);
 	if (setup->check_status_sema)
 		sem_close(setup->check_status_sema);
+	if (setup->check_death_sema)
+		sem_close(setup->check_death_sema);
 }
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)

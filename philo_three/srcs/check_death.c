@@ -3,6 +3,7 @@
 //
 
 #include "../headers/check_death.h"
+#include "../headers/clean_up.h"
 
 void	kill_all_process(t_philosopher *philos)
 {

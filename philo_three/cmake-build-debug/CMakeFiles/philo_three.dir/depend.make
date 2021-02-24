@@ -9,6 +9,7 @@ CMakeFiles/philo_three.dir/main.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/main.c.o: ../main.c
 
 CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../headers/check_death.h
+CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../headers/clean_up.h
 CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../headers/struct.h
 CMakeFiles/philo_three.dir/srcs/check_death.c.o: ../srcs/check_death.c
 

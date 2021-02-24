@@ -22,5 +22,6 @@ int 	main(int argc, char **argv)
 	if (initialise_philos(&setup, philos) == -1)
 		return (clean_up(&setup, philos, -1));
 	fork_philo_process(&setup, philos);
+	pthread_join(setup.check_death_thread, NULL);
 	return (clean_up(&setup, philos, 0));
 }
