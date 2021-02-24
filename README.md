@@ -14,7 +14,7 @@
 
 - Each time a philosopher has finished eating, he will drop his forks and start sleeping. When a philosopher is done sleeping, he will start thinking. The simulation stops when a philosopher dies.
 
-## philo_one [link](https://github.com/qingqingqingli/philosophers/tree/main/philo_one)
+## philo_one ([*link*](https://github.com/qingqingqingli/philosophers/tree/main/philo_one))
 
 - One fork between each philosopher, therefore there will be a fork at the right and at the left of each philosopher.
   
@@ -22,7 +22,7 @@
   
 - Each philosopher should be a `thread`.
 
-## philo_two [link](https://github.com/qingqingqingli/philosophers/tree/main/philo_two)
+## philo_two ([*link*](https://github.com/qingqingqingli/philosophers/tree/main/philo_two))
 
 - All the forks are in the middle of the table.
   
@@ -30,7 +30,7 @@
   
 - Each philosopher should be a `thread`.
 
-## philo_three [link](https://github.com/qingqingqingli/philosophers/tree/main/philo_three)
+## philo_three ([*link*](https://github.com/qingqingqingli/philosophers/tree/main/philo_three))
 
 - All the forks are in the middle of the table.
   
