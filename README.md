@@ -38,6 +38,10 @@
   
 - Each philosopher should be a `process` and the main process should not be a philosopher.
 
+## wiki
+
+- You can check my learnings from this project in [this wiki](https://github.com/qingqingqingli/philosophers/wiki)
+
 ## How to test
 
 - These parameters are required in order when running the executable: `number_of_philosophers` `time_to_die` `time_to_eat` `time_to_sleep` `number_of_times_each_philosopher_must_eat(optional)`
