@@ -19,7 +19,8 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	color[5] = CYAN;
 	if (philo->setup->life_status == dead)
 		return (1);
-	if (sem_wait(philo->setup->write_sema))
+	if (sem_wait(philo->setup->write_sema) || \
+	sem_wait(philo->setup->death_block_sema))
 		return (set_sema_dead(philo->setup, 1));
 	gettimeofday(&philo->now, NULL);
 	write(STDOUT_FILENO, color[philo->num % 6], \
@@ -32,5 +33,6 @@ int	print_prompt(t_philosopher *philo, char *prompt)
 	write(STDOUT_FILENO, "] \t", 3);
 	write(STDOUT_FILENO, prompt, ft_strlen(prompt));
 	sem_post(philo->setup->write_sema);
+	sem_post(philo->setup->death_block_sema);
 	return (0);
 }

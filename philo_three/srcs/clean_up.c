@@ -28,6 +28,8 @@ void 	clean_up_setup_semaphores(t_setup *setup)
 		sem_close(setup->check_status_sema);
 	if (setup->check_death_sema)
 		sem_close(setup->check_death_sema);
+	if (setup->death_block_sema)
+		sem_close(setup->death_block_sema);
 }
 
 int 	clean_up(t_setup *setup, t_philosopher *philos, int return_value)

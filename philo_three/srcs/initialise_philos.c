@@ -40,6 +40,11 @@ int 	init_semaphores(t_philosopher *philo)
 	if (philo->setup->check_death_sema == SEM_FAILED)
 		return (set_sema_dead(philo->setup, 1));
 	sem_unlink(DEATH_SEMA);
+	philo->setup->death_block_sema = sem_open(DEATH_BLOCK_SEMA, \
+	O_CREAT, MODE, 1);
+	if (philo->setup->death_block_sema == SEM_FAILED)
+		return (set_sema_dead(philo->setup, 1));
+	sem_unlink(DEATH_BLOCK_SEMA);
 	return (0);
 }
 

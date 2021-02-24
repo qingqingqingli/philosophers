@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/qli/CLionProjects/philosophers/philo_three/headers/check_death.h
+struct.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
+sys/types.h
+-
+signal.h
+-
+stdio.h
+-
+
 /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
 ../headers/struct.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -14,8 +24,10 @@ stdlib.h
 unistd.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
-unistd.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
+../headers/struct.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
+stdlib.h
 -
 
 /home/qli/CLionProjects/philosophers/philo_three/headers/struct.h
@@ -30,11 +42,13 @@ sys/stat.h
 semaphore.h
 -
 
-/home/qli/CLionProjects/philosophers/philo_three/srcs/clean_up.c
+/home/qli/CLionProjects/philosophers/philo_three/srcs/initialise_philos.c
 stdio.h
 -
+../headers/initialise_philos.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/initialise_philos.h
 ../headers/clean_up.h
 /home/qli/CLionProjects/philosophers/philo_three/headers/clean_up.h
-../headers/libft_functions.h
-/home/qli/CLionProjects/philosophers/philo_three/headers/libft_functions.h
+../headers/check_death.h
+/home/qli/CLionProjects/philosophers/philo_three/headers/check_death.h
 
