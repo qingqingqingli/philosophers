@@ -2,7 +2,7 @@
 
 # philosophers
 
-***This project focuses on the basics of threading a process and how to work on the same memory space. You will learn how to make threads, and discover the mutex, semaphore and shared memory.***
+***This project focuses on the basics of threading a process and how to work on the same memory space. We learnt how to make `threads`, and discover the `mutex`, `semaphore` and `shared memory`.***
 
 ## Project requirements
 
@@ -37,3 +37,31 @@
 - They have no states in memory but the number of available forks is represented by a `semaphore`.
   
 - Each philosopher should be a `process` and the main process should not be a philosopher.
+
+## How to test
+
+- These parameters are required in order when running the executable: [number_of_philosophers] [time_to_die] [time_to_eat] [time_to_sleep] [number_of_times_each_philosopher_must_eat](optional)
+- Do not test with more than 200 philosophers
+- Do not test with [time_to_die] [time_to_eat] [time_to_sleep] under 60ms
+- Test with `5 800 200 200`, no one should die
+- Test with `5 800 200 200 7`, the simulation should stop when all the philosophers have eaten at least 7 times each
+
+> Run the following commands:
+
+```shell
+$ git clone https://github.com/qingqingqingli/philosophers
+# choose which version you want to test
+$ cd philo_one
+$ make
+$ ./philo_one 5 800 200 200
+```
+
+## Examples
+
+> When the stimulation does not stop
+
+[![philosopher_1](https://github.com/qingqingqingli/readme_images/blob/master/philosopher_1.png)](https://github.com/qingqingqingli/philosophers)
+
+> When philosopher dies
+
+[![philosopher_2](https://github.com/qingqingqingli/readme_images/blob/master/philosopher_2.png)](https://github.com/qingqingqingli/philosophers)
