@@ -6,6 +6,17 @@
 #include "../headers/check_status.h"
 #include "../headers/start_action.h"
 
+int	child_process_action(t_setup *setup, t_philosopher *philos, int i)
+{
+	if (pthread_create(&philos[i].philo_status_thread, NULL, \
+			check_status, &philos[i]))
+		return (1);
+	start_action(&philos[i]);
+	if (pthread_join(philos[i].philo_status_thread, NULL))
+		return (1);
+	return (0);
+}
+
 int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 {
 	int	i;
@@ -19,12 +30,7 @@ int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 		if (philos[i].fork_id == -1)
 			return (-1);
 		if (philos[i].fork_id == 0)
-		{
-			pthread_create(&philos[i].philo_status_thread, NULL, \
-			check_status, &philos[i]);
-			start_action(&philos[i]);
-			pthread_join(philos[i].philo_status_thread, NULL);
-		}
+			child_process_action(setup, philos, i);
 		usleep(100);
 		i++;
 	}

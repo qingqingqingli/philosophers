@@ -40,6 +40,8 @@ int	process_setup_data(int argc, char **argv, t_setup *setup)
 	setup->fork_sema = NULL;
 	setup->write_sema = NULL;
 	setup->check_status_sema = NULL;
+	setup->check_death_sema = NULL;
+	setup->death_block_sema = NULL;
 	setup->number_of_philosophers = ft_atoi(argv[1]);
 	setup->time_to_die = ft_atoi(argv[2]);
 	setup->time_to_eat = ft_atoi(argv[3]);
