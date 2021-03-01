@@ -22,7 +22,8 @@ void	*check_death(void *arg)
 	t_philosopher	*philos;
 
 	philos = arg;
-	sem_wait(philos->setup->check_death_sema);
+	if (sem_wait(philos->setup->check_death_sema))
+		return (NULL);
 	kill_all_process(philos);
 	sem_post(philos->setup->death_block_sema);
 	sem_post(philos->setup->check_death_sema);

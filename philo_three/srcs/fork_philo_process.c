@@ -6,7 +6,7 @@
 #include "../headers/check_status.h"
 #include "../headers/start_action.h"
 
-int	child_process_action(t_setup *setup, t_philosopher *philos, int i)
+int	child_process_action(t_philosopher *philos, int i)
 {
 	if (pthread_create(&philos[i].philo_status_thread, NULL, \
 			check_status, &philos[i]))
@@ -30,7 +30,7 @@ int	fork_philo_process(t_setup *setup, t_philosopher *philos)
 		if (philos[i].fork_id == -1)
 			return (-1);
 		if (philos[i].fork_id == 0)
-			child_process_action(setup, philos, i);
+			child_process_action(philos, i);
 		usleep(100);
 		i++;
 	}

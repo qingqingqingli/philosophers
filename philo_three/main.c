@@ -19,6 +19,7 @@ int 	main(int argc, char **argv)
 	philos = malloc(sizeof(t_philosopher) * setup.number_of_philosophers);
 	if (!philos)
 		return (clean_up(&setup, philos, -1));
+	printf("time\tindex\taction\n");
 	if (initialise_philos(&setup, philos) == -1)
 		return (clean_up(&setup, philos, -1));
 	fork_philo_process(&setup, philos);
